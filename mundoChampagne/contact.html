@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pre Connect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Italiana -->
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <!-- Font Monserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Ubuntu -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Social Media Icons -->
+    <script src="https://kit.fontawesome.com/96163b0f22.js" crossorigin="anonymous"></script>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS file -->
+    <script src="./js/contact.js"></script>
+    <title>Contacto - Mundo Champagne</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="nav-header">
+            <input type="checkbox" name="" id="nav-menu">
+            <div class="logo">
+                <p>mundo<strong class="capitol-c">C</strong>hampagne</p>
+            </div>
+            <ul class="ul-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="varieties.html">Variedades</a></li>
+                <li><a href="foodies.html">Sibaritas</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <label for="nav-menu" class="icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+        <div class="gold-line"></div>
+    </header>
+    <!-- MAIN - CONTENT -->
+    <div class="main-content-4">
+        <div class="main-content-contact">
+            <div class="contact-intro">
+                <h1>Contacto</h1>
+                <p>¿Deseas dejarnos un comentario sobre qué imformación te gustaría conocer en nuestro sitio? ¿Deseas estar al tanto de toda la información? Puedes llenar el formulario para recibir boletines con toda la nueva información disponible. Tienes también a disposición la dirección de nuestras oficinas centrales, puedes solicitar una visita guiada.</p>
+                <p>Los campos con asterisco " * " son obligatorios.</p>
+            </div>
+            <div class="form-map">
+                <div class="form-contact">
+                    <form name="contact-form" >
+                        <div>
+                            <label for="full-name" class="label">Nombre y Apellido *</label>
+                            <input class="input-txt" id="full-name" type="text" name="full-name" placeholder="Ingrese su nombre y apellido...">
+                        </div>
+                        <div>
+                            <label for="country" class="label">País *</label>
+                            <select name="" class="select-country" id="country">
+                                <option value="" disabled selected hidden>Elija País...</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="CostaRica">Costa Rica</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="ElSalvador">El Salvador</option>
+                                <option value="España">España</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="GuineaEcuatorial">Guinea Ecuatorial</option>
+                                <option value="Haití">Haití</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="México">México</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Perú</option>
+                                <option value="PuertoRico">Puerto Rico</option>
+                                <option value="RepúblicaDominicana">República Dominicana</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+                            <!--<input class="input-txt" id="country" type="text" name="country" placeholder="Ingrese su país...">-->
+                        </div>
+                        <div>
+                            <label for="email" class="label">Correo Electrónico *</label>
+                            <input class="input-txt" id="email" type="email" name="email" placeholder="Ingrese su correo electrónico..." >
+                        </div>
+                        <div>
+                            <label for="subject" class="label">Mensaje</label>
+                            <textarea class="subject-box" id="subject" name="subject" placeholder="Deje su mensaje..." style="height:200px" maxlength="240"></textarea>                    
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Tengo mayoría de edad. Acepto recibir boletines a mi correo.
+                        </div>
+                        <div>
+                            <input type="submit" class="button" id="btn-submit" onclick=" return validate_data()" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <h2>Oficinas Centrales</h2>
+                    <p>Macacha Güemes 396 - CABA - Argentina</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9949549976833!2d-58.36469146458202!3d-34.60467179487243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352e5615b701%3A0xdf7681e2591a840e!2sMacacha%20G%C3%BCemes%20396%2C%20C1106BKH%20CABA!5e0!3m2!1ses-419!2sar!4v1653596870984!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <nav class="nav-footer">
+            <a href="https://www.facebook.com" target="blank"><i class="fa-brands fa-facebook fa-2xl" style="color: whitesmoke;"></i></a>
+            <a href="https://www.instagram.com" target="blank"><i class="fa-brands fa-instagram fa-2xl" style="color: whitesmoke;"></i></a>
+            <a href="https://web.whatsapp.com/" target="blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: whitesmoke;"></i></a>
+        </nav>
+        <div class="all-rights-reserved">
+            <p>Derechos Resevados @2022</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- =============================================================
+Code By: Mati Coria; 
+Mail: coria79@gmail.com; 
+Proyect course "Codo A Codo" by https://aulasvirtuales.bue.edu.ar/ ;
+Teacher: Paola Romero; 
+Commission: 22084; 
+Date: May 2022.
+============================================================== -->

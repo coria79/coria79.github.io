@@ -1,0 +1,814 @@
+/* --- BODY --- */
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: visible;
+    min-width: 320px;
+}
+/* --- HEADER --- */
+#nav-menu{
+    top: -100px;
+    display: none;
+}
+.nav-header{
+    margin: 0;
+    padding: 0 0 0 20px;
+    height: 80px;
+    background-color: #5D4954;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+/* --- HEADER --- Logo --- */
+.logo{
+    margin: 0;
+    display: flex;
+    width: 40%;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+.logo p{
+    font-family: 'Italiana', serif;
+    color: gold;
+    float: left;
+    text-align: left;
+    font-size: 40px;
+    text-shadow: 1px 1px 3px black;
+    animation-name: rotate-y;
+    animation-duration: 1.5s;    
+}
+.capitol-c{
+    color: white;
+    text-shadow: 3px 2px 4px white;
+}
+.capitol-c:hover{
+    color: black;
+}
+/* --- HEADER --- Links --- */
+.ul-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.ul-links li{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    float: right;
+    list-style: none;
+}
+.ul-links li:hover{
+    color: gold;
+    cursor: pointer;
+}
+.ul-links a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* --- HEADER --- Hamburguer Icon --- */
+.icon{
+    margin-top: 30px;
+    margin-right: 15px;
+    display: none;
+    /*display: block;*/
+    transform: translateY(-50%);
+}
+.line{
+    margin: 5px;
+    width: 30px;
+    height: 5px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.gold-line{
+    top: 99px;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 5px;
+    background-color: gold;
+    opacity: 100%;
+}
+/* --- MAIN CONTENT --- */
+.main-content-1{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    margin: 0;
+    border: 0;    
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('../img/bckgrnd.png');
+    background-size: 100% 568px;
+    background-color: black;
+    background-repeat: no-repeat;
+    min-height: 568px;
+}
+.p-final{
+    color: gold;
+}
+.h2-color{
+    color: gold;
+}
+/* --- MAIN CONTENT - INDEX --- */
+.main-content-index{
+    
+    margin-top: 50px;
+    /*position: absolute;*/
+    /*right: 40%;*/
+    /*transform: translate(35%);*/
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    width: 400px;
+    height: auto;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+}
+/* --- MAIN CONTENT - VARIETIES --- */
+.main-content-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('../img/bckgrnd-2.png');
+    background-size: 100% 568px;
+    color: black;
+    background-repeat: no-repeat;
+    min-height: 3000px;
+}
+.main-content-varieties{
+    width: 1050px;
+    margin-top: 50px;
+    /*position: absolute;*/
+    /*transform: translate(20%);*/
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: justify;
+    /*padding: 10px;*/
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+}
+.main-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon-grapes{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/grapes.png");
+    width: 260px;
+    height: 180px;
+}
+.icon-grapes:hover{
+    background-color:rgba(255, 215, 0, .1);
+    background-image: url("../img/grapes-2.png");
+    width: 260px;
+    height: 180px;
+}
+.grapes{
+    background-image: url("../img/grapes-230x230.png");
+    width: 230px;
+    height: 230px;
+    border-color: black;
+    border-radius: 10px;
+}
+.icon-bottle{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/bottle.png");
+    margin-left: 35px;
+    margin-right: 35px;
+    width: 260px;
+    height: 180px;
+}
+.icon-bottle:hover{
+    background-color:rgba(255, 215, 0, .1);
+    background-image: url("../img/bottle-2.png");
+    width: 260px;
+    height: 180px;
+}
+.bottles{
+    background-image: url("../img/bottles-230x230.png");
+    width: 230px;
+    height: 230px;
+    border-color: black;
+    border-radius: 10px;
+}
+.icon-cup{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/cup.png");
+    width: 260px;
+    height: 180px;
+}
+.icon-cup:hover{
+    background-color:rgba(255, 215, 0, .1);
+    background-image: url("../img/cup-2.png");
+    width: 260px;
+    height: 180px;
+}
+.cups{
+    background-image: url("../img//cups-230x230.png");
+    width: 230px;
+    height: 230px;
+    border-color: black;
+    border-radius: 10px;    
+}
+.main-varieties{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .01);
+    top: 650px;
+    /*transform: translate(0);*/
+    width: 100%;
+    height: auto;
+}
+/* --- MAIN CONTENT - FOODIES --- */
+.main-content-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('../img/bckgrnd-2.png');
+    background-size: 100% 568px;
+    color: black;
+    background-repeat: no-repeat;
+    min-height: 1400px;
+}
+.main-content-foodies{
+    width: 1050px;
+    margin-top: 50px;
+    /*position: absolute;*/
+    /*transform: translate(20%);*/
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: justify;
+    /*padding: 10px;*/
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+}
+.icon-coctails{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/coctail.png");
+    width: 260px;
+    height: 180px;
+}
+.icon-coctails:hover{
+    background-color:rgba(255, 215, 0, .1);
+    background-image: url("../img/coctail-2.png");
+    width: 260px;
+    height: 180px;
+}
+.coctails{
+    background-image: url("../img/coctails.png");
+    width: 230px;
+    height: 230px;
+    border-color: black;
+    border-radius: 10px;
+}
+.icon-meals{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/meal.png");
+    margin-left: 35px;
+    margin-right: 35px;
+    width: 260px;
+    height: 180px;
+}
+.icon-meals:hover{
+    background-color:rgba(255, 215, 0, .1);
+    background-image: url("../img/meal-2.png");
+    width: 260px;
+    height: 180px;
+}
+.meals{
+    background-image: url("../img/meals.png");
+    width: 230px;
+    height: 230px;
+    border-color: black;
+    border-radius: 8px;
+}
+.icon-desservs{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/desserv.png");
+    width: 260px;
+    height: 180px;
+}
+.icon-desservs:hover{
+    background-color:rgba(255, 215, 0, .1);
+    background-image: url("../img/desserv-2.png");
+    width: 260px;
+    height: 180px;
+}
+.desserts{
+    background-image: url("../img/desserts.png");
+    width: 230px;
+    height: 230px;
+    border-color: black;
+    border-radius: 8px;
+}
+.main-foodies{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .01);
+    top: 650px;
+    width: 100%;
+    height: auto;
+}
+/* --- MAIN CONTENT - CONTACT --- */
+.main-content-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background-image: url('../img/bckgrnd-2.png');
+    background-size: 100% 568px;
+    color: black;
+    background-repeat: no-repeat;
+    min-height: 850px;
+}
+.main-content-contact{
+    width: 1050px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+    box-sizing: border-box;
+}
+.contact-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 1px;
+}
+/* --- USE OF FLEX - MAIN CONTAINER .form-map SONS ITEMS .form-contact AND .contact-map{--- */
+.form-map{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
+    box-sizing: border-box;
+}
+.form-contact{
+    color: whitesmoke;
+    order: 1;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    width: 500px;
+    box-sizing: border-box;
+}
+.input-txt, .select-country{
+    margin-top: 5px;
+    padding: 1px;
+    float: left;
+    width: 100%;
+    min-height: 25px;
+    resize: none;
+}
+.subject-box{
+    padding: 1px;    
+    float: left;
+    width: 100%;
+    resize: none;
+}
+.button{
+    background-color: #5D4954;
+    color: gold;
+    font-size: 22px;
+    width: 82px;
+    height: 40px;
+}
+.contact-map{
+    margin-left: 30px;
+    color: whitesmoke;
+    order: 2;
+    width: 500px;
+    box-sizing: border-box;
+}
+.label{
+    margin-top: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+/* --- FOOTER --- */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.nav-footer a{
+    margin: 8px;
+}
+.nav-footer a:hover{
+    background-color: black;
+    opacity: 50%;
+    animation-name: rotate-y;
+    animation-duration: 1.5s;
+}
+.all-rights-reserved{
+    text-align: center;
+}
+.all-rights-reserved p{
+    padding: 2px;
+    margin: 2px;
+}
+/* --- ANIMATION --- */
+@keyframes rotate-y {
+    0%{transform: rotateY(0deg);}
+    25%{transform: rotateY(90deg);}
+    50%{transform: rotateY(180deg);}
+    75%{transform: rotateY(270deg);}
+    100%{transform: rotateY(360deg);}
+}
+/* --- MEDIA QUERIE - SCREEN FROM 320PX TO 449PX --- */
+@media screen and (min-width: 320px) and (max-width: 449.99px){
+    .logo{
+        width: 90%;
+        transform: translate(2%);
+        transition: all .5s ease-in-out;
+    }
+    .logo p{
+        font-size: 30px;
+    }
+    /* --- STANDAR MENU TO DROP DOWN MENU --- */
+    .icon{
+        float: right;
+    }
+    .ul-links{
+        float: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 64px;
+        bottom: 100%;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #5D4954;
+        opacity: 95%;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+        align-items: center;
+        z-index: 1;
+    }
+    .ul-links a{
+        font-size: 20px;
+    }
+    .ul-links a:hover{
+        color: gold;
+        opacity: 80%;
+    }
+    .nav-header :checked ~ .ul-links{
+        bottom: 30%;
+    }
+    .nav-header .icon{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-header :checked ~ .icon .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    .nav-header :checked ~ .icon .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    .nav-header :checked ~ .icon .line:nth-child(2) {
+        opacity: 0;
+    }
+/* --- MEDIA QUERIE - SCREEN FROM 320PX TO 449PX - MAIN CONTENT - INDEX --- */
+    .main-content-1{
+        align-items: center;
+        font-size: 12px;
+    }
+    .main-content-index{
+        margin: 50px 0 0 0;
+        border: 0;
+        padding: 0 3px 0 3px;
+        /*transform: translate(2%);*/
+        width: 300px;
+        transition: all .5s ease-in-out;
+    }
+/* --- MEDIA QUERIE - SCREEN FROM 320PX TO 449PX - MAIN CONTENT - VARIETIES --- */
+    .main-content-2{
+        align-items: center;
+        font-size: 12px;
+        min-height: 3150px;
+    }
+    .main-content-varieties{
+        width: 316px;
+        /*transform: translate(1%);*/
+        border: 1;
+        margin: 1;
+        transition: all .5s ease-in-out;
+    }
+    .main-varieties{
+        box-sizing: border-box;
+        margin: 0 2px 0 2px;
+        border: 2px;
+        padding: 2px;
+        top: 650px;
+        width: 316px;
+        font-size: 12px;
+    }
+    p{
+        box-sizing: border-box;
+        margin: 3px;
+        border: 1px;
+        padding: 1px;
+    }
+    li{
+        box-sizing: border-box;
+        margin: 3px;
+        border: 1px;
+        padding: 1px;        
+    }
+/* --- MEDIA QUERIE - SCREEN FROM 320PX TO 449PX - MAIN CONTENT - FOODIES --- */
+    .main-content-3{
+        align-items: center;
+        font-size: 12px;
+        min-height: 2000px;
+    }
+    .main-content-foodies{
+        /*right: 16%;*/
+        width: 316px;
+        /*transform: translate(1%);*/
+        border: 0;
+        transition: all .5s ease-in-out;
+    }
+    .main-foodies{
+        box-sizing: border-box;
+        margin: 0 2px 0 2px;
+        border: 2px;
+        padding: 2px;
+        top: 650px;
+        width: 316px;
+        font-size: 12px;
+    }    
+/* --- MEDIA QUERIE - SCREEN FROM 320PX TO 449PX - MAIN CONTENT - CONTACT --- */
+.main-content-4{
+    min-height: 1280px;
+    align-items: center;
+    }
+.main-content-contact{
+    transition: all .5s ease-in-out;        
+    width: 320px;
+}
+.contact-intro{
+    width: 100%;
+}
+.form-map{
+    width: 100%;
+}
+.form-contact{
+    width: 100%;
+}
+.contact-map{
+    width: 100%;
+}
+
+
+}
+
+/* --- MEDIA QUERIE - SCREEN FROM 450PX TO 779PX --- */
+@media screen and (min-width: 450px) and (max-width: 779.99px){
+    .logo{
+        margin: 0;
+        justify-content: center;
+        align-content: center;
+        box-sizing: border-box;
+        width: 95%;
+        transition: all .5s ease-in-out;
+    }
+    .logo p{
+        font-size: 35px;
+    }
+    /* --- STANDAR MENU TO DROP DOWN MENU --- */
+    .ul-links{
+        float: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 64px;
+        bottom: 100%;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #5D4954;
+        opacity: 95%;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+        align-items: center;
+        z-index: 1;
+    }
+    .ul-links a{
+        font-size: 20px;
+    }
+    .ul-links a:hover{
+        color: gold;
+        opacity: 80%;
+    }
+    .nav-header :checked ~ .ul-links{
+        bottom: 30%;
+    }
+    .nav-header .icon{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-header :checked ~ .icon .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    .nav-header :checked ~ .icon .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    .nav-header :checked ~ .icon .line:nth-child(2) {
+        opacity: 0;
+    }
+
+/* --- MEDIA QUERIE - SCREEN FROM 450PX TO 779PX - MAIN CONTENT - INDEX --- */
+    .main-content-1{
+        align-items: center;
+        font-size: 14px;
+    }
+    .main-content-index{
+        margin: 50px 0 0 0;
+        border: 0;
+        padding: 0 7px 0 7px;
+        /*transform: translate(4%);*/
+        width: 400px;
+        transition: all .5s ease-in-out;
+    }
+/* --- MEDIA QUERIE - SCREEN FROM 450PX TO 779PX - MAIN CONTENT - VARIETIES --- */
+.main-content-2{
+    align-items: center;
+    font-size: 12px;
+    min-height: 2750px;
+}
+.main-content-varieties{
+    width: 446px;
+    /*transform: translate(1%);*/
+    border: 1;
+    margin: 1;
+    transition: all .5s ease-in-out;
+}
+.main-varieties{
+    box-sizing: border-box;
+    margin: 0 2px 0 2px;
+    border: 2px;
+    padding: 2px;
+    top: 650px;
+    width: 446px;
+    font-size: 12px;
+}
+p{
+    box-sizing: border-box;
+    margin: 3px;
+    border: 1px;
+    padding: 1px;
+}
+li{
+    box-sizing: border-box;
+    margin: 3px;
+    border: 1px;
+    padding: 1px;        
+}
+/* --- MEDIA QUERIE - SCREEN FROM 450PX TO 779PX - MAIN CONTENT - FOODIES --- */
+.main-content-3{
+    align-items: center;
+    font-size: 12px;
+    min-height: 2000px;
+}
+.main-content-foodies{
+    /*right: 16%;*/
+    width: 446px;
+    /*transform: translate(1%);*/
+    border: 0;
+    transition: all .5s ease-in-out;
+}
+.main-foodies{
+    box-sizing: border-box;
+    margin: 0 2px 0 2px;
+    border: 2px;
+    padding: 2px;
+    top: 650px;
+    width: 446px;
+    font-size: 12px;
+}    
+
+/* --- MEDIA QUERIE - SCREEN FROM 450PX TO 779PX - MAIN CONTENT - CONTACT --- */
+.main-content-4{
+    align-items: center;
+    min-height: 1280px;
+    }
+.main-content-contact{
+    transition: all .5s ease-in-out;        
+    width: 450px;
+}
+.contact-intro{
+    width: 100%;
+}
+.form-map{
+    width: 100%;
+}
+.form-contact{
+    width: 100%;
+}
+.contact-map{
+    width: 100%;
+}
+}
+/* --- MEDIA QUERIE - SCREEN FROM 780PX TO 1080PX--- */
+@media screen and (min-width: 780px)and (mAX-width: 1080px){
+    .logo{
+        transition: all .5s ease-in-out;
+    }
+/* --- MEDIA QUERIE - SCREEN FROM 780PX TO 1080PX - MAIN CONTENT - INDEX --- */
+    .main-content-1{
+        align-items: center;
+    }
+    .main-content-index{
+        /*transform: translate(15%);*/
+        transition: all .5s ease-in-out;
+    }
+/* --- MEDIA QUERIE - SCREEN FROM 780PX TO 1080PX - MAIN CONTENT - VARIETIES --- */
+    .main-content-2{
+        align-items: center;
+    }
+    .main-content-varieties{
+        /*transform: translate(1%);*/
+        transition: all .5s ease-in-out;
+        width: 776px;
+    }
+/* --- MEDIA QUERIE - SCREEN FROM 780PX TO 1080PX - MAIN CONTENT - FOODIES --- */
+    .main-content-3{
+        align-items: center;
+    }
+    .main-content-foodies{
+        /*transform: translate(1%);*/
+        transition: all .5s ease-in-out;
+        width: 776px;        
+    }
+/* --- MEDIA QUERIE - SCREEN FROM 780PX TO 1080PX - MAIN CONTENT - CONTACT --- */
+    .main-content-4{
+        align-items: center;
+        }
+    .main-content-contact{
+        transition: all .5s ease-in-out;        
+        width: 780px;
+    }
+    .contact-intro{
+        width: 100%;
+    }
+    .form-map{
+        width: 100%;
+    }
+    .form-contact{
+        width: 40%;
+    }
+    .contact-map{
+        width:400PX;
+    }
+}
+
+/* ================================================================
+Code By: Mati Coria; 
+Mail: coria79@gmail.com; 
+Proyect course "Codo A Codo" by https://aulasvirtuales.bue.edu.ar/ ; 
+Teacher: Paola Romero; 
+Commission: 22084; 
+Date: May 2022.
+================================================================= */
