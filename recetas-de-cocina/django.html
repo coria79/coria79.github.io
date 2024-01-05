@@ -33,8 +33,13 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4">
                     <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                    <a href="about.html" class="nav-item nav-link">Acerca de</a>
+                    <a href="about.html" class="nav-item nav-link">Acerca de</a>                    
                 </div>
+                <!-- Language elements -->
+                <div id="languageOptions" class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active" onclick="changeLanguage('es')">ES</a>
+                    <a href="#" class="nav-item nav-link" onclick="changeLanguage('en')">ENG</a>
+                </div>                
             </div>
         </nav>
     </div>
@@ -47,8 +52,11 @@
                 <div class="carousel-item active">
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-primary font-weight-medium m-0">Recetas De Cocina</h2>
-                        <h1 class="display-1 text-white m-0">Para Programadores</h1>
+                        <h1 class="display-1 m-0">
+                            <span class="text-primary">Recetas De Cocina</span>
+                            <br>
+                            <span class="text-white">Para Programadores</span>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -63,7 +71,13 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-12 py-0 py-lg-5">
                 <p>
-                    Esta receta cubre todo el proceso necesario para poder establecer todo lo necesario para tener un ambiente de desarrollo que permita codificar en Django.<br>
+                    <b>Introducción:</b><br>
+                    <br>
+                    Es preferible desarrollar en entorno Linux. Muy probablemente el sistema operativo que utilice tú equipo sea Windows. Para evitar formatear el equipo e instalar alguna distribución de Linux. O para evitar crear una nueva partición con otro sistema de archivos diferente al de Windows es que esta receta explica cómo poder tener acceso a Linux sin dejar de tener Windows en el equipo.<br>
+                    <br>
+                    <b>Objetivo:</b><br>
+                    <br>
+                    Desde Windows y por medio de una máquina virtual, poder instalar en un ambiente Linux todo lo necesario para comenzar a desarrollar en Django. Esta receta cubre todo lo necesario para ello.<br>
                     <br>
                     Se encuentra dividido en cuatro secciones. Al completar todas las secciones se podrá contar con lo necesario para iniciar el desarrollo.<br>
                 </p>
@@ -102,19 +116,19 @@
                             <br>
                             <b>Requisitos Previos:</b><br>
                             <br>
-                            - Validar que el equipo cumple con los requisitos mínimos o los recomendados (preferentemente los recomendados).<br>
-                            - El sistema operativo se encuentra actualizado.<br>
+                            - Validar que el equipo cumple con los requisitos mínimos o los recomendados (preferentemente los recomendados serían procesador doble núcleo con cuatro hilos y memoria ram de 8Gb).<br>
+                            - El sistema operativo Windows se encuentra actualizado.<br>
                             - No hay actualizaciones pendientes de instalarse.<br>
                             - No hay otras aplicaciones ejecutándose, cerrar todas las ventanas innecesarias.<br>
                             <br>
                             <b>Descarga:</b><br>
                             <br>
-                            - Desde el navegador web visitar el sitio oficial de descargas de VMware: https://www.vmware.com/es/products/workstation-pro.html<br>
-                            - Deslizarse hacia abajo en busca "Descargar Versión De Prueba" de la versión vigente de VMware Workstation Player para Windows y descargala.<br>
+                            - Desde el navegador web visitar el sitio oficial de <a href="https://www.vmware.com/es/products/workstation-pro.html">descargas de VMware</a>.<br>
+                            - Deslizarse hacia abajo en busca "Descargar Versión De Prueba" de la versión vigente de VMware Workstation Player para Windows y descargarla.<br>
                             <br>
                             <b>Instalación:</b><br>
                             <br>
-                            - Hacer doble clic en el archivo de instalación (*.exe) para iniciar el asistente de instalación (siguiente).<br>
+                            - Hacer doble click en el archivo de instalación (*.exe) para iniciar el asistente de instalación (siguiente).<br>
                             - Aceptar los términos de la licencia (siguiente).<br>
                             - Opcional: Agregar controladores de teclado.<br>
                             - Dejar tildado "Agregar las herramientas de consola de VMWare Workstation en el PATH de sistema (siguiente).<br>
@@ -155,8 +169,8 @@
                             <br>
                             <b>Ingredientes:</b><br>
                             <br>
-                            - Navegador web<br>
-                            - Tamaño del archivo ISO: 4.69 Gb (apróx.)<br>
+                            - Navegador web.<br>
+                            - Tamaño del archivo ISO: 4.69 Gb (apróx.).<br>
                             <br>
                             <b>Tiempo De Cocción:</b><br>
                             <br>
@@ -164,9 +178,9 @@
                             <br>
                             <b>Descarga:</b><br>
                             <br>
-                            - Desde el navegador web visitar el sitio oficial de descargas de Ubuntu: https://ubuntu.com/download/desktop<br>
+                            - Desde el navegador web visitar el sitio oficial de <a href="https://ubuntu.com/download/desktop">descargas de Ubuntu</a>.<br>
                             - Deslizarse hacia abajo en busca de la versión de Ubuntu vigente que se desea descargar. Se recomienda la versión LTS (soporte a largo plazo).<br>
-                            - Al hacer click en el botón "Descarga" se incia proceso de descarga.<br>
+                            - Al hacer click en el botón "Descarga" se inicia proceso de descarga.<br>
                             - Opcional : Deslizarse hacia abajo en busca de la sección "verificar su descarga" por medio del hash SHA-256 de la ISO.<br>
                             <br>
                             Se ha completado la receta para descargar imagen ISO de Ubuntu Linux en VMware Workstation Player en sistema Windows.<br>
@@ -219,7 +233,7 @@
                             - Dejar tildada la opción de "Encender esta máquina virtual luego de la creación" (Finalizar).<br>
                             - Se dará inicio al proceso de instalación de Ubuntu Linux.<br>
                             - Distribución Del Teclado. Presionar en el botón "Detectar Configuración Del Teclado". Pedirá presionar algunas teclas para su correcta detección (Continue).<br>
-                            - Elegir la opción de "Instalación Mínima"<br>
+                            - Elegir la opción de "Instalación Mínima".<br>
                             - Tildar ambas opciones en "Otras Opciones" (Continue).<br>
                             - Tipo De Instalación. Dejar seleccionado como se muestra por defecto. Borrar Disco E Instalar Ubuntu. Dejar todo como está (Instalar Ahora).<br>
                             - Se abre una nueva ventana emergente mostrando "Cambios en el disco" (Continue).<br>
@@ -269,18 +283,18 @@
                             <br>
                             <b>Ingredientes:</b><br>
                             <br>
-                            - PyCharm<br>
-                            - DBeaver<br>
-                            - Python<br>
-                            - Pip<br>
-                            - Entorno Virtual<br>
-                            - Django<br>
+                            - PyCharm.<br>
+                            - DBeaver.<br>
+                            - Python.<br>
+                            - Pip.<br>
+                            - Entorno Virtual.<br>
+                            - Django.<br>
                             <br>
-                            - Espacio que ocupa la aplicación PyCharm instalada: 800 Mb (apróx.)<br>
-                            - Espacio que ocupa la aplicación DBeaver instalada: 259 Mb (apróx.)<br>
-                            - Espacio que ocupa la aplicación Pip instalada: 221 Mb (apróx.)<br>
-                            - Espacio que ocupa la aplicación Entorno Virtual instalada: 4 Mb (apróx.)<br>
-                            - Espacio que ocupa la aplicación Django instalada: 8 Mb (apróx.)<br>
+                            - Espacio que ocupa la aplicación PyCharm instalada: 800 Mb (apróx.).<br>
+                            - Espacio que ocupa la aplicación DBeaver instalada: 259 Mb (apróx.).<br>
+                            - Espacio que ocupa la aplicación Pip instalada: 221 Mb (apróx.).<br>
+                            - Espacio que ocupa la aplicación Entorno Virtual instalada: 4 Mb (apróx.).<br>
+                            - Espacio que ocupa la aplicación Django instalada: 8 Mb (apróx.).<br>
                             <br>
                             <b>Tiempo De Cocción:</b><br>
                             <br>
@@ -288,12 +302,12 @@
                             <br>
                             <b>Requisitos Previos:</b><br>
                             <br>
-                            - Aplicación Ubuntu Software<br>
+                            - Aplicación Ubuntu Software.<br>
                             <br>
                             <b>Instalar Pycharm:</b><br>
                             <br>
-                            PyCharm es el IDE (Interface Developer Environment)<br>
-                            - Inciar la aplicación "Ubuntu Software".<br>
+                            PyCharm es el IDE (Interface Developer Environment).<br>
+                            - Iniciar la aplicación "Ubuntu Software".<br>
                             - Desde la lupa, realizar la búsqueda de PyCharm.<br>
                             - Automáticamente se mostrarán resultados de la búsqueda.<br>
                             - Seleccionar "PyCharm Community Edition".<br>
@@ -308,11 +322,11 @@
                             <b>Instalar DBeaver:</b><br>
                             <br>
                             DBeaver es el gestor de base de datos.<br>
-                            - Inciar la aplicación "Ubuntu Software".<br>
-                            - Desde la lupa, realizar la búsqueda de dbeaver.<br>
+                            - Iniciar la aplicación "Ubuntu Software".<br>
+                            - Desde la lupa, realizar la búsqueda de DBeaver.<br>
                             - Automáticamente se mostrarán resultados de la búsqueda.<br>
-                            - Seleccionar "dbeaver Universal Database Manager and SQL Cliente".<br>
-                            - Se mostrarán detalles de "Pycharm Community" (Instalar).<br>
+                            - Seleccionar "dbeaver Universal Database Manager and SQL Client".<br>
+                            - Se mostrarán detalles de "DBeaver" (Instalar).<br>
                             - Aparecerá ventana emergente solicitando ingresar contraseña de usuario (Autenticar).<br>
                             - Una vez finalizada la instalación cerrar Ubuntu Software.<br>
                             - Iniciar DBeaver para validar que se instaló correctamente.<br>
@@ -322,8 +336,8 @@
                             <br>
                             <b>Instalación de Python:</b><br>
                             <br>
-                            Python viene instalado con Ubuntu.<br>
-                            - Para verificar la versión actual instalada de Python<br>
+                            Python ya viene instalado con Ubuntu.<br>
+                            - Para verificar la versión actual instalada de Python.<br>
                             - Abrir terminal.<br>
                             - Ingresar el siguiente comando: python3 --version (enter).<br>
                             <br>
@@ -386,6 +400,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
 </body>
 
 </html>

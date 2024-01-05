@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cooking Recipes - For Programmers</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index-eng.html" class="nav-item nav-link active">Home</a>
+                    <a href="about-eng.html" class="nav-item nav-link">About</a>
+                </div>
+                <!-- Language elements -->
+                <div id="languageOptions" class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active" onclick="changeLanguage('es')">ES</a>
+                    <a href="#" class="nav-item nav-link" onclick="changeLanguage('en')">ENG</a>
+                </div>                
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h1 class="display-1 m-0">
+                            <span class="text-primary">Cooking Recipes</span>
+                            <br>
+                            <span class="text-white">For Programmers</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Django Start -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Django Framework on Ubuntu from Windows with Virtual Machines.</h2>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-12 py-0 py-lg-5">
+                <p>
+                    <b>Introduction:</b><br>
+                    <br>
+                    It's preferable to develop in a Linux environment. Most likely, your computer's operating system is Windows. To avoid formatting the computer and installing a Linux distribution. Or to avoid creating a new partition with a file system different from that of Windows, this recipe explains how to access Linux without giving up Windows on the computer.<br>
+                    <br>
+                    <b>Objective:</b><br>
+                    <br>
+                    From Windows and through a virtual machine, be able to install everything needed for Django development in a Linux environment. This recipe covers all the necessary steps.<br>
+                    <br>
+                    It is divided into four sections. By completing all sections, you will have everything you need to start development.<br>
+                </p>
+
+            </div>
+        </div>
+
+        
+        <div class="accordion" id="faqAccordion">
+            <!-- VMWare Workstation Player - Download Installation on Windows -->
+            <div class="card w-85">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-parent="#faqAccordion">
+                            VMWare Workstation Player - Download and installation on Windows.
+                        </button>
+                    </h2>
+                </div>
+                
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body w-85">
+                        <p>
+                            <h4>Recipe to download and install VMware Workstation Player on Windows:</h4><br>
+                            <br>
+                            <b>Ingredients:</b><br>
+                            <br>
+                            - Web Browser.<br>
+                            - VMware Workstation Player (This recipe is based on version 17).<br>
+                            <br>
+                            - Installation file size: 577 Mb (approx.)<br>
+                            - Installed application size: 841 Mb (approx.)<br>
+                            <br>
+                            <b>Cooking Time:</b><br>
+                            <br>
+                            - 10 to 15 minutes.<br>
+                            <br>
+                            <b>Prerequisites:</b><br>
+                            <br>
+                            - Verify that the computer meets the minimum or recommended requirements (preferably recommended: dual-core processor with four threads and 8Gb RAM).<br>
+                            - Windows operating system is up-to-date.<br>
+                            - No pending updates to be installed.<br>
+                            - No other applications running, close all unnecessary windows.<br>
+                            <br>
+                            <b>Download:</b><br>
+                            <br>
+                            - From the web browser, visit the official <a href="https://www.vmware.com/products/workstation-pro.html">VMware download page</a>.<br>
+                            - Scroll down to find the "Download Trial Version" for the current version of VMware Workstation Player for Windows and download it.<br>
+                            <br>
+                            <b>Installation:</b><br>
+                            <br>
+                            - Double-click on the installation file (*.exe) to start the installation wizard (next).<br>
+                            - Accept the license terms (next).<br>
+                            - Optional: Add keyboard drivers.<br>
+                            - Leave "Add VMware Workstation console tools to the system PATH" checked (next).<br>
+                            - Leave "Check for product updates on startup" checked.<br>
+                            - Optional: uncheck "Join the user experience improvement program" (next).<br>
+                            - Shortcuts can be left at the default settings (next).<br>
+                            - "Confirm" to start the installation.<br>
+                            - Notification appears that the installation is complete (finish).<br>
+                            - Optional: Restart the system (recommended).<br>
+                            <br>
+                            <b>Initial Configuration:</b><br>
+                            <br>
+                            - Open VMware Workstation Player from the start menu (or from the desktop icon).<br>
+                            - Choose "Use VMware Workstation Player for free" (continue).<br>
+                            - "Finish," and the main VMware Workstation Player window will open.<br>
+                            <br>
+                            <br>
+                            Recipe for downloading, installing, and configuring VMware Workstation Player on a Windows system is complete.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ISO of Ubuntu Linux - Download Installation Configuration Virtual Machine -->
+            <div class="card w-85">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-parent="#faqAccordion">
+                            ISO of Ubuntu Linux - Download, installation, and configuration of virtual machine.
+                        </button>
+                    </h2>
+                </div>
+                
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body w-85">
+                        <p>
+                            <h4>Recipe to download Ubuntu Linux ISO image:</h4><br>
+                            <br>
+                            <b>Ingredients:</b><br>
+                            <br>
+                            - Web Browser.<br>
+                            - ISO file size: 4.69 Gb (approx.).<br>
+                            <br>
+                            <b>Cooking Time:</b><br>
+                            <br>
+                            - 20 to 30 minutes (depends on the ISO download speed).<br>
+                            <br>
+                            <b>Download:</b><br>
+                            <br>
+                            - From the web browser, visit the official <a href="https://ubuntu.com/download/desktop">Ubuntu download page</a>.<br>
+                            - Scroll down to find the current version of Ubuntu to download. It is recommended to choose the LTS (Long Term Support) version.<br>
+                            - Click the "Download" button to start the download process.<br>
+                            - Optional: Scroll down to the "verify your download" section using the SHA-256 hash of the ISO.<br>
+                            <br>
+                            Recipe for downloading Ubuntu Linux ISO image in VMware Workstation Player on Windows system is complete.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create virtual machine of Ubuntu Linux -->
+            <div class="card w-85">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-parent="#faqAccordion">
+                            Create virtual machine of Ubuntu Linux.
+                        </button>
+                    </h2>
+                </div>
+                
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body w-85">
+                        <p>
+                            <h4>Recipe to create a virtual machine of Ubuntu Linux:</h4><br>
+                            <br>
+                            <b>Ingredients:</b><br>
+                            <br>
+                            - VMware Workstation Player.<br>
+                            - Ubuntu Linux ISO image.<br>
+                            <br>
+                            - Minimum installation of Ubuntu takes up 14.5 Gb (approx.)<br>
+                            <br>
+                            <b>Cooking Time:</b><br>
+                            <br>
+                            - 15 to 20 minutes.<br>
+                            <br>
+                            <b>Instructions:</b><br>
+                            <br>
+                            - Open VMware Workstation Player.<br>
+                            - Choose the option "Create a New Virtual Machine."<br>
+                            - The "New Virtual Machine Wizard" window opens.<br>
+                            - Click "Browse..." to locate the Ubuntu Linux ISO file.<br>
+                            - A window opens to navigate through folders to find the Linux Ubuntu .ISO file.<br>
+                            - Select the .ISO file (Open).<br>
+                            - Click the "Next" button.<br>
+                            - Fill in the fields with user data (Next).<br>
+                            - Name the virtual machine and select the destination for the new virtual machine. It can be left as the default (Next).<br>
+                            - Define the size of the hard disk. It is recommended to use 40Gb.<br>
+                            - Check "Split into multiple files" (Next).<br>
+                            - To increase the RAM size, select the "Edit Hardware" button.<br>
+                            - Modify the RAM size value to 8192 (Close).<br>
+                            - Check the option "Power on this virtual machine after creation" (Finish).<br>
+                            - The Ubuntu Linux installation process starts.<br>
+                            - Keyboard Layout. Press the "Detect Keyboard Layout" button. It will ask to press some keys for correct detection (Continue).<br>
+                            - Choose the "Minimal Installation" option.<br>
+                            - Check both options in "Other Options" (Continue).<br>
+                            - Installation Type. Leave selected as shown by default. Erase Disk and Install Ubuntu. Leave everything as it is (Install Now).<br>
+                            - A new popup window appears showing "Changes to disk" (Continue).<br>
+                            - Choose the time zone (Continue).<br>
+                            - Enter Full Name, Username, Password, Confirm Password.<br>
+                            - Check the option "Require my password to log in" (Continue).<br>
+                            - The installation process of the operating system is displayed.<br>
+                            - At the end of the installation, a new popup window opens (Restart Now).<br>
+                            - Log in.<br>
+                            - A popup window appears with final installation details.<br>
+                            - Connect with online accounts (Skip).<br>
+                            - Enable Ubuntu Pro. Check the option "Skip for now" (Next).<br>
+                            - Help improve Ubuntu. Check the option "No, do not send system information" (Next).<br>
+                            - Privacy. Leave the option "Location Services" deactivated (Next).<br>
+                            - Ready to continue (Done).<br>
+                            - A popup window may appear asking to install updates (Install Now).<br>
+                            - Enter the user password (Authenticate).<br>
+                            - At the end of the update, it will ask to restart the system (Restart Now).<br>
+                            <br>
+                            <b>Installation of VM-Tools:</b><br>
+                            <br>
+                            - Log in.<br>
+                            - Open "Terminal".<br>
+                            - Enter the command: sudo apt install open-vm-tools (enter).<br>
+                            - Enter the user password.<br>
+                            <br>
+                            Recipe for creating Ubuntu Linux Virtual Machine with VMware Workstation Player is complete.<br>                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Configure development environment for Django on Ubuntu Linux -->
+            <div class="card w-85">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-parent="#faqAccordion">
+                            Configure development environment for Django on Ubuntu Linux.
+                        </button>
+                    </h2>
+                </div>
+                
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                    <div class="card-body w-85">
+                        <p>
+                            <h4>Recipe to configure the development environment for Django on Ubuntu Linux:</h4><br>
+                            <br>
+                            <b>Ingredients:</b><br>
+                            <br>
+                            - PyCharm.<br>
+                            - DBeaver.<br>
+                            - Python.<br>
+                            - Pip.<br>
+                            - Virtual Environment.<br>
+                            - Django.<br>
+                            <br>
+                            - Installed PyCharm application size: 800 Mb (approx.).<br>
+                            - Installed DBeaver application size: 259 Mb (approx.).<br>
+                            - Installed Pip application size: 221 Mb (approx.).<br>
+                            - Installed Virtual Environment application size: 4 Mb (approx.).<br>
+                            - Installed Django application size: 8 Mb (approx.).<br>
+                            <br>
+                            <b>Cooking Time:</b><br>
+                            <br>
+                            - 10 to 15 minutes.<br>
+                            <br>
+                            <b>Prerequisites:</b><br>
+                            <br>
+                            - Ubuntu Software application.<br>
+                            <br>
+                            <b>Install PyCharm:</b><br>
+                            <br>
+                            PyCharm is the IDE (Interface Developer Environment).<br>
+                            - Launch the "Ubuntu Software" application.<br>
+                            - From the search, perform a PyCharm search.<br>
+                            - Results of the search will be automatically displayed.<br>
+                            - Select "PyCharm Community Edition".<br>
+                            - Details of "Pycharm Community" will be displayed (Install).<br>
+                            - Once the installation is complete, close Ubuntu Software.<br>
+                            - A popup window will appear asking to enter the user password (Authenticate).<br>
+                            - Start PyCharm to validate that it installed correctly.<br>
+                            - Select "I confirm that I have read and accept the terms of this user agreement" (Continue).<br>
+                            - Share Information (Do Not Send).<br>
+                            - The application will start for the first time, showing the Welcome screen.<br>
+                            <br>
+                            <b>Install DBeaver:</b><br>
+                            <br>
+                            DBeaver is the database manager.<br>
+                            - Launch the "Ubuntu Software" application.<br>
+                            - From the search, perform a DBeaver search.<br>
+                            - Results of the search will be automatically displayed.<br>
+                            - Select "dbeaver Universal Database Manager and SQL Client".<br>
+                            - Details of "DBeaver" will be displayed (Install).<br>
+                            - A popup window will appear asking to enter the user password (Authenticate).<br>
+                            - Once the installation is complete, close Ubuntu Software.<br>
+                            - Start DBeaver to validate that it installed correctly.<br>
+                            - A popup window will appear asking to create a sample database (No).<br>
+                            - The database wizard will be displayed.<br>
+                            - A "Send Statistical Information" window may appear (Do Not Send).<br>
+                            <br>
+                            <b>Python Installation:</b><br>
+                            <br>
+                            Python is already installed with Ubuntu.<br>
+                            - To verify the current installed version of Python.<br>
+                            - Open terminal.<br>
+                            - Enter the following command: python3 --version (enter).<br>
+                            <br>
+                            <b>Pip Installation:</b><br>
+                            <br>
+                            Pip is the package manager needed to install Django.<br>
+                            - Open terminal.<br>
+                            - Enter the following command: sudo apt install python3-pip (enter).<br>
+                            - Enter the user password.<br>
+                            - It will request confirmation to install (Y).<br>
+                            <br>
+                            <b>Virtual Environment Installation:</b><br>
+                            <br>
+                            The virtual environment is necessary to run a Django project.<br>
+                            - Open terminal.<br>
+                            - Enter the following command: sudo apt install python3 virtualenv (enter).<br>
+                            - Enter the user password.<br>
+                            - It will request confirmation to install (Y).<br>
+                            <br>
+                            <b>Django Installation:</b><br>
+                            <br>
+                            - Open terminal.<br>
+                            - Enter the following command: pip install Django (enter).<br>
+                            <br>
+                            Recipe for configuring the development environment for Django on Ubuntu Linux is complete.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more questions as needed -->
+        </div>
+    </div>
+    <!-- Django End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Copyright 2024 &copy; <a class="font-weight-bold" href="https://coria79.github.io/">coria79.github.io</a>. All rights reserved.</a></p>
+            <p class="m-0 text-white">Designed by: <a class="font-weight-bold" href="#">htmlcodex</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+</body>
+
+</html>
