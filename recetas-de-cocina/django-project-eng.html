@@ -66,67 +66,223 @@
 
     <!-- Django Start -->
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Recipe for creating a project in Django.</h2>
+        <h2 class="text-center mb-4">Recipe for creating a Django project.</h2>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-12 py-0 py-lg-5">
                 <p>
-                    <b>Ingredients:</b><br>
-                    <br>
-                    - Web browser.<br>
-                    - Terminal.<br>
-                    <br>
-                    <b>Cooking Time:</b><br>
-                    <br>
-                    - 5 to 10 minutes.<br>
-                    <br>
-                    <b>Prerequisites:</b><br>
-                    <br>
-                    - Completed the recipe: "Django Framework on Ubuntu from Windows with virtual machines."<br>
-                    <br>
                     <b>Objective:</b><br>
                     <br>
-                    The use of the Linux terminal is an almost essential tool for developers. Using the terminal will be a daily routine. Therefore, it's important to develop the habit from the beginning. A good practice would be to type the commands directly rather than copy-pasting. This will greatly help in incorporating the use of the terminal and entering commands.<br>
+                    Perform the necessary tasks to create a project in Django and finalize settings in the development environment.<br>
                     <br>
-                    <b>Instructions:</b><br>
-                    <br>
-                    - Open the terminal. Access the terminal by pressing "Ctrl + Alt + T" or searching for "Terminal" in the applications menu.<br>
-                    - Know the current folder using the "pwd" command. It will show something like: /home/user, where "user" is the username configured during installation. In this case, we are in the user's home directory.<br>
-                    - Use the "ls" command to see the contents of the folder. In this case, you will see the contents of the "user" folder, something like: Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos.<br>
-                    - Create the main project folder within the "Documents" folder.<br>
-                    - Use the command "cd Documents" to enter this folder.<br>
-                    - Create the main folder that will contain different Djando projects using the command "mkdir projects_django".<br>
-                    - Enter the newly created folder using "cd projects_django".<br>
-                    - Use the already installed "virtualenv" virtual environment. Create the virtual environment with the command "virtualenv -p python3 env-my_project".<br>
-                    - Activate the virtual environment with the command "source env-my_project/bin/activate".<br>
-                    - You can confirm the activation of the virtual environment because the prompt will show: (env-my_project).<br>
-                    - Install Django with the command "pip install django".<br>
-                    - Create the project using the command "django-admin startproject my_project".<br>
-                    - Use the "ls" command to show the folders inside "projects_django"; you should see the newly created project folder "my_proyect".<br>
-                    - The output of the "ls" command should be: manage.py  my_project.<br>
-                    - Enter this folder with the command "cd my_project".<br>
-                    - Create the app with the command "python manage.py startapp my_app".<br>
-                    - Note that the app's name must be different from the project's name; otherwise, an error will occur.<br>
-                    - Move up one folder level with the command "cd ..".<br>
-                    - Execute the project with the command "python manage.py runserver".<br>
-                    - Open the browser, enter the URL: http://localhost:8000.<br>
-                    <br>
-                    The recipe for the basic installation of the Django Framework has been completed.<br>
-                    <br>
-                    <b>Final Comments:</b><br>
-                    <br>
-                    The use of the terminal can be done with the Linux terminal or with the terminal built into the IDE. In this case, as it is the first project, the Linux terminal was chosen. However, the majority of usage might be within the IDE, depending on each developer's comfort.<br>
-                    <br>
-                    The virtual environment was configured in a folder outside the Django project but with a name similar to the project. This is done to make it more intuitive to recognize the virtual environment and its corresponding project. Different projects may have different virtual environments, for example, a virtual environment working with an older version of Python. This separation of folders is done intuitively.<br>
-                    <br>
-                    Opening the browser and going to: localhost:8000 is a way to verify that the Django installation is correct. You will see a generic Django welcome page.<br>
-                    <br>
-                    Regarding the use of English, since it is the language on which all programming languages are based and all documentation is done, this site will maintain the rule of being entirely in English except for user-facing content that needs to be in Spanish (or another language). Hence, even folder names are in English.<br>
-                </p>                
+                    It is divided into two sections. By completing all the sections, you will have what is needed to start development.<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+            <!-- Start Django Project -->
+            <div class="card w-85">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-parent="#faqAccordion">
+                            Create Django Project
+                        </button>
+                    </h2>
+                </div>
+                
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body w-85">
+                        <p>
+                            <h4>Recipe to start a Django project:</h4><br>
+                            <b>Ingredients:</b><br>
+                            <br>
+                            - Web browser.<br>
+                            - Terminal.<br>
+                            <br>
+                            <b>Cooking Time:</b><br>
+                            <br>
+                            - 10 to 15 minutes.<br>
+                            <br>
+                            <b>Prerequisites:</b><br>
+                            <br>
+                            - Completed the recipe: "Django Framework on Ubuntu from Windows with virtual machines."<br>
+                            <br>
+                            <b>Objective:</b><br>
+                            <br>
+                            The use of the Linux terminal is an almost essential tool for developers. Getting used to using the terminal will be a daily occurrence. Therefore, it is important to develop the habit from the beginning. A good practice would be to type the command directly rather than copy-pasting. This will help a lot in incorporating the use of the terminal and entering commands.<br>
+                            <br>
+                            <b>Instructions:</b><br>
+                            <br>
+                            - Open the terminal. Access the terminal by pressing "Ctrl + Alt + T" or searching for "Terminal" in the application menu.<br>
+                            - Know the current folder using the "pwd" command.<br>
+                            - It will show something similar to: /home/user, where "user" is the username configured during installation. In this case, we are in the home of the user.<br>
+                            - Use the "ls" command to see the contents of the folder. In this case, you will see the contents of the "user" folder.<br>
+                            - It will show something similar to: Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos<br>
+                            - Create the main project folder inside the "Documents" folder.<br>
+                            - Use the "cd Documents" command to enter this folder.<br>
+                            - Create the main folder that will contain the different Django projects using the "mkdir projects_django" command.<br>
+                            <br>
+                            <b>Activate Virtual Environment:</b><br>
+                            <br>
+                            - Enter the newly created folder using "cd projects_django".<br>
+                            - Use the virtual environment already installed "virtualenv".<br>
+                            - Use the "virtualenv -p python3 env-my_project" command to create the virtual environment.<br>
+                            - Use the "source env-my_project/bin/activate" command to activate the virtual environment.<br>
+                            - You can confirm the activation of the virtual environment because the prompt will show: (env-my_project)<br>
+                            <br>
+                            <b>Install Django:</b><br>
+                            <br>
+                            - Use the "pip install django" command to install Django.<br>
+                            <br>
+                            <b>Create Project:</b><br>
+                            <br>
+                            - Use the "django-admin startproject my_project" command to create the project.<br>
+                            - Use the "ls" command to show the folders inside "projects_django". You should see the newly created project folder "my_proyect".<br>
+                            - The output of the "ls" command should be: manage.py  my_project<br>
+                            - Use the "cd my_project" command to enter this folder.<br>
+                            <br>
+                            <b>Create Application:</b><br>
+                            <br>
+                            - Use the "python manage.py startapp my_app" command to create the app.<br>
+                            - One detail to keep in mind is that the app's name must be different from the project's name. If you try to create it with the same name, you will get an error.<br>
+                            <br>
+                            <b>Run Server:</b><br>
+                            <br>
+                            - Use the "cd .." command to go up one level of the folder.<br>
+                            - Use the "python manage.py runserver" command to run the project.<br>
+                            - Open the browser, enter the URL: http://localhost:8000 or its alternative http://127.0.0.1:8000<br>
+                            - CONTROL + C (to end the server execution)<br>
+                            <br>
+                            The recipe for the basic installation of the Django Framework has been completed.<br>
+                            <br>
+                            <b>Final Comments:</b><br>
+                            <br>
+                            The use of the terminal can be done with the Linux terminal. But it can also be done with the terminal that comes built into the IDE itself. In this case, since it is the first project, we chose to use the Linux terminal. But most likely, the majority of usage will be within the IDE, although it depends on each developer's comfort level.<br>
+                            <br>
+                            The virtual environment was configured in a folder outside the Django project but with a name similar to the project. This is done to make it a bit more intuitive to recognize the virtual environment and the corresponding project. Since there may be different projects with different virtual environments, for example, a virtual environment that works with an earlier version of Python. This intuitively separates the folders.<br>
+                            <br>
+                            Opening the browser and entering: localhost:8000 is the way to verify that the Django installation is correct. You will see a generic welcome page from Django.<br>
+                            <br>
+                            Regarding the use of English. Since it is the language on which all programming languages are based and on which all documentation is done, this site will follow the rule that everything will be in English except what needs to be shown to the user, which will be in Spanish (or another language). That's why you see that even the folder names will be in English.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Final Development Environment Settings -->
+            <div class="card w-85">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-parent="#faqAccordion">
+                            Final Development Environment Settings
+                        </button>
+                    </h2>
+                </div>
+                
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body w-85">
+                        <p>
+                            <h4>Recipe for finalizing development environment settings:</h4><br>
+                            <b>Open Project Folder With PyCharm:</b><br>
+                            <br>
+                            - Start PyCharm.<br>
+                            - The welcome window appears (Open).<br>
+                            - Open the window to browse folders, select the project folder (OK).<br>
+                            - It will ask us if we trust the contents of the folder, check.<br>
+                            "Trust projects in ~/Documents/django_projects/my_project (Trust Project).<br>
+                            - The project's folder tree will open.<br>
+                            - In the "Tool Windows Bar," click on the "Terminal" icon (at the bottom of the bar). This bar is located just to the left of the browser panel (where the project's folders and files are visible).<br>
+                            - The prompt will be visible, for example:<br>
+                            user@user-virtual-machine:~/Documents/projects_django/my_project$<br>
+                            <br>
+                            <b>Open Project Folder With Visual Studio Code:</b><br>
+                            <br>
+                            - Launch Visual Studio Code.<br>
+                            - The welcome window will appear.<br>
+                            - For the first time, it will prompt you to choose the "theme"; select "Dark Modern".<br>
+                            - Go to the File menu -> Open Folder...<br>
+                            - A window will open for navigating folders; choose the project folder, for example:<br>
+                            Documents/projects_django/my_project (Open)<br>
+                            - It will ask if you trust the content of the folder; check:<br>
+                            "Trust the authors of all files in the parent folder 'my_project' (Yes, I trust the authors)<br>
+                            <br>
+                            <b>Activate the virtual environment:</b><br>
+                            <br>
+                            - Enter the following command to go up one level in the folders: cd ..<br>
+                            - Use the "ls" command to validate that you are in the indicated folder; you should see the env-my_project folder.<br>
+                            - source env-my_project/bin/activate<br>
+                            - (env-my_project)<br>
+                            <br>
+                            <b>Perform Migrations and Migrate:</b><br>
+                            <br>
+                            - Enter the following command to enter the project folder: cd my_project<br>
+                            - Use the "ls" command to validate that you are in the indicated folder; you should see the manage.py file.<br>
+                            - Enter the following command to perform migrations: python manage.py makemigrations<br>
+                            - The default output would be: No changes detected.<br>
+                            - Enter the following command to migrate: python manage.py migrate<br>
+                            - The console will show the operations to be performed. Operations to perform: Apply all migrations: admin, auth, contenttypes, sessions<br>
+                            - Pending migrations that are by default when a Django project starts will be performed.<br>
+                            - Optional: In case there are no migrations to perform, the console will show the message: No migrations to apply.<br>
+                            <br>
+                            <b>Select the interpreter from PyCharm:</b><br>
+                            <br>
+                            - Main menu "File" -> "Settings..."<br>
+                            - The Settings window will open.<br>
+                            - On the left side, different options will be displayed.<br>
+                            - Click on "Project: my_project" (here you will see the name of the project folder you created).<br>
+                            - In the main part of the window, click on "Python Interpreter."<br>
+                            - In "Python interpreter," the Python version will be displayed, and then the interpreter's path will be displayed. It needs to be changed.<br>
+                            - Click on "Add Interpreter."<br>
+                            - Click on "Add Local Interpreter..."<br>
+                            - In "Environment," check "Existing."<br>
+                            - Click on "..."<br>
+                            - Navigate through the folders until you are in:<br>
+                            /home/user/Documents/projects/env-my_project/bin<br>
+                            - In this case, being in the "bin" folder, select "python3.10 (OK).<br>
+                            - In "Interpreter," the complete path of the interpreter that was just configured will be displayed (OK).<br>
+                            - In "Python interpreter," you will see the interpreter with the folder we created when creating the virtual environment.<br>
+                            <br>
+                            <b>Add Database Connector:</b><br>
+                            <br>
+                            SQLite is the default database used by Django. The following steps are to develop with this database engine.<br>
+                            - Without closing the settings window.<br>
+                            - You can see the "+" and "-" buttons.<br>
+                            - Select "+"<br>
+                            - In the search box, start entering the text "sqlalchemy-pysqlite3-binary."<br>
+                            - Select it from the list.<br>
+                            - Click "Install Package."<br>
+                            - A small notice will appear at the bottom of that same window: "Package 'sqlalchemy-pysqlite3-binary' installed successfully."<br>
+                            - Close the window.<br>
+                            - The previous window with the newly installed package can be viewed (OK).<br>
+                            <br>
+                            <b>Select the interpreter from Visual Studio Code:</b><br>
+                            (Coming soon)<br>
+                            <br>
+                            <b>DBeaver:</b><br>
+                            <br>
+                            SQLite is the default database used by Django. The following steps are to connect to this database engine.<br>
+                            - Start the dbeaver-ce application.<br>
+                            - It may show "Tip Of The Day" (Close).<br>
+                            - Click on the "New Database Connection" icon.<br>
+                            - The assistant opens, select "SQLite" (Next).<br>
+                            - Check "Host."<br>
+                            - (Open...) To indicate the path where the sqlite3 file is located, in this case:<br>
+                            user/documents/django_projects/my_project<br>
+                            - Select the file. The file's name is: db.sqlite3 (Select).<br>
+                            - (Test Connection...) To validate that DBeaver can successfully connect to the database.<br>
+                            - Optional: It may be necessary to download drivers (Download).<br>
+                            - It will show that the connection result was successful (OK).<br>
+                            - Finish the database connection wizard (Finish).<br>
+                            - The DBeaver window should remain open; it can be minimized.<br>
+                            <br>
+                            The recipe for finalizing development environment settings has been completed.<br>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Django End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
@@ -137,10 +293,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -149,9 +303,9 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/tempusdominus/js/moment.min.js"></script>
+
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
