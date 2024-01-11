@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Recetas De Cocina - Para Programadores</title>
+    <title>Cooking Recipes - For Developers</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -55,7 +55,7 @@
                         <h1 class="display-1 m-0">
                             <span class="text-primary">Cooking Recipes</span>
                             <br>
-                            <span class="text-white">For Programmers</span>
+                            <span class="text-white">For Developers</span>
                         </h1>
                     </div>
                 </div>
@@ -276,6 +276,72 @@
                             - The DBeaver window should remain open; it can be minimized.<br>
                             <br>
                             The recipe for finalizing development environment settings has been completed.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Know the default folders and files of a Django project -->
+            <div class="card w-85">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-parent="#faqAccordion">
+                            Know the default folders and files of a Django project.
+                        </button>
+                    </h2>
+                </div>
+                
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body w-85">
+                        <p>
+                            <h4>Recipe to know the default folders and files of a Django project:</h4><br>
+                            <b>Ingredients:</b><br>
+                            <br>
+                            - PyCharm / Visual Studio Code.<br>
+                            <br>
+                            <b>Cooking Time:</b><br>
+                            <br>
+                            - 5 to 10 minutes.<br>
+                            <br>
+                            <b>Objective:</b><br>
+                            <br>
+                            Understand the structure of the folder and file tree that makes up a newly installed Django project.<br>
+                            <br>
+                            <b>Instructions:</b><br>
+                            <br>
+                            At first glance, two folders can be distinguished. One corresponds to the application, and the other corresponds to the project. In this case, the names are very representative and one of the reasons they were chosen that way. While it's important to recognize all files and their function in the project, we will focus on the most important ones. The folder and file tree of a Django project looks something like the following.<br>
+                            <br>
+                            <img src="./img/django-project-files.jpg" alt="Folder and file tree in Django project" style="display: block; margin: auto;">
+                            <b>models.py</b><br>
+                            <br>
+                            - This is where the data model for the application is defined. Django will translate these model definitions into creating or updating the corresponding tables in the database.<br>
+                            - Migrations and migrate use these models to impact changes in the database.<br>
+                            <br>
+                            <b>views.py</b><br>
+                            <br>
+                            - This is where functions or classes containing the logic of the application are defined. Here, HTTP requests are processed, and if necessary, interaction with the data model occurs to finally return a response to the client.<br>
+                            <br>
+                            <b>urls.py</b><br>
+                            <br>
+                            - The developing application will use URLs for its operation. The urls.py file will be responsible for configuring those URLs and interacting with the classes or functions in views.py, as that is where the application's logic is found.<br>
+                            <br>
+                            <b>settings.py</b><br>
+                            <br>
+                            - This is the central configuration file that controls all the behavior of the project or application. Here, for example, the database is configured.<br>
+                            <br>
+                            <b>forms.py</b><br>
+                            <br>
+                            - This file is not configured by default. But it is important in case you want to use "forms" in the developing application.<br>
+                            <br>
+                            <b>db.sqlite3</b><br>
+                            <br>
+                            - This is the database file installed by default in a Django project.<br>
+                            <br>
+                            The recipe to know the default folders and files of a Django project is complete.<br>
+                            <br>
+                            <b>Final comments:</b><br>
+                            <br>
+                            Knowing the standard structure of a project helps in the initial steps. However, it's crucial to keep in mind that the project's folder structure can quickly grow in complexity depending on the size and scope of the application to be developed. This recipe only shows the case of a single application; remember that a project can have many more than one application, each of which can have its own folder and file structure (which would be expected and recommended).
                         </p>
                     </div>
                 </div>

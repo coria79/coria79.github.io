@@ -295,12 +295,73 @@
                 </div>
             </div>
 
-
-
+            <!-- Conocer las carpetas y archivos por defecto de proyecto Django -->
+            <div class="card w-85">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-parent="#faqAccordion">
+                            Conocer las carpetas y archivos por defecto de un proyecto Django.
+                        </button>
+                    </h2>
+                </div>
+                
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body w-85">
+                        <p>
+                            <h4>Receta para conocer las carpetas y archivos por defecto de un proyecto Django:</h4><br>
+                            <b>Ingredientes:</b><br>
+                            <br>
+                            - PyCharm / Visual Studio Code.<br>
+                            <br>
+                            <b>Tiempo De Cocción:</b><br>
+                            <br>
+                            - 5 a 10 minutos.<br>
+                            <br>
+                            <b>Objetivo:</b><br>
+                            <br>
+                            Conocer la estructura del árbol de carpetas y archivos que componen un proyecto recién instalado en Django.<br>
+                            <br>
+                            <b>Instrucciones:</b><br>
+                            <br>
+                            A primera vista, se pueden diferenciar dos carpetas. Una corresponde a la aplicación. Y la otra corresponde al proyecto. En este caso los nombres son muy representativos y es uno de los motivos por lo que fueron elegidos así. Si bien es importante reconocer todos los archivos y su función en el proyecto. En este caso haremos incapié en los más importantes. El árbol de carpetas y de archivos de un proyecto en Django es más o menos como el siguiente.<br>
+                            <br>
+                            <img src="./img/django-project-files.jpg" alt="Árbol de carpetas y archivos en proyecto Django" style="display: block; margin: auto;">
+                            <b>models.py</b><br>
+                            <br>
+                            - Es el lugar donde se define el modelo de datos para la aplicación. Django se encargará de traducir esas definiciones de modelos en la creación o actualización de las tablas corresponidentes en a base de datos.<br>
+                            - Migrations and migrate se valen de estos modelos para impactar los cambios en la base de datos.<br>
+                            <br>
+                            <b>views.py</b><br>
+                            <br>
+                            - Es donde se definen las funciones o clases que contienen la lógica de la aplicación. Aquí se procesan las solicitudes HTTP y si es necesario interactúa con el modelo de datos para finalmente devolver una respuesta al cliente.<br>
+                            <br>
+                            <b>urls.py</b><br>
+                            <br>
+                            - La aplicación en desarrollo utilizará URL's para su funcionamiento. El archivo urls.py será en encargado de la configuración de esas URL's y interacción con las clases o funciones de views.py con las que se corresponde ya que allí se encuentra la lógica de la aplicación.<br>
+                            <br>
+                            <b>settings.py</b><br>
+                            <br>
+                            - Es el archivo de configuración central que controla todo el comportamiento del proyecto o aplicación. Aquí se configura por ejemplo la base de datos.<br>
+                            <br>
+                            <b>forms.py</b><br>
+                            <br>
+                            - Este archivo no se configura por defecto. Pero es importante para el caso que se desee utilizar "formularios" en la aplicación a desarrollar.<br>
+                            <br>
+                            <b>bd.sqlite3</b><br>
+                            <br>
+                            - Este es el archivo de la base de datos que se instala por defecto en un proyecto Django.<br>
+                            <br>
+                            Se ha completado la receta para conocer las carpetas y archivos por defecto de un proyecto Django.<br>
+                            <br>
+                            <b>Comentarios finales:</b><br>
+                            <br>
+                            Conocer la estructura estándar de un proyecto nos ayuda en los primeros pasos. Pero es muy importante tener presente que la estructura de las carpetas del proyecto puede muy rápidamente crecer en complejidad dependiendo del tamaño y el alcance de la aplicación a desarrollar. Y esta receta solo muestra el caso de una sola aplicación, recordar que un proyecto puede tener muchas más que una aplicación, la cual puede tener su propia estructura de carpetas y archivos (lo cual sería lo esperado y lo recomendable).<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
             <!-- Agrega más preguntas según sea necesario -->
         </div>
-
-
     </div>
     <!-- Django End -->
 
