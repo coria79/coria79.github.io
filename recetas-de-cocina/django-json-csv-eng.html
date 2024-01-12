@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cooking Recipes - For Programmers</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                </div>
+                <!-- Language elements -->
+                <div id="languageOptions" class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active" onclick="changeLanguage('es', event)">ES</a>
+                    <a href="#" class="nav-item nav-link" onclick="changeLanguage('en', event)">ENG</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h1 class="display-1 m-0">
+                            <span class="text-primary">Cooking Recipes</span>
+                            <br>
+                            <span class="text-white">For Developers</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Django Start -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Recipe for Loading SQLite Database Table with JSON and CSV</h2>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-12 py-0 py-lg-5">
+                <p>
+                    <b>Introduction:</b><br>
+                    <br>
+                    Using information to load a database can be very useful. Currently, scripts can be created to handle these tasks. This guide will cover everything needed to accomplish this.<br>
+                    <br>
+                    <b>Objective:</b><br>
+                    <br>
+                    Show how to load data into a database table from a JSON file. Also, demonstrate the same process for a CSV file to appreciate the differences and difficulties in each case.<br>
+                    <br>
+                    <b>Ingredients:</b><br>
+                    <br>
+                    - DBeaver<br>
+                    - PyCharm<br>
+                    - AI ChatGPT<br>
+                    - SQLite 3<br>
+                    <br>
+                    <b>Cooking Time:</b><br>
+                    <br>
+                    - 15 to 20 minutes.<br>
+                    <br>
+                    <b>Instructions:</b><br>
+                    <br>
+                    - Launch DBeaver.<br>
+                    - Launch PyCharm.<br>
+                    - In PyCharm, open the models.py file within the my_app folder.<br>
+                    - Enter the following code:<br>
+                    <br>
+                    from django.db import models<br>
+                    <br>
+                    # Create your models here.<br>
+                    class User(models.Model):<br>
+                        username = models.CharField(max_length=30, unique=True, null=False)<br>
+                        name = models.CharField(max_length=30, null=False)<br>
+                        last_name = models.CharField(max_length=30, null=False)<br>
+                        email = models.EmailField(unique=True, null=False)<br>
+                        registration_date = models.DateTimeField(auto_now_add=True, null=False)<br>
+                        phone_number = models.CharField(max_length=18, null=False)<br>
+                        is_active = models.BooleanField(default=True, null=False)<br>
+                        password = models.CharField(max_length=30, null=False)<br>
+                    <br>
+                    - Save the changes.<br>
+                    - From the IDE terminal, navigate up one level in the folders using: cd ..<br>
+                    - While in the folder: ~/Documents/django_projects<br>
+                    - Activate the virtual environment with the command: source env-my_project/bin/activate<br>
+                    - To confirm the virtual environment activation, it will be displayed in the prompt: (env-my_project)<br>
+                    - Enter the my_project folder with the command: cd my_project<br>
+                    - Perform migrations using the following command: python manage.py makemigrations<br>
+                    - Complete the migration with the following command: python manage.py migrate<br>
+                    - The table will be created with the structure defined in the models.<br>
+                    - Verify that the table has been created from DBeaver: db.sqlite3 -> Tables -> my_app_user -> Columns<br>
+                    <br>
+                    <b>Create fixtures folder:</b><br>
+                    <br>
+                    - In PyCharm, in the project explorer, right-click on the main my_project folder (the first one).<br>
+                    - Select "New" -> "Directory"<br>
+                    - A small popup window will appear to enter the folder name, enter "fixtures" (press Enter).<br>
+                    <br>
+                    <b>Create JSON file:</b><br>
+                    <br>
+                    - While standing in the newly created fixtures folder, right-click and select "New" -> "File"<br>
+                    - A small popup window will appear to enter the file name, enter "table-user.json" (press Enter).<br>
+                    - The file just created will open in the IDE.<br>
+                    <br>
+                    <b>Generate Information for JSON using AI:</b><br>
+                    <br>
+                    - Through the use of artificial intelligence, you can request it to generate the necessary records to complete the .json file.<br>
+                    - You need to provide the code from the models.py file again so that the AI knows the table structure and how the JSON should be.<br>
+                    - Specify the application name, in this case: my_app<br>
+                    - Specify the model name, which in this case is the class name in models.py: User<br>
+                    - These last two pieces of information are important and must be present in the JSON.<br>
+                    - Provide the content of the previously generated CSV file to the AI.<br>
+                    - Be attentive as the AI might try to force the value of the primary key in the JSON; indicate not to do so.<br>
+                    - The prompt to request information from the AI would be as follows:<br>
+                    "Generate a JSON file with fictional data to load into a database table. Generate 20 records. The data model in my Django application looks like this: (provide the model). The application is named 'my_app,' and the model's name is 'User.' Generate the JSON file with this information. Important: I do not want to force the inclusion of primary keys in the JSON file.<br>
+                    - The information generated by the AI should look like this:<br>
+                    <br>
+                    [<br>
+                        {<br>
+                            "model": "my_app.User",<br>
+                            "fields": {<br>
+                                "username": "john_doe",<br>
+                                "name": "John",<br>
+                                "last_name": "Doe",<br>
+                                "email": "john.doe@example.com",<br>
+                                "registration_date": "2022-01-01T12:00:00Z",<br>
+                                "phone_number": "123456789",<br>
+                                "is_active": true,<br>
+                                "password": "hashed_password_1"<br>
+                            }<br>
+                        }<br>
+                    ]<br>
+                    <br>
+                    - Save the changes.<br>
+                    <br>
+                    <b>Load data into the table from a JSON file:</b><br>
+                    <br>
+                    - Using the "loaddata" command, you can load the information from the newly generated JSON file into the database table.<br>
+                    - From the terminal, make sure you are positioned in the folder where the "manage.py" file is located.<br>
+                    - The command is as follows: python manage.py loaddata fixtures/table-user.json<br>
+                    - If everything went well, the command's output will be: Installed 20 object(s) from 1 fixture(s)<br>
+                    - Verify that the information is in the table using DBeaver.<br>
+                    - On the open table, click "Refresh" to refresh the table.<br>
+                    <br>
+                    <b>Create CSV file:</b><br>
+                    <br>
+                    The initial idea was to show how to load information into a database table using both a .json and a .csv file. There are details related to how folder references are handled differently when it is a .json file compared to a .csv file. The intention is to demonstrate simple examples with only the necessary lines of code. Loading a .csv file is not as straightforward.<br>
+                    <br>
+                    The only way to load a .csv file without needing to write a 100-line script is to have the database file (db.sqlite3), the .csv file, and the .py script file all in the same folder. That's why, in this example, the use of the fixture folder will not be applied.<br>
+                    <br>
+                    - While standing in the folder where the db.sqlite3 file is located, right-click and select "New" -> "File"<br>
+                    - A small popup window will appear to enter the file name, enter "user.csv" (press Enter).<br>
+                    - The file just created will open in the IDE.<br>
+                    - Through the use of artificial intelligence, you can request it to generate the necessary records to complete that .csv file.<br>
+                    - First, copy and paste the entire content of the models.py code so that the AI knows the table structure. The prompt to request information from the AI would be as follows:<br>
+                    "Provide fictional data to complete a CSV file based on the Django model I provided earlier. I need 20 records with random but model-appropriate information."<br>
+                    - Paste the information generated by the AI into the user.csv file, keeping in mind that for CSV, headers and then information are needed.<br>
+                    - Save the changes.<br>
+                    <br>
+                    <b>Create a script that loads the content of the CSV file into the database:</b><br>
+                    <br>
+                    - While standing in the folder where the db.sqlite3 file is located, right-click and select "New" -> "File"<br>
+                    - A small popup window will appear to enter the file name, enter "script.py" (press Enter).<br>
+                    - Enter the following code:<br>
+                    <br>
+                    import sqlite3<br>
+                    <br>
+                    conn = sqlite3.connect('db.sqlite3')<br>
+                    cursor = conn.cursor()<br>
+                    file = open('user.csv', 'r')<br>
+                    lines = file.readlines()<br>
+                    <br>
+                    for line in lines:<br>
+                        line_array = line.split(',')<br>
+                        sql = f'INSERT INTO my_app_user (username, name, last_name, email, registration_date, phone_number, is_active, password) VALUES ("{line_array[0]}", "{line_array[1]}", "{line_array[2]}", "{line_array[3]}", "{line_array[4]}", "{line_array[5]}", "{line_array[6]}", "{line_array[7]}")'<br>
+                        result = cursor.execute(sql)<br>
+                        conn.commit()<br>
+                    <br>
+                    - Save the changes.<br>
+                    <br>
+                    <b>Load data into the table from a CSV file:</b><br>
+                    <br>
+                    - Ensure that the virtual environment is still active, it will be displayed in the prompt: (env-my_project)<br>
+                    - With the script.py file open, execute the file with the "play" button visible in the IDE.<br>
+                    - In this case, the terminal will not show any specific information; it will only show that the script has been executed correctly.<br>
+                    - Verify that the information is in the table using DBeaver.<br>
+                    - On the open table, click "Refresh" to refresh the table.<br>
+                    <br>
+                    The recipe for loading a database table with JSON and CSV has been completed.<br>
+                    <br>
+                    <b>Final Comments:</b><br>
+                    <br>
+                    The best option is always to make an effort to work with .json files. In this example, consider the detail that it is not convenient to have exactly the same information for both the .json and .csv files. This is due to how the data model is defined, as there are fields defined as "unique." Trying to load repeated information, for example, first from the .json and then from the .csv, will generate an error.<br>
+                    <br>
+                    Regarding the complexity of the script, the goal is to keep it as simple as possible, with the minimum needed to understand the main logic of the code. It's essential to mention that many validations were not introduced to avoid unnecessarily increasing the number of lines of code.
+                </p>                
+            </div>
+        </div>
+    </div>
+    <!-- Django End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Copyright 2024 &copy; <a class="font-weight-bold" href="https://coria79.github.io/">coria79.github.io</a>. All rights reserved.</p>
+            <p class="m-0 text-white">Designed by: <a class="font-weight-bold" href="#">htmlcodex</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+</body>
+
+</html>
