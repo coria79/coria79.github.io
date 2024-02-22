@@ -97,7 +97,7 @@ main{
     background-color: #0A3971;
     color: white;
     margin-right: 2%;
-    padding: 12px 5px 12px 5px;
+    padding: 9px 5px 9px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ main{
     border-color: #A3B4CA;
     background-color: #f2f5fc;
     color: #0A3971;
-    padding: 12px 5px 12px 5px;
+    padding: 9px 5px 9px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,8 +129,8 @@ main{
 
 .txt-area-encrypted{
     width: 87%;
-    height: 80%;
-    margin: 13px auto;
+    height: 71%;
+    margin: 13px auto 1px auto;
     border-radius: 15px;
     resize: none;
     background-color: white;
@@ -148,7 +148,7 @@ main{
     justify-content:center;
     margin: auto;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 }
 
 .btn-copy{
@@ -159,6 +159,9 @@ main{
     background-color: white;
     color: #0A3971;
     /*box-shadow: 0 0px 0px rgb(163, 180, 202);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* FOOTER */
