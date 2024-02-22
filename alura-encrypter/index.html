@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web page for encrypting and decrypting text, for the first Alura Latam challenge for the Oracle ONE Group 6 program.">
+    
+    <!-- Links to CSS files. -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- This CSS is usefull to set all the values to cero. -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Links to JavaScript files. -->
+    <script src="https://kit.fontawesome.com/96163b0f22.js" crossorigin="anonymous"></script> <!-- Fontawesome icons. -->
+    <title>Alura Desafío Encriptador - Desencriptador</title>
+</head>
+<body>
+    <!-- Header section. -->
+    <header>
+        <h1>Alura Desafío Encriptador - Desencriptador</h1> <!-- Mainly for SEO (Search Engine Optimization) porpouses -->
+    </header>
+    <!-- Main section. -->
+    <main>
+        <!-- Nav section. -->
+        <nav>
+            <div id="div-nav" class="div-nav">
+                <a href="index.html" title="Ir a la página de inicio de Desafío Encriptador - Desencriptador">
+                    <img id="img-logo-alura" class="img-logo-alura" src="img/alura-blue.png" alt="Logo de Alura">
+                </a>
+                <a href="#">
+                    <img id="img-colours-icon" class="img-colours-icon" src="img/colours-icon.png" alt="Ícono de selector de colores">
+                </a>
+                <a href="#">
+                    <img id="img-england-icon" class="img-england-icon" src="img/england-icon.png" alt="Ícono de cambio de idioma al inglés">
+                </a>
+                <a href="#">
+                    <img id="img-bazil-icon" class="img-bazil-icon" src="img/brazil-icon.png" alt="Ícono de cambio de idioma al portugués">
+                </a>
+            </div>
+        </nav>
+
+        <!-- Original text to encrypt or decrypt with buttons. -->
+        <div id="div-original" class="div-original">
+            <textarea name="txt-area-original" id="txt-area-original" class="txt-area-original" placeholder="Ingrese el texto aquí..." spellcheck="false" cols="1" rows="1"></textarea>
+            <div id="div-p-aviso" class="div-p-aviso">
+                <p id="p-aviso" class="p-aviso"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div id="div-original-buttons" class="div-original-buttons">
+                <button id="btn-encrypt" class="btn-encrypt">Encriptar</button>
+                <button id="btn-decrypt" class="btn-decrypt">Desencriptar</button>
+            </div>
+        </div>
+        <!-- Result text after encrypt or decrypt with copy button. -->
+        <div id="div-encrypted" class="div-encrypted">
+            <textarea name="txt-area-encrypted" id="txt-area-encrypted" class="txt-area-encrypted" spellcheck="false" cols="1" rows="1" disabled></textarea>
+            <div id="div-encrypted-buttons" class="div-encrypted-buttons">
+                <button id="btn-copy" class="btn-copy">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <!-- Footer section. -->
+    <footer>
+        <div id="div-footer" class="div-footer">
+            <p id="p-footer" class="p-footer">Todos los derechos de copia reservados <a href="https://coria79.github.io/" target="_blank">Mati Coria</a> &copy; 2024.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script> <!-- Recomended to load de js here, not at the head tag. -->
+</body>
+</html>
+
+<!--
+
+Legal Disclaimer:
+----------------
+
+All the images used on this website, including the "Alura" logo and the image used for "No messages were found," are the property of their respective owners and are used solely for educational and demonstrative purposes. We acknowledge and respect the copyright of their respective owners/creators.
+We have no intention to infringe upon the copyright of any individual or entity. If the owner of any of the images used on this website wishes for them to be removed, please contact us, and we will take immediate action to remove them.
+This website is a learning project aimed at demonstrating web development skills using HTML, CSS, and JavaScript.
+Thank you for your understanding.
+
+Thanks to:
+---------
+
+My special mention to the educational program ONE (Oracle Next Education) for the opportunity they have given me to participate in Group 6. In particular to:
+
+Amanda Gelumbauskas - Head of ONE Latin America
+Natalie Bonilla - Employability Leader at ONE
+Christian Velasco - Director of Alura Latam
+Jose Gonzalez - Instructor Alura Latam
+Luis Puig - Scuba Team ONE
+Paz Correa - ONE Community Manager
+Bruno Souza - Scuba Team ONE
+
+Mati Coria
+coria79@gmail.com
+Mendoza - Argentina - 2024
+
+
+Helpful Resources Section:
+-------------------------
+
+Here, the different topics necessary to solve this challenge will be detailed, along with links to explore the contents and necessary context.
+
+The main websites are:
+
+https://www.w3schools.com/html/">W3Schools - HTML Tutorial
+https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs - CSS Reference
+https://www.javascript.info/">JavaScript.info - JavaScript Tutorial
+
+Here are some more details topics.
+
+HTML Comments
+https://www.w3schools.com/html/html_comments.asp
+
+HTML <meta>
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+https://www.w3schools.com/tags/tag_meta.asp
+https://developers.google.com/search/docs/appearance/snippet#:~:text=A%20meta%20description%20tag%20generally,what%20they're%20looking%20for.
+
+HTML Fontawesome icons
+https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/vuejs">Font Awesome - How to Use
+
+HTML <h1> (Etiqueta H1 Por qué es importante y buenas prácticas de SEO)
+https://es.semrush.com/blog/h1-tag-que-es/?kw=&cmp=LM_SRCH_DSA_Blog_ES&label=dsa_pagefeed&Network=g&Device=c&utm_content=678247163703&kwid=dsa-2232567167221&cmpid=19249322807&agpid=152775995737&BU=Core&extid=109453793078&adpos=&gad_source=1&gclid=EAIaIQobChMIoeep7eu6hAMVR0BIAB0pXwu4EAAYASAAEgKX7PD_BwE
+
+CSS Comments
+https://developer.mozilla.org/en-US/docs/Web/CSS/Comments
+
+CSS Reset CSS
+https://meyerweb.com/eric/tools/css/reset/
+
+CSS Selectors
+https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors
+
+CSS Margin
+https://developer.mozilla.org/es/docs/Web/CSS/margin
+https://www.w3schools.com/css/css_margin.asp
+
+CSS Padding
+https://developer.mozilla.org/en-US/docs/Web/CSS/padding
+https://www.w3schools.com/css/css_padding.asp
+
+CSS Padding vs Margin
+https://app.aluracursos.com/forum/topico-diferencia-entre-padding-y-margin-118039?gad_source=1&gclid=EAIaIQobChMIq4XDlce8hAMVmDnUAR0OmgKnEAAYASAAEgL-FvD_BwE
+https://mailchimp.com/es/resources/padding-vs-margin/#:~:text=Padding%20represents%20the%20amount%20of,use%20automatic%20settings%20for%20margins.
+https://www.hostinger.es/tutoriales/padding-vs-margin
+
+CSS display: flex, flex-direction: column
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+CSS Aligning items in a flex container
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
+
+CSS ::placeholder
+https://developer.mozilla.org/es/docs/Web/CSS/::placeholder
+
+CSS  Definig a property for all the elements
+https://medium.com/geekculture/basic-css-multiple-selector-5fc9e437aee4
+
+CSS Responsive Design
+https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Responsive_Design
+https://www.w3schools.com/css/css_rwd_intro.asp
+
+CSS Media Queries
+https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
+https://www.geeksforgeeks.org/how-to-target-desktop-tablet-and-mobile-using-media-query/
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+JavaScript Comments
+https://www.w3schools.com/js/js_comments.asp
+
+JavaScript For
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/for
+
+JavaScript Switch
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/switch
+
+JavaScript String replace()
+https://www.w3schools.com/jsref/jsref_replace.asp
+
+JavaScript String replace() /m (multilinea) /g (global)
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+
+JavaScript The trim() method of String 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
+
+JavaScritp Funtions
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions
+
+JavaScript DOMContentLoaded event
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+https://www.javascripttutorial.net/javascript-dom/javascript-domcontentloaded/
+
+JavaScript querySelector() method
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+
+JavaScript getElementById() method
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+
+JavaScript querySelector() vs. getElementById()
+https://dev.to/colelevy/queryselector-vs-getelementbyid-166n
+https://medium.com/@tgolebie16/getelementbyid-vs-queryselector-b164acba1421
+
+JavaScript createElement() method
+https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+
+JavaScript classList property
+https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
+JavaScript Nodo appendChild
+https://developer.mozilla.org/es/docs/Web/API/Node/appendChild
+
+JavaScript replaceWith() method
+https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceWith
+
+JavaScript addEventListener() method
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+http://www.mywonderland.es/curso_js/addevent/index.html
+
+JavaScritp addEventListener() method vs onclick()
+https://app.aluracursos.com/forum/topico-cual-es-la-diferencia-entre-onclick-y-addeventlistener-117010?gad_source=1&gclid=EAIaIQobChMItrWQuMi8hAMVd19IAB0IIAFyEAAYASAAEgIQSPD_BwE
+https://dev.to/brainiacneit/differentiating-onclick-and-addeventlistener-in-javascript-30ke
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
+
+JavaScript Clipboard: writeText() method
+https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText
+
+JavaScript setAttribute() method
+https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+https://www.w3schools.com/jsref/met_element_setattribute.asp
+
+JavaScript innerHTML property
+https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
+
+JavaScript String Interpolation
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#string_interpolation
+https://www.w3schools.com/js/js_string_templates.asp
+https://www.freecodecamp.org/news/javascript-string-format-how-to-use-string-interpolation-in-js/
+
+-->
