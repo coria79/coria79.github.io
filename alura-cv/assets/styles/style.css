@@ -1,0 +1,830 @@
+
+:root {
+    --color-background: #F5F5F5;
+    --color-background-2: #FFE5B4;
+    --color-background-3: white;
+    --color-link: #8E44AD;
+    --color-button: #C0392B;
+    --color-border-color: #d35400;
+    --color-error: red;
+}
+
+body {
+    background-color: var(--color-background);
+    width: auto;
+    margin: 15px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+p, label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul, li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.error {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.1;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: var(--color-error);
+    display: block; /* Make the <span> visible */
+}
+
+/*SECTION HEADER*/
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_divLeft {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header_img{
+    width: 32px;
+    height: 100%;
+}
+
+.header_divRigh {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.heaver_nav {
+    display: flex;
+}
+
+/* Hide Elements <li> */
+
+.header_nav_menuList li:nth-child(1) {
+    display: none;
+}
+
+.header_nav_menuList li:nth-child(2) {
+    display: none;
+}
+
+.header_nav_menuList li:nth-child(3) {
+    display: none;
+}
+
+.header_nav_menuList li:nth-child(4) {
+    display: none;
+}
+
+.header_nav_menuList li:nth-child(5) {
+    display: none;
+}
+
+/*SECTION ABOUT ME*/
+
+.main_section_smallAboutMe_div {
+    margin-top: 25px;
+}
+
+.main_section_smallAboutMe_div_2 {
+    width: 75%;
+}
+
+.main_section_smallAboutMe_div_img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.main_section_smallAboutMe_menuList{
+    margin-top: 15px;
+}
+
+.main_section_aboutMe, .main_section_training, .main_section_contact {
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-background-2);
+    margin-top: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.mati{
+    display: flex;
+    flex-direction: column;
+}
+
+.h2_aboutMe {
+    text-align: left;
+}
+
+.main_section_smallAboutMe {
+    margin-bottom: 15px;
+}
+
+.main_section_smallAboutMe_p {
+    margin-bottom: 15px;
+}
+
+.main_section_smallAboutMe_menuList_li:hover{
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.arrow_ico {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+
+.signature {
+    width: 250px;
+}
+
+.h2_skills {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ul_skills_ico {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ul_hobbies_ico {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.li_skills_ico {
+    background-color: var(--color-background-3);
+    width: 100%;
+    max-width: 210px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_section_hobbies {
+    margin-bottom: 15px;
+}
+
+.li_hobbies_ico {
+    background-color: var(--color-background-3);
+    width: 100%;
+    max-width: 210px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+}
+
+.h2_hobbies{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main_section_proyects {
+    margin-bottom: 15px;
+}
+
+.li_hobbies_ico {
+    align-content: flex-start;
+    justify-content: center;
+    max-width: 195px;
+    padding-left: 15px;
+}
+
+.skills_ico, .training_ico {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: var(--color-background-3);
+}
+
+.hobbies_ico{
+    width: 50px;
+}
+
+.ul_training_ico {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.li_trainig_ico {
+    background-color: var(--color-background-3);
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.training_ico {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.li_trainig_ico_div {
+    background-color: var(--color-background-2);
+    width: 100%;
+    text-align: center;
+}
+
+/*SECTION PROYECTS*/
+
+.main_section_proyects_div_principal {
+    margin-top: 15px;
+}
+
+.main_section_proyects_div_img {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.challenge_img{
+    width: 100%;
+    max-width: 420px;
+}
+
+.main_section_proyects_div_buttons {
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+/* Proyect Buttons */
+
+.proyect_button_repositori, .proyect_button_demo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.proyect_button_repositori {
+    background-color: var(--color-background-3);
+    color: var(--color-button);
+    border-color: var(--color-button);
+}
+
+.proyect_button_demo {
+    background-color: var(--color-button);
+    color: var(--color-background-3);
+    border: none;
+}
+
+/* Buttons Hover Effect */
+
+.proyect_button_repositori:hover, .proyect_button_demo:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/*SECTION CONTACT*/
+
+.main_section_contact_div_img {
+    display: none;
+}
+
+.h2_contact {
+    text-align: left;
+}
+.main_section_contact_img {
+    display: none;
+}
+
+.main_section_contact_form {
+    margin-top: 15px;
+}
+
+.main_section_contact_form {
+    width: auto;
+    margin-right: 15px;
+}
+
+.name , .email, .subject, .message {
+    width: 100%;
+}
+
+.message {
+    resize: none;
+}
+
+.main_section_contact_div_button {
+    margin-top: 15px;
+}
+
+.main_section_contact_button {
+    border-color: var(--color-border-color);
+    background-color: var(--color-button);
+    color: var(--color-background-3);
+    width: 140px;
+    height: 45px;
+}
+
+/*SECTION FOOTER*/
+
+.footer  {
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-background-3);
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.footer_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/*MEDIA QUERIES  MAX 449px */
+
+@media (max-width: 570px){
+    
+    .ul_skills_ico, .ul_hobbies_ico {
+        justify-content: center;
+    }
+
+}
+
+/*MEDIA QUERIES  FOR TABLET DEVICE 481px - 768px */
+
+@media (min-width: 481px) and (max-width: 570px){
+    body {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .mati{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main_section_smallAboutMe_div {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .main_section_smallAboutMe_div_img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+    .main_section_smallAboutMe_text {
+        padding-right: 20px;
+    }
+
+    .main_section_aboutMe, .main_section_training, .main_section_contact {
+        margin-left: -45px;
+        margin-right: -45px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 15px;
+        padding-bottom: 45px;
+    }
+
+    .ul_skills_ico {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .li_skills_ico {
+        width: 100%;
+        max-width: 190px;
+        min-height: 160px;        
+    }    
+
+    .ul_hobbies_ico {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .li_hobbies_ico {
+        width: 100%;
+        max-width: 173px;
+    }
+
+    .li_trainig_ico_div {
+        height: 40px;
+        max-width: 150px;
+    }
+
+    .ul_training_ico {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .li_trainig_ico {
+        max-width: 150px;
+    }
+
+    .training_ico {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .footer  {
+        margin-left: -45px;
+        margin-right: -45px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 35px;
+        padding-bottom: 45px;
+    }
+}
+
+@media (min-width: 571px) and (max-width: 768px){
+
+    body {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .mati{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main_section_smallAboutMe_text {
+        padding-right: 60px;
+    }
+
+    .main_section_aboutMe, .main_section_training, .main_section_contact {
+        margin-left: -45px;
+        margin-right: -45px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 15px;
+        padding-bottom: 45px;
+    }
+
+    .ul_skills_ico {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .li_skills_ico {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .ul_hobbies_ico {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .li_hobbies_ico {
+        width: 100%;
+        max-width: 185px;
+    }
+
+    .li_trainig_ico_div {
+        height: 40px;
+        max-width: 100%;
+    }
+
+    .ul_training_ico {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .li_trainig_ico {
+        width: 100%;
+        max-width: 170px;
+    }
+
+    .footer  {
+        margin-left: -45px;
+        margin-right: -45px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 35px;
+        padding-bottom: 45px;
+    }
+}
+
+/*MEDIA QUERIES FOR DESKTOP 769px - 1080px AND PLUS */
+
+@media (min-width: 769px) and (max-width: 1080px){
+
+    body {
+        margin: 15px auto;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .header_divLeft {
+        width: 25%;
+    }
+
+    .header_divRight {
+        width: 75%;
+    }
+
+    .header_title, .header_nav_menuList_itemAboutMe, .header_nav_menuList_itemSkills, .header_nav_menuList_itemHobbies, .header_nav_menuList_itemTraining, .header_nav_menuList_itemProyects, .header_nav_menu_list_itemContact {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;        
+    }
+
+    /* UN-Hide Elements <li> */
+
+    .header_nav_menuList li:nth-child(1) {
+        display: flex;
+    }
+
+    .header_nav_menuList li:nth-child(2) {
+        display: flex;
+    }
+
+    .header_nav_menuList li:nth-child(3) {
+        display: flex;
+    }
+
+    .header_nav_menuList li:nth-child(4) {
+        display: flex;
+    }
+
+    .header_nav_menuList li:nth-child(5) {
+        display: flex;
+    }
+
+    .mati{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main_section_smallAboutMe_div {
+        margin-right: 10px;
+    }
+
+    .main_section_smallAboutMe_div_2 {
+        margin-right: 10px;
+    }
+
+    .main_section_smallAboutMe_text {
+        width: 100%;
+        padding-right: 60px;
+    }
+
+    .main_section_aboutMe, .main_section_skills, .main_section_hobbies, .main_section_training, .main_section_contact {
+        margin-top: 25px;
+    }
+
+    .li_skills_ico {
+        max-width: 220px;
+    }
+
+    .li_hobbies_ico {
+        max-width: 200px;
+    }
+
+    .ul_training_ico {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .li_trainig_ico {
+        width: 100%;
+        min-width: 170px;
+        max-width: 200px;
+    }
+
+    .main_section_proyects_div_principal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_section_proyects_div_img{
+        margin-right: 15px;
+    }
+
+    .main_section_contact{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main_section_contact_div_img{
+        display: flex;
+        width: 180px;
+        height: auto;
+    }
+
+    .telephone {
+        width: auto;
+        max-width: 350px;
+        padding-top: 20px;
+    }
+
+    .main_section_contact_important {
+        width: 50%;
+        margin-left: 200px;
+    }
+
+}
+
+/*MEDIA QUERIES 1080px OR PLUS*/
+
+@media (min-width: 1081px){
+
+    html {
+        max-width: 1080px;
+        margin: 15px auto;
+    }
+
+    body {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .header_divLeft {
+        width: 25%;
+    }
+
+    .header_divRight {
+        width: 75%;
+    }
+    
+    .header_title, .header_nav_menuList_itemAboutMe, .header_nav_menuList_itemSkills, .header_nav_menuList_itemHobbies, .header_nav_menuList_itemTraining, .header_nav_menuList_itemProyects, .header_nav_menu_list_itemContact {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;        
+    }
+
+    /* UN-Hide Elements <li> */
+
+    .header_nav_menuList li:nth-child(1) {
+        display: flex;
+    }
+
+    .header_nav_menuList li:nth-child(2) {
+        display: flex;
+    }
+
+    .header_nav_menuList li:nth-child(3) {
+        display: flex;
+    }
+
+    .header_nav_menuList li:nth-child(4) {
+        display: flex;
+    }
+
+    .header_nav_menuList li:nth-child(5) {
+        display: flex;
+    }
+
+    .mati{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main_section_smallAboutMe_div {
+        margin-right: 10px;
+    }
+
+    .main_section_smallAboutMe_div_2 {
+        margin-right: 10px;
+    }
+
+    .main_section_smallAboutMe_text {
+        width: 100%;
+        padding-right: 60px;
+    }
+
+    .main_section_aboutMe, .main_section_training, .main_section_contact {
+        margin-top: 25px;
+    }
+
+    .li_skills_ico {
+        max-width: 220px;
+    }
+
+    .li_hobbies_ico {
+        max-width: 200px;
+    }
+
+    .ul_training_ico {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .li_trainig_ico {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .main_section_proyects_div_principal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_section_proyects_div_img{
+        margin-right: 15px;
+    }
+
+    .main_section_contact{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main_section_contact_div_img{
+        display: flex;
+        width: 180px;
+        height: auto;
+    }
+
+    .telephone {
+        width: auto;
+        max-width: 350px;
+        padding-top: 20px;
+    }
+
+    .main_section_contact_important {
+        width: 50%;
+        margin-left: 200px;
+    }
+
+}
