@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Recetas De Cocina - Para Programadores</title>
+    <title>Cooking Recipes - For Programmers</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -53,9 +53,9 @@
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h1 class="display-1 m-0">
-                            <span class="text-primary">Recetas De Cocina</span>
+                            <span class="text-primary">Cooking Recipes</span>
                             <br>
-                            <span class="text-white">Para Programadores</span>
+                            <span class="text-white">For Programmers</span>
                         </h1>
                     </div>
                 </div>
@@ -66,163 +66,99 @@
 
     <!-- Django Start -->
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Receta para cargar tabla de base de datos SQLite con JSON y CSV</h2>
+        <h2 class="text-center mb-4">Recipe to Connect GitHub with SSH from Linux</h2>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-12 py-0 py-lg-5">
                 <p>
-                    <b>Introducción:</b><br>
+                    <b>Introduction:</b><br>
                     <br>
-                    Utilizar información para cargar una base de datos puede ser muy útil. Actualmente se puede realizar scritps que se encarguen de estas tareas. Aquí se cubrirá todo lo necesario para poder realizarlo.<br>
+                    As a developer, it will be necessary to get used to the Linux environment. One of the required tasks will be to connect to a remote repository such as GitHub. To connect securely, one of the available methods is by using an SSH key.<br>
                     <br>
-                    <b>Objetivo:</b><br>
+                    <b>Objective:</b><br>
                     <br>
-                    Mostrar como cargar datos a una tabla de la base de datos desde un archivo json. Y también mostrar lo mismo pero para un archivo csv. Para apreciar las diferencias y dificultades de cada caso.<br>
+                    To show the necessary steps to successfully connect to a remote repository through an SSH key to authenticate the user.<br>
                     <br>
-                    <b>Ingedientes:</b><br>
+                    <b>Ingredients:</b><br>
                     <br>
-                    - DBeaver<br>
-                    - PyCharm<br>
-                    - IA ChatGPT<br>
-                    - SQLite 3
+                    - Ubuntu Linux<br>
+                    - Terminal<br>
+                    - Browser<br>
+                    - Active GitHub account<br>
                     <br>
-                    <b>Tiempo de cocción:</b><br>
+                    <b>Cooking time:</b><br>
                     <br>
-                    - 15 a 20 minutos.<br>
+                    - 10 to 15 minutes.<br>
                     <br>
-                    <b>Instrucciones:</b><br>
+                    <b>Instructions:</b><br>
                     <br>
-                    - Iniciar DBeaver.<br>
-                    - Iniciar PyCharm.<br>
-                    - En PyCharm abrir el archivo models.py dentro de la carpeta my_app.<br>
-                    - Ingresar el siguiente código:<br>
+                    - Open the terminal.<br>
+                    - Open the browser.<br>
+                    - In the browser, sign in to your GitHub account.<br>
+                    - In the terminal, run the following commands.<br>
                     <br>
-                    from django.db import models<br>
+                    Update the operating system.<br>
+                    sudo apt update && sudo apt upgrade -y<br>
                     <br>
-                    # Create your models here.<br>
-                    class User(models.Model):<br>
-                        username = models.CharField(max_length=30, unique=True, null=False)<br>
-                        name = models.CharField(max_length=30, null=False)<br>
-                        last_name = models.CharField(max_length=30, null=False)<br>
-                        email = models.EmailField(unique=True, null=False)<br>
-                        registration_date = models.DateTimeField(auto_now_add=True, null=False)<br>
-                        phone_number = models.CharField(max_length=18, null=False)<br>
-                        is_active = models.BooleanField(default=True, null=False)<br>
-                        password = models.CharField(max_length=30, null=False)<br>
+                    Check if Git is installed.<br>
+                    git --version<br>
                     <br>
-                    - Guardar los cambios.<br>
-                    - Desde la terminal del IDE para subir un nivel en las carpetas hacer: cd ..<br>
-                    - Estando parado en la carpeta: ~/Documents/django_projects<br>
-                    - Activar el entorno virtual con el comando: source env-my_project/bin/activate<br>
-                    - Para confirmar que ha sido activado el entorno virtual se mostrará en el prompt: (env-my_project)<br>
-                    - Ingresar en la carpeta my_project por medio del comando: cd my_project<br>
-                    - Realizar migraciones mediante el siguiente comando:  python manage.py makemigrations<br>
-                    - Completar el migrate con el siguiente comando: python manage.py migrate<br>
-                    - Se creará la tabla con la estructura definida en el models.<br>
-                    - Verificar que se ha creado la tabla desde DBeaver: db.sqlite3 -> Tables -> my_app_user -> Columns<br>
+                    If it is not installed, run the following command to install it.<br>
+                    sudo apt install git<br>
                     <br>
-                    <b>Crear carpeta fixtures:</b><br>
+                    Verify that you are in the user’s home directory.<br>
+                    pwd<br>
                     <br>
-                    - Desde PyCharm, en el navegador de proyecto posecionarse sobre la carpeta principal my_project (la primera de todas).<br>
-                    - Botón derecho "New" -> "Directory"<br>
-                    - Se abrirá una pequeña ventana emergente para colocar el nombre de la carpeta, colocar "fixtures" (enter).<br>
+                    Enter the hidden .ssh folder.<br>
+                    cd .ssh<br>
                     <br>
-                    <b>Crear archivo json:</b><br>
+                    Generate the SSH key.<br>
+                    ssh-keygen<br>
                     <br>
-                    - Estando parados sobre la carpeta recién creada fixtures, botón derecho "New" -> "File"<br>
-                    - Se abrirá una pequeña ventana emergente para colocar el nombre del archivo, colocar "table-user.json" (enter).<br>
-                    - Se abrirá el archivo que se acaba de crear en el IDE.<br>
+                    It will ask you to enter the file name.<br>
+                    Since you are in the same folder as the SSH keys, there is no need to type the full path.<br>
+                    id_ed25519_test<br>
+                    Press Enter<br>
                     <br>
-                    <b>Generar Información para el Json por medio de la IA:</b><br>
+                    It will ask for a passphrase to increase security.<br>
+                    In this case, it will not be necessary — just press Enter.<br>
+                    It will ask to confirm the passphrase again — just press Enter.<br>
                     <br>
-                    - Por medio del uso de la inteligencia articifial se le puede solicitar que genere los registros necesarios para completar ese archivo .json<br>
-                    - Hay que volver a pasarle el código del archivo models.py para que conozca la estructura de la tabla y cómo debe ser el json.<br>
-                    - Hay que indicarle el nombre de la aplicación en este caso es: my_app<br>
-                    - Hay que indicarle el nombre del modelos, que en este caso es el nombre de la clase en models.py: User<br>
-                    - Estos últimos dos datos son importantes porque deben estar presentes en el json.<br>
-                    - Hay que pasarle el contenido del archivo csv que se generó anteriormente.<br>
-                    - Es posible que la IA intente forzar el valor de la clave primaria en el mismo json, hay que estar atentos para indicarle que no lo haga.<br>
-                    - El prompt indicado para solicitarle a la IA la información. sería el siguiente:<br>
-                    "Generar un archivo JSON con datos ficticios para poder cargar en una tabla de una base de datos. Que sean 20 registros. El modelo de datos en mi aplicación Django se ve así: (pasarle el modelo). La aplicación se llama 'my_app' y el nombre del modelo es 'User'. Generar el archivo JSON con esta información. Importante: no deseo forzar la inclusión de claves primarias en el archivo JSON.<br>
-                    - La información generada por la IA debería verse de la siguiente forma:<br>
+                    The result of the SSH key creation will be displayed.<br>
+                    Your identification has been saved in /home/your_user/.ssh/id_ed25519_test<br>
+                    Your public key has been saved in /home/your_user/.ssh/id_ed25519_test.pub<br>
                     <br>
-                    [<br>
-                        {<br>
-                            "model": "my_app.User",<br>
-                            "fields": {<br>
-                                "username": "john_doe",<br>
-                                "name": "John",<br>
-                                "last_name": "Doe",<br>
-                                "email": "john.doe@example.com",<br>
-                                "registration_date": "2022-01-01T12:00:00Z",<br>
-                                "phone_number": "123456789",<br>
-                                "is_active": true,<br>
-                                "password": "hashed_password_1"<br>
-                            }<br>
-                        }<br>
-                    ]<br>
+                    Verify that the files are in the folder:<br>
+                    id_ed25519_test        ← private key (do not share)<br>
+                    id_ed25519_test.pub    ← public key (copied to GitHub)<br>
                     <br>
-                    - Guardar los cambios.<br>
+                    Display the content of the public key.<br>
+                    cat id_ed25519_test.pub<br>
                     <br>
-                    <b>Cargar datos en la tabla a partir de un archivo Json:</b><br>
+                    Copy the entire line displayed and paste it into your GitHub account.<br>
+                    In the browser, go to your GitHub account.<br>
+                    Click your avatar → “Settings” → “SSH and GPG keys”.<br>
+                    Click <b>New SSH key</b>.<br>
+                    Title: <code>Linux Key</code><br>
+                    Key: paste the copied content — only the public key.<br>
+                    Click <b>Add SSH key</b>.<br><br>
                     <br>
-                    - Por medio del comando "loaddata" se podrá cargar la información del archivo json recién generado en la tabla de la base de datos.<br>
-                    - Desde la terminal es necesario encontrarse posicionados en la carpeta donde se encuetra el archivo "manage.py"<br>
-                    - El comando es el siguiente: python manage.py loaddata fixtures/table-user.json<br>
-                    - Si todo salió bien, la salida del comando será la siguiente: Installed 20 object(s) from 1 fixture(s)<br>
-                    - Verificar que la información se encuentra en la tabla mediante DBeaver.<br>
-                    - Sobre la tabla abierta hacer click en "Refresh" para refrescar la tabla.<br>
+                    In the terminal, execute the following command:<br>
+                    ssh -T git@github.com<br>
                     <br>
-                    <b>Crear archivo csv:</b><br>
+                    When asked whether to trust the host, type "yes" and press Enter.<br>
+                    If everything went well, you will see the following:<br>
+                    Hi &lt;your_user&gt;! You've successfully authenticated<br>
                     <br>
-                    La idea en principio era poder mostrar cómo se carga información en una tabla de una base de datos tanto por medio de un archivo .json como por medio de un archivo .csv. Hay detalles relacionados a la forma en la que se manejan las referencias a las carpetas que no funcionan de la misma manera cuando es un archivo .json y cuando es un archivo .csv. La idea es que se muestren ejemplos sencillos únicamente con las líneas de código necesarias. Y para la carga de un archivo .csv no es tan sencillo.<br>
+                    Choose a working folder, for example:<br>
+                    <code>cd Documents</code><br>
+                    Clone the repository with:<br>
+                    <code>git clone git@github.com:&lt;YOUR_USER&gt;/&lt;YOUR_REPO&gt;.git</code><br>
                     <br>
-                    La única forma que se pueda cargar un archivo .csv sin necesidad de tener que escribir un script de 100 líneas de código es teniendo en la misma carpeta tanto el archivo de la base de datos (db.sqlite3) como el archivo .csv como el archivo del script .py. Por eso se verá en este ejemplo que el uso de la carpeta fixture no se aplicará.<br>
+                    <b>Final comments:</b><br>
                     <br>
-                    - Estando parados sobre la carpeta donde está el archivo db.sqlite3, botón derecho "New" -> "File"<br>
-                    - Se abrirá una pequeña ventana emergente para colocar el nombre del archivo, colocar "user.csv" (enter).<br>
-                    - Se abrirá el archivo que se acaba de crear en el IDE.<br>
-                    - Por medio del uso de la inteligencia articifial se le puede solicitar que genere los registros necesarios para completar ese archivo .csv<br>
-                    - Primero es necesario copiar y pegar todo el contenido del código de models.py para que la IA conozca la estructura de la tabla. El prompt indicado para solicitarle a la IA la información. sería el siguiente:<br>
-                    "Proporciona los datos ficticios para completar un archivo CSV basado en el modelo de Django que te proporcioné anteriormente. Necesitaría 20 registros con información aleatoria pero acorde a los campos del modelo."<br>
-                    - Pegar la información generada por la IA en el archivo user.csv, tener en cuenta que al ser CSV se necesitan los encabezados y luego la información.<br>
-                    - Guardar los cambios.<br>
+                    The private key must remain only on the local machine and must not be shared with anyone. Generating the SSH key allows you to connect securely with the repository.<br>
                     <br>
-                    <b>Crear script que cargue el contenido del archivo csv en la base de datos:</b><br>
                     <br>
-                    - Estando parados sobre la carpeta donde está el archivo db.sqlite3, botón derecho "New" -> "File"<br>
-                    - Se abrirá una pequeña ventana emergente para colocar el nombre del archivo, colocar "script.py" (enter).<br>
-                    - Ingresar el siguiente código:<br>
-                    <br>
-                    import sqlite3<br>
-                    <br>
-                    conn = sqlite3.connect('db.sqlite3')<br>
-                    cursor = conn.cursor()<br>
-                    file = open('user.csv', 'r')<br>
-                    lines = file.readlines()<br>
-                    <br>
-                    for line in lines:<br>
-                        line_array = line.split(',')<br>
-                        sql = f'INSERT INTO my_app_user (username, name, last_name, email, registration_date, phone_number, is_active, password) VALUES ("{line_array[0]}", "{line_array[1]}", "{line_array[2]}", "{line_array[3]}", "{line_array[4]}", "{line_array[5]}", "{line_array[6]}", "{line_array[7]}")'<br>
-                        result = cursor.execute(sql)<br>
-                        conn.commit()<br>
-                    <br>
-                    - Guardar los cambios.<br>
-                    <br>
-                    <b>Cargar datos en la tabla a partir de un archivo csv:</b><br>
-                    <br>
-                    - Validar que todavía se encuentra activado el entorno virtual, se mostrará en el prompt: (env-my_project)<br>
-                    - Con el archivo script.py abierto ejecutar el archivo con botón "play" que se ve en el IDE<br>
-                    - En este caso por terminal no se mostrará ninguna información en especial, solo se verá que se ha ejecutado de forma correcta el script.<br>
-                    - Verificar que la información se encuentra en la tabla mediante DBeaver.<br>
-                    - Sobre la tabla abierta hacer click en "Refresh" para refrescar la tabla.<br>
-                    <br>
-                    Se ha completado la receta para cargar tabla de bases de datos con json y csv.<br>
-                    <br>
-                    <b>Comentarios finales:</b><br>
-                    <br>
-                    La mejor opción será siempre hacer el esfuerzo para trabajar con archivos .json. En este ejemplo hay que tener en cuenta el detalle que no es conveniente tener exactamente la misma información tanto para el archivo json como para el archivo csv. El motivo es, por cómo está definido el modelo de datos ya que hay campos que han sido definidos como "unique". Lo que al querer cargar por ejemplo primero desde el json y luego desde el csv generará un error por intentar cargar información repetida.<br>
-                    <br>
-                    En lo que refiere a la complejidad del script se busca que sea lo más sencilla posible, con lo mínimo posible para entender la lógica principal del código. Es importante mencionar que hay muchas validaciones que no se introdujeron. Esto fue así para evitar hacer crecer en cantidad las líneas de código.<br>
                 </p>
             </div>
         </div>        
@@ -232,8 +168,8 @@
     <!-- Footer Start -->
     <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Derechos de copia 2024 &copy; <a class="font-weight-bold" href="https://coria79.github.io/">coria79.github.io</a>. Todos los derechos reservados.</a></p>
-            <p class="m-0 text-white">Diseñado por: <a class="font-weight-bold" href="#">htmlcodex</a></p>
+            <p class="mb-2 text-white">Copyright 2024 &copy; <a class="font-weight-bold" href="https://coria79.github.io/">coria79.github.io</a>. All rights reserved.</a></p>
+            <p class="m-0 text-white">Designed by: <a class="font-weight-bold" href="#">htmlcodex</a></p>
         </div>
     </div>
     <!-- Footer End -->
