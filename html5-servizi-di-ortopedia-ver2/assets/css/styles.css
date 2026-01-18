@@ -1,0 +1,365 @@
+:root{
+  /* Color principal (celeste salud) */
+  --primary: #3FA9F5;
+
+  --bg: #eef1f4;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+
+  /* Sombras */
+  --shadow: 0 12px 30px rgba(0,0,0,.18);
+  --shadow-soft: 0 10px 20px rgba(0,0,0,.12);
+
+  --radius: 16px;
+}
+
+*{ box-sizing: border-box; }
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page{
+  min-height: 100%;
+  display: grid;
+  place-items: start center;
+  padding: 28px 14px;
+}
+
+.hero, .content{
+  width: min(420px, 92vw);
+}
+
+/* ===== HERO (Header) ===== */
+/* .hero NO recorta (para permitir que el avatar sobresalga) */
+.hero{
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  overflow: visible; /* el avatar puede salir */
+  box-shadow: var(--shadow);
+  background: transparent;
+}
+
+/* Wrapper que SI recorta SOLO el fondo (imagen + marco) */
+.hero__bg{
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;           /* ✅ recorta la imagen dentro del marco */
+  background: var(--primary); /* fallback */
+}
+
+/* Imagen de fondo (tipo portada) + leve suavizado (NÍTIDA) */
+.hero__bg::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px 20px 0 0;
+
+  /* Ruta: ajustala si tu proyecto es distinto */
+  background-image: url("../../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* Ajuste para que se vea clara pero suave */
+  filter: blur(1px) contrast(1.08) saturate(1.08);
+
+  /* Escalado para que el blur no muestre bordes;
+     AHORA no desborda porque .hero__bg recorta */
+  transform: scale(1.06);
+
+  opacity: 1;
+  z-index: 0;
+}
+
+/* Capa celeste + MARCO (borde real, no box-shadow) */
+.hero__bg::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px 20px 0 0;
+
+  /* “tinta” celeste suave (no tapa la imagen) */
+  background: rgba(63, 169, 245, 0.25);
+
+  /* Marco celeste que respeta el radio */
+  border: 6px solid rgba(63, 169, 245, 0.95);
+  box-sizing: border-box;
+
+  z-index: 1;
+}
+
+/* Contenido del hero por encima del fondo */
+.hero__inner{
+  padding: 26px 18px 70px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__quote{
+  margin: 0 0 18px;
+  font-weight: 600;
+  color: rgba(255,255,255,.9);
+  letter-spacing: .2px;
+}
+
+.hero__stats{
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 6px 10px;
+}
+
+.stat{
+  flex: 1;
+  background: rgba(0,0,0,.12);
+  border-radius: 12px;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+.stat__value{
+  display: inline-block;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.15);
+  margin-bottom: 4px;
+}
+
+.stat__label{
+  display: block;
+  font-size: 12px;
+  opacity: .95;
+}
+
+/* ===== Avatar superpuesto ===== */
+.profile-pic{
+  position: absolute;
+  left: 50%;
+  bottom: -52px;
+  transform: translateX(-50%);
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 7px;
+  box-shadow: 0 14px 26px rgba(0,0,0,.18);
+  z-index: 10;
+}
+
+/* Panza azul centrada abajo (conic-gradient correcto: 0° arriba) */
+.profile-pic::before{
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  z-index: -1;
+
+  /* Arco centrado en 180° (abajo) */
+  background: conic-gradient(
+    transparent 0deg 90deg,
+    var(--primary) 90deg 270deg,
+    transparent 270deg 360deg
+  );
+
+  /* Convertir el disco en un aro de 10px (mismo grosor que el borde del header) */
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 6px),
+    #000 0
+  );
+          mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 6px),
+    #000 0
+  );
+}
+
+.profile-pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== CONTENIDO ===== */
+.content{
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: var(--shadow);
+  padding: 62px 18px 18px;
+
+  position: relative;
+  z-index: 1;
+
+  margin-top: -1px; /* evita una costura visible */
+}
+
+.profile{
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.profile__name{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.profile__location{
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ===== Tarjetas tipo accesos ===== */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 12px 0 18px;
+}
+
+.card{
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 16px 12px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--card);
+  box-shadow: 0 8px 16px rgba(0,0,0,.06);
+}
+
+.card__icon{
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.card__label{
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.badge{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 8px;
+  box-shadow: 0 10px 18px rgba(0,0,0,.12);
+}
+
+/* ===== Galería: 1 columna en móvil por defecto ===== */
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.gallery__item{
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 18px rgba(0,0,0,.10);
+  outline: none;
+}
+
+.gallery__item:focus-visible{
+  box-shadow: 0 0 0 3px rgba(63, 169, 245, .35), 0 10px 18px rgba(0,0,0,.10);
+}
+
+.gallery__item img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Desktop: 2x2 */
+@media (min-width: 900px){
+  .page{
+    padding: 40px 18px;
+  }
+
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__item img{
+    height: 160px;
+  }
+}
+
+/* ===== Lightbox ===== */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 50;
+}
+
+.lightbox.is-open{
+  display: block;
+}
+
+.lightbox__backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.62);
+}
+
+.lightbox__panel{
+  position: relative;
+  width: min(920px, 92vw);
+  margin: 5vh auto 0;
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.lightbox__img{
+  width: 100%;
+  height: min(78vh, 720px);
+  object-fit: contain;
+  display: block;
+  background: #111;
+}
+
+.lightbox__close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.lightbox__close:focus-visible{
+  outline: 3px solid rgba(63, 169, 245, .5);
+  outline-offset: 2px;
+}

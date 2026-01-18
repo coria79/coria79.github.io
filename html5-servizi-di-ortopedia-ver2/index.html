@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perfil - Demo</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <main class="page">
+    <!-- Header / Hero -->
+    <header class="hero">
+    <div class="hero__bg">
+        <div class="hero__inner">
+        </div>
+    </div>
+
+    <div class="profile-pic">
+        <img src="images/avatar.jpg" alt="Logo" />
+    </div>
+    </header>
+
+    <!-- Cuerpo -->
+    <section class="content">
+      <div class="profile">
+        <h1 class="profile__name">Servizi Per Ortopedie</h1>
+        <p class="profile__location">📍 Repubblica Italiana</p>
+      </div>
+
+    <section id="two">
+        <h2 style="color: black;">Servizi Offerti:</h2>
+        <div class="row">
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/01.jpg" class="image fit thumb"><img src="images/01.jpg" alt="" /></a>
+                <h3 style="color: black;">Cataloghi di prodotti.</h3>
+                <p style="color: black;">Mostra i tuoi prodotti e le loro caratteristiche.</p>
+            </article>
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/02.jpg" class="image fit thumb"><img src="images/02.jpg" alt="" /></a>
+                <h3 style="color: black;">Fotografate i vostri prodotti.</h3>
+                <p style="color: black;">Quando il prodotto ha un bell’aspetto, arriva meglio al cliente.</p>
+            </article>
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/03.jpg" class="image fit thumb"><img src="images/03.jpg" alt="" /></a>
+                <h3 style="color: black;">Vendita online.</h3>
+                <p style="color: black;">Portate i vostri prodotti in ogni angolo del mondo.</p>
+            </article>
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/04.jpg" class="image fit thumb"><img src="images/04.jpg" alt="" /></a>
+                <h3 style="color: black;">Gestione dei fornitori.</h3>
+                <p style="color: black;">Lavorate in modo più efficiente con tutti i vostri fornitori di merce.</p>
+            </article>
+        </div>
+    
+    </section>
+    
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" data-close="true"></div>
+
+    <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Vista previa de imagen">
+      <button class="lightbox__close" type="button" aria-label="Cerrar" data-close="true">✕</button>
+      <img class="lightbox__img" id="lightboxImg" alt="Imagen ampliada" />
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
