@@ -139,6 +139,12 @@ body{
   opacity: .95;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ===== Avatar superpuesto ===== */
 .profile-pic{
   position: absolute;
