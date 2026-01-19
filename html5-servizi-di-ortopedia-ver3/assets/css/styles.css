@@ -203,7 +203,7 @@ body{
 
 /* Contenido del hero por encima del fondo */
 .hero__inner{
-  padding: 80px 18px 70px;
+  padding: 60px 18px 60px;
   text-align: center;
   position: relative;
   z-index: 2;
