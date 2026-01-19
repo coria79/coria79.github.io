@@ -1,0 +1,537 @@
+:root{
+  /* Color principal (celeste salud) */
+  --primary: #3FA9F5;
+
+  --bg: #eef1f4;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+
+  /* Sombras */
+  --shadow: 0 12px 30px rgba(0,0,0,.18);
+  --shadow-soft: 0 10px 20px rgba(0,0,0,.12);
+
+  --radius: 16px;
+}
+
+*{ box-sizing: border-box; }
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page{
+  min-height: 100%;
+  display: grid;
+  place-items: start center;
+  padding: 28px 14px;
+}
+
+.page-title {
+  position: relative;
+  text-align: center;          /* mantiene el foco visual */
+  margin: 5px 0;
+  padding: 20px 0;             /* espacio para las barras */
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Barra superior */
+.page-title::before {
+  content: "";
+  display: block;
+  width:200px;                 /* largo de la barra */
+  height: 2px;                 /* espesor */
+  background-color: #c5c5c5;   /* gris neutro */
+  margin: 0 auto 12px auto;    /* centrada + separación */
+}
+
+/* Barra inferior */
+.page-title::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #c5c5c5;
+  margin: 12px auto 0 auto;
+}
+
+/* ===== Título de sección (H2) ===== */
+.section-title {
+  position: relative;
+  color: #111;
+  font-weight: 700;
+  margin: 50px 0 10px;
+  padding-left: 18px;
+}
+
+/* Barra vertical azul */
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 7px;
+  height: 80%;
+  background-color: #4aa3df; /* azul principal */
+  border-radius: 2px;
+}
+
+/* Texto introductorio debajo del H2 */
+.section-intro {
+  margin: 0 0 30px 18px;
+  color: #666;
+  font-size: 0.95em;
+  max-width: 520px;
+}
+
+/* ===== Separador horizontal gris entre H2/intro y la grilla ===== */
+.section-separator {
+  border: 0;
+  border-top: 3px solid #c5c5c5; /* gris claro, visible y sobrio */
+  margin: 18px 25px 24px 25px;
+}
+
+/* ===== H3 de cada servicio con barra vertical azul fina ===== */
+.service-title {
+  position: relative;
+  margin: 16px 0 6px;
+  padding-left: 14px;        /* espacio para la barra */
+  color: #111;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Barra vertical azul (más fina que la del H2) */
+.service-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;               /* alinea visualmente con el texto */
+  width: 4px;                /* más fina que la del H2 */
+  height: 1.05em;            /* acompaña la altura del texto */
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+/* Texto descriptivo del servicio */
+.service-desc {
+  margin: 0 0 12px;
+  color: #444;               /* gris oscuro legible */
+  line-height: 1.5;
+}
+
+
+.hero, .content{
+  width: min(420px, 92vw);
+}
+
+/* ===== HERO (Header) ===== */
+/* .hero NO recorta (para permitir que el avatar sobresalga) */
+.hero{
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  overflow: visible; /* el avatar puede salir */
+  box-shadow: var(--shadow);
+  background: transparent;
+}
+
+/* Wrapper que SI recorta SOLO el fondo (imagen + marco) */
+.hero__bg{
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;           /* ✅ recorta la imagen dentro del marco */
+  background: var(--primary); /* fallback */
+}
+
+/* Imagen de fondo (tipo portada) + leve suavizado (NÍTIDA) */
+.hero__bg::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px 20px 0 0;
+
+  /* Ruta: ajustala si tu proyecto es distinto */
+  background-image: url("../../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* Ajuste para que se vea clara pero suave */
+  filter: blur(1px) contrast(1.08) saturate(1.08);
+
+  /* Escalado para que el blur no muestre bordes;
+     AHORA no desborda porque .hero__bg recorta */
+  transform: scale(1.06);
+
+  opacity: 1;
+  z-index: 0;
+}
+
+.hero__bg::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px 20px 0 0;
+  z-index: 1;
+
+  /* Marco con degradado vertical */
+  background: linear-gradient(
+    to bottom,
+    rgba(63,169,245,0.05) 0%,
+    rgba(63,169,245,0.35) 30%,
+    rgba(63,169,245,0.65) 85%,
+    rgba(63,169,245,0.95) 100%
+  );
+
+  /* Convertimos el fondo en un marco de 6px */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+
+          mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+          mask-composite: exclude;
+
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+/* Contenido del hero por encima del fondo */
+.hero__inner{
+  padding: 26px 18px 70px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__quote{
+  margin: 0 0 18px;
+  font-weight: 600;
+  color: rgba(255,255,255,.9);
+  letter-spacing: .2px;
+}
+
+.hero__stats{
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 6px 10px;
+}
+
+.stat{
+  flex: 1;
+  background: rgba(0,0,0,.12);
+  border-radius: 12px;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+.stat__value{
+  display: inline-block;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.15);
+  margin-bottom: 4px;
+}
+
+.stat__label{
+  display: block;
+  font-size: 12px;
+  opacity: .95;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Avatar superpuesto ===== */
+.profile-pic{
+  position: absolute;
+  left: 50%;
+  bottom: -52px;
+  transform: translateX(-50%);
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 7px;
+  box-shadow: 0 14px 26px rgba(0,0,0,.18);
+  z-index: 10;
+}
+
+/* Panza azul centrada abajo (conic-gradient correcto: 0° arriba) */
+.profile-pic::before{
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  z-index: -1;
+
+  /* Arco centrado en 180° (abajo) */
+  background: conic-gradient(
+    transparent 0deg 90deg,
+    var(--primary) 90deg 270deg,
+    transparent 270deg 360deg
+  );
+
+  /* Convertir el disco en un aro de 10px (mismo grosor que el borde del header) */
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 6px),
+    #000 0
+  );
+          mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 6px),
+    #000 0
+  );
+}
+
+.profile-pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== CONTENIDO ===== */
+.content{
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: var(--shadow);
+  padding: 62px 18px 18px;
+
+  position: relative;
+  z-index: 1;
+
+  margin-top: -1px; /* evita una costura visible */
+}
+
+.profile{
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.profile__name{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.profile__location{
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ===== Tarjetas tipo accesos ===== */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 12px 0 18px;
+}
+
+.card{
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 16px 12px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--card);
+  box-shadow: 0 8px 16px rgba(0,0,0,.06);
+}
+
+.card__icon{
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.card__label{
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.badge{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 8px;
+  box-shadow: 0 10px 18px rgba(0,0,0,.12);
+}
+
+/* ===== Galería: 1 columna en móvil por defecto ===== */
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.gallery__item{
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 18px rgba(0,0,0,.10);
+  outline: none;
+}
+
+.gallery__item:focus-visible{
+  box-shadow: 0 0 0 3px rgba(63, 169, 245, .35), 0 10px 18px rgba(0,0,0,.10);
+}
+
+.gallery__item img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Desktop: 2x2 */
+@media (min-width: 900px){
+  .page{
+    padding: 40px 18px;
+  }
+
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__item img{
+    height: 160px;
+  }
+}
+
+/* ===== Lightbox ===== */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 50;
+}
+
+.lightbox.is-open{
+  display: block;
+}
+
+.lightbox__backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.62);
+}
+
+.lightbox__panel{
+  position: relative;
+  width: min(920px, 92vw);
+  margin: 5vh auto 0;
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.lightbox__img{
+  width: 100%;
+  height: min(78vh, 720px);
+  object-fit: contain;
+  display: block;
+  background: #111;
+}
+
+.lightbox__close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.lightbox__close:focus-visible{
+  outline: 3px solid rgba(63, 169, 245, .5);
+  outline-offset: 2px;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background-color: #1f2937; /* gris oscuro profesional */
+  color: #e5e7eb;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 35px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-copy i {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #cbd5e1;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-social a i {
+  font-size: 14px;
+}
+
+.footer-social a:hover {
+  color: var(--primary);
+}
