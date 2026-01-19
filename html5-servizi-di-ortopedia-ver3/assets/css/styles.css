@@ -31,14 +31,12 @@ body{
   padding: 28px 14px;
 }
 
-.page-title {
-  position: relative;
-  text-align: center;          /* mantiene el foco visual */
-  margin: 5px 0;
-  padding: 20px 0;             /* espacio para las barras */
-  font-weight: 700;
-  letter-spacing: 0.5px;
+.page-title{
+  font-size: clamp(26px, 6.2vw, 40px);
+  line-height: 1.15;
+  letter-spacing: 0.2px; /* clave: reduce ancho real */
 }
+
 
 /* Barra superior */
 .page-title::before {
@@ -92,7 +90,7 @@ body{
 /* ===== Separador horizontal gris entre H2/intro y la grilla ===== */
 .section-separator {
   border: 0;
-  border-top: 3px solid #c5c5c5; /* gris claro, visible y sobrio */
+  border-top: 2px solid #c5c5c5; /* gris claro, visible y sobrio */
   margin: 18px 25px 24px 25px;
 }
 
@@ -204,7 +202,7 @@ body{
 
 /* Contenido del hero por encima del fondo */
 .hero__inner{
-  padding: 26px 18px 70px;
+  padding: 80px 18px 70px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -534,4 +532,45 @@ img {
 
 .footer-social a:hover {
   color: var(--primary);
+}
+
+@media (max-width: 380px){
+  .page-title{
+    font-size: clamp(24px, 6vw, 32px);
+  }
+}
+
+/* Tablet y superior: más ancho para servicios */
+@media (min-width: 700px){
+  .hero,
+  .content{
+    width: min(720px, 92vw);
+  }
+}
+
+/* ===== Servicios (grilla responsive) ===== */
+.row{
+  display: grid;
+  grid-template-columns: 1fr; /* móvil: 1 columna */
+  gap: 16px;
+}
+
+/* Asegura que cada “card” no herede comportamientos raros */
+.work-item{
+  margin: 0;
+}
+
+/* Imágenes dentro del servicio: que ocupen el ancho del item */
+.work-item img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet / notebook / PC: 2 columnas */
+@media (min-width: 700px){
+  .row{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
 }
