@@ -35,6 +35,7 @@ body{
   font-size: clamp(26px, 6.2vw, 40px);
   line-height: 1.15;
   letter-spacing: 0.2px; /* clave: reduce ancho real */
+  color: var(--bg);
 }
 
 
