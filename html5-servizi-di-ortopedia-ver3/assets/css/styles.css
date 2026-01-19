@@ -28,7 +28,7 @@ body{
   min-height: 100%;
   display: grid;
   place-items: start center;
-  padding: 28px 14px;
+  padding: 14px 14px;
 }
 
 .page-title{
@@ -481,7 +481,7 @@ img {
 .site-footer {
   background-color: #1f2937; /* gris oscuro profesional */
   color: #e5e7eb;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .footer-inner {
