@@ -187,7 +187,7 @@ body{
   border-radius: 20px 20px 0 0;
 
   /* Ruta: ajustala si tu proyecto es distinto */
-  background-image: url("../../images/hero.jpg");
+  background-image: url("../../images/h-ero.jpg");
   background-size: cover;
   background-position: center;
 
@@ -606,4 +606,5 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
   }
+
 }
