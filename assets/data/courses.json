@@ -1,0 +1,1382 @@
+[
+  {
+    "number": 138,
+    "title": "IA HEROES",
+    "organization": "LEARNING HEROES",
+    "date": "2026.04.17",
+    "instructor": "Sáez, Javier",
+    "duration": "8 hs",
+    "skill": "Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2026.04.17 Learning Heroes - IA Heroes - Thumbail.jpg"
+  },
+  {
+    "number": 137,
+    "title": "EFFECTIVE BUSINESS WEBSITES",
+    "organization": "HP (HEWLETT PACKARD) LIFE",
+    "date": "2026.04.15",
+    "instructor": "",
+    "duration": "1 h",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2026.04.15 HP Life - Effective Business Websites - Thumbail.jpg"
+  },
+  {
+    "number": 136,
+    "title": "INTRODUCTION TO CYBERSECURITY",
+    "organization": "HP (HEWLETT PACKARD) LIFE",
+    "date": "2026.04.13",
+    "instructor": "",
+    "duration": "1 h",
+    "skill": "Cybersecurity",
+    "thumbnail": "./assets/img/certificates/2026.04.13 HP Life - Introduction to Cybersecurity - Thumbail.jpg"
+  },
+  {
+    "number": 135,
+    "title": "IA FOR BEGINNERS",
+    "organization": "HP (HEWLETT PACKARD) LIFE",
+    "date": "2026.04.11",
+    "instructor": "",
+    "duration": "1 h",
+    "skill": "Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2026.04.11HP Life - IA for beginners - Thumbail.jpg"
+  },
+  {
+    "number": 134,
+    "title": "ETHICAL HACKING",
+    "organization": "BIG SCHOOL",
+    "date": "2026.04.10",
+    "instructor": "Álvarez, Mario",
+    "duration": "6 hs",
+    "skill": "Cybersecurity",
+    "thumbnail": "./assets/img/certificates/2026.04.10 Big School - Ethical Hacking - Thumbail.jpg"
+  },
+  {
+    "number": 133,
+    "title": "DIGITAL MARKETING WITH IA",
+    "organization": "BIG SCHOOL",
+    "date": "2026.04.10",
+    "instructor": "González, Paula",
+    "duration": "6 hs",
+    "skill": "Digital Marketing",
+    "thumbnail": "./assets/img/certificates/2026.04.10 Big School - Digital Marketing With IA - Thumbail.jpg"
+  },
+  {
+    "number": 132,
+    "title": "INTRODUCTION TO AI DEVELOPMENT",
+    "organization": "BIG SCHOOL",
+    "date": "2026.03.19",
+    "instructor": "Moure, Brais",
+    "duration": "6 hs",
+    "skill": "Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2026.03.19 Big School - Introduction to AI development - Thumbail.jpg"
+  },
+  {
+    "number": 131,
+    "title": "GO COURSE",
+    "organization": "VIDEOCURSOS CO",
+    "date": "2025.11.22",
+    "instructor": "Castillo Lacruz, Leonardo José",
+    "duration": "2 hs",
+    "skill": "GO (Golang)",
+    "thumbnail": "./assets/img/certificates/2025.11.22 Videocursos co - Go Course - Thumbail.jpg"
+  },
+  {
+    "number": 130,
+    "title": "GOLANG BASICS",
+    "organization": "SIMPLILEARN",
+    "date": "2025.11.21",
+    "instructor": "",
+    "duration": "2 hs",
+    "skill": "GO (Golang)",
+    "thumbnail": "./assets/img/certificates/2025.11.21 SimpliLearn - Go-Lang Basics - Thumbail.jpg"
+  },
+  {
+    "number": 129,
+    "title": "INTRODUCTION TO GOLANG",
+    "organization": "SIMPLILEARN",
+    "date": "2025.11.12",
+    "instructor": "",
+    "duration": "1 h",
+    "skill": "GO (Golang)",
+    "thumbnail": "./assets/img/certificates/2025.11.12 SimpliLearn - Introduction To Golang - Thumbail.jpg"
+  },
+  {
+    "number": 128,
+    "title": "DOCKER LEVELING",
+    "organization": "ALURA LATAM",
+    "date": "2025.05.10",
+    "instructor": "",
+    "duration": "20 hs",
+    "skill": "Docker",
+    "thumbnail": "./assets/img/certificates/2025.05.10 Alura - Docker Leveling - Thumbail.jpg"
+  },
+  {
+    "number": 127,
+    "title": "NETWORKS INTRODUCTION CONCEPTS AND PRACTICE",
+    "organization": "ALURA LATAM",
+    "date": "2025.05.10",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "12 hs",
+    "skill": "Back-End",
+    "thumbnail": "./assets/img/certificates/2025.05.10 Alura - Networks Introduction Concepts And Practice - Thumbail.jpg"
+  },
+  {
+    "number": 126,
+    "title": "LINUX GETTING TO KNOW AND USING THE TERMINAL",
+    "organization": "ALURA LATAM",
+    "date": "2025.05.03",
+    "instructor": "Castillo Lacruz, Leonardo Jose",
+    "duration": "8 hs",
+    "skill": "Linux",
+    "thumbnail": "./assets/img/certificates/2025.05.03 Alura - Linux Getting To Know And Using The Terminal - Thumbail.jpg"
+  },
+  {
+    "number": 125,
+    "title": "PYTHON VIRTUAL ENVIROMENTS AND PIP",
+    "organization": "PLATZI",
+    "date": "2025.03.21",
+    "instructor": "Molina, Nicolás",
+    "duration": "13 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2025.03.21 Platzi - Python Virtual Enviroments And PIP - Thumbail.jpg"
+  },
+  {
+    "number": 124,
+    "title": "PYTHON COMPREHENSIONS FUNCTIONS AND HANDLING ERRORS",
+    "organization": "PLATZI",
+    "date": "2025.03.17",
+    "instructor": "Molina, Nicolás",
+    "duration": "21 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2025.03.17 Platzi - Python Comprehensions Functions And Handling Errors - Thumbail.jpg"
+  },
+  {
+    "number": 123,
+    "title": "DATA ANALYSIS WITH PYTHON USING CHATGPT AS AN ASSISTANT",
+    "organization": "ALURA LATAM",
+    "date": "2025.02.18",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "6 hs",
+    "skill": "Python, Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2025.04.18 Alura - Data Analysis With Python Using ChatGPT As An Assistant - Thumbail.jpg"
+  },
+  {
+    "number": 122,
+    "title": "JAVASCRIPT CONSOLIDATE YOUR KNOWLEDGE OF THE WEB LANGUAGE",
+    "organization": "ALURA LATAM",
+    "date": "2025.02.17",
+    "instructor": "Velasco, Christian",
+    "duration": "10 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2025.02.18 Alura - JavaScript Consolidate Your Knowledge Of The Web Language - Thumbail.jpg"
+  },
+  {
+    "number": 121,
+    "title": "PYTHON GETTING STARTED WITH THE LANGUAGE",
+    "organization": "ALURA LATAM",
+    "date": "2025.02.14",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "8 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2026.02.14 Alura - Python Getting Started With The Language - Thumbail.jpg"
+  },
+  {
+    "number": 120,
+    "title": "FIGMA PROTOTYPING AND INTERFACES",
+    "organization": "PLATZI",
+    "date": "2024.11.14",
+    "instructor": "Camargo, Santiago",
+    "duration": "18 hs",
+    "skill": "Figma",
+    "thumbnail": "./assets/img/certificates/2024.11.14 Alura - Figma Prototyping And Iinterfaces - Thumbail.jpg"
+  },
+  {
+    "number": 119,
+    "title": "SQL WITH MySQL ORACLE SERVER",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.10.30",
+    "instructor": "",
+    "duration": "30 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2024.10.30 Alura - SQL With MySQL Oracle Server - Thumbail.jpg"
+  },
+  {
+    "number": 118,
+    "title": "SQL WITH MySQL",
+    "organization": "ALURA LATAM",
+    "date": "2024.10.30",
+    "instructor": "",
+    "duration": "79 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2024.10.30 Alura - SQL With MySQL - Thumbail.jpg"
+  },
+  {
+    "number": 117,
+    "title": "SQL WITH MySQL FINAL PROJECT",
+    "organization": "ALURA LATAM",
+    "date": "2024.10.30",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "8 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2024.10.28 Alura - SQL With MySQL - Final Proyect - Thumbail.jpg"
+  },
+  {
+    "number": 116,
+    "title": "MySQL ADMINISTRATION DATABASE SECURITY AND OPTIMIZATION PART 2",
+    "organization": "ALURA LATAM",
+    "date": "2024.10.30",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "8 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2026.10.30 Alura - MySQL Administration Database Security and Optimization Part 2 - Thumbail.jpg"
+  },
+  {
+    "number": 115,
+    "title": "MySQL ADMINISTRATION DATABASE SECURITY AND OPTIMIZATION PART 1",
+    "organization": "ALURA LATAM",
+    "date": "2024.10.28",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "8 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2026.10.28 Alura - MySQL Administration Database Security and Optimization Part 1 - Thumbail.jpg"
+  },
+  {
+    "number": 114,
+    "title": "SQL PROCEDURES EXECUTING CODE IN MySQL",
+    "organization": "ALURA LATAM",
+    "date": "2024.10.25",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "10 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2024.10.25 Alura - SQL Procedures Executing Code in MySQL - Thumbail.jpg"
+  },
+  {
+    "number": 113,
+    "title": "DML COMMANDS DATA MANIPULATION WITH MySQL",
+    "organization": "ALURA LATAM",
+    "date": "2024.10.22",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "14 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2024.10.22 Alura - DML Commands Data Manipulation With MySQL - Thumbail.jpg"
+  },
+  {
+    "number": 112,
+    "title": "SQL QUERIES ADVANCING IN SQL WITH MySQL",
+    "organization": "ALURA LATAM",
+    "date": "2024.10.19",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "16 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2024.10.19 Alura - SQL Procedures Executing Code In MySQL - Thumbail.jpg"
+  },
+  {
+    "number": 111,
+    "title": "INTRODUCTION TO SQL WITH MySQL MANIPULATE AND QUERY DATA",
+    "organization": "ALURA LATAM",
+    "date": "2024.10.19",
+    "instructor": "Camacho Diaz, Álvaro Hernando",
+    "duration": "12 hs",
+    "skill": "MySQL",
+    "thumbnail": "./assets/img/certificates/2024.10.09 Alura - Introduction To Sql With Mysql Manipulate And Query Data - Thumbail.jpg"
+  },
+  {
+    "number": 110,
+    "title": "ORACLE CLOUD INFRAESTRUCTURE",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.09.28",
+    "instructor": "",
+    "duration": "17 hs",
+    "skill": "Cloud",
+    "thumbnail": "./assets/img/certificates/2024.09.28 ONE - Oracle Cloud Infrastructure - Thumbail.jpg"
+  },
+  {
+    "number": 109,
+    "title": "ORACLE CLOUD INFRASTRUCTURE DATABASE AND INFRASTRUCTURE AS CODE",
+    "organization": "ALURA LATAM",
+    "date": "2024.09.28",
+    "instructor": "Lohora, Harland",
+    "duration": "8 hs",
+    "skill": "Cloud",
+    "thumbnail": "./assets/img/certificates/2024.09.28 Alura - Oracle Cloud Infrastructure Database And Infrastructure As Code - Thumbail.jpg"
+  },
+  {
+    "number": 108,
+    "title": "ORACLE CLOUD INFRASTRUCTURE IMPLEMENTING A CLOUD APPLICATION",
+    "organization": "ALURA LATAM",
+    "date": "2024.09.23",
+    "instructor": "Lohora, Harland",
+    "duration": "8 hs",
+    "skill": "Cloud",
+    "thumbnail": "./assets/img/certificates/2024.09.23 Alura - Oracle Cloud Infrastructure Implementing A Cloud Application - Thumbail.jpg"
+  },
+  {
+    "number": 107,
+    "title": "GENERATIVE IA",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.09.22",
+    "instructor": "",
+    "duration": "25 hs",
+    "skill": "Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2024.09.22 ONE - Generative IA - Thumbail.jpg"
+  },
+  {
+    "number": 106,
+    "title": "CHATGPT AND PROGRAMMING BOOST YOUR PRODUCTIVITY",
+    "organization": "ALURA LATAM",
+    "date": "2024.09.22",
+    "instructor": "Rondón, Génesys",
+    "duration": "8 hs",
+    "skill": "Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2024.09.22 Alura - ChatGPT And Programming Boost Your Productivity - Thumbail.jpg"
+  },
+  {
+    "number": 105,
+    "title": "CHATGPT AND JAVASCRIPT BUILDING THE PONG GAME",
+    "organization": "ALURA LATAM",
+    "date": "2024.09.21",
+    "instructor": "Velasco, Christian",
+    "duration": "8 hs",
+    "skill": "Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2024.09.21 Alura - ChatGPT And JavaScript Building The Pong Game - Thumbail.jpg"
+  },
+  {
+    "number": 104,
+    "title": "CHAT GPT OPTIMIZING THE QUALITY OF RESULTS",
+    "organization": "ALURA LATAM",
+    "date": "2024.09.20",
+    "instructor": "Velasco, Christian",
+    "duration": "8 hs",
+    "skill": "Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2024.09.20 Alura - Chat GPT Optimizing The Quality Of Results - Thumbail.jpg"
+  },
+  {
+    "number": 103,
+    "title": "ONE (ORACLE NEXT EDUCATION) F2 T6 FRONT-END",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.07.16",
+    "instructor": "",
+    "duration": "313 hs",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2024.07.16 ONE (Oracle Next Education) F2 T6 Front-End - Thumbail.jpg"
+  },
+  {
+    "number": 102,
+    "title": "REACT G6",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.07.16",
+    "instructor": "",
+    "duration": "92 hs",
+    "skill": "React",
+    "thumbnail": "./assets/img/certificates/2024.07.16 Alura - React G6 - ONE - Thumbail.jpg"
+  },
+  {
+    "number": 101,
+    "title": "PRACTICING REACT ALURAFLIX CHALLENGE",
+    "organization": "ALURA LATAM",
+    "date": "2024.07.16",
+    "instructor": "González, José",
+    "duration": "20 hs",
+    "skill": "React",
+    "thumbnail": "./assets/img/certificates/2024.07.16 Alura - Practicing React Aluraflix Challenge - Thumbail.jpg"
+  },
+  {
+    "number": 100,
+    "title": "WEB DEVELOPMENT: JAVASCRIPT & NODE JS",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2024.07.12",
+    "instructor": "Díaz, Alicia",
+    "duration": "198 hs",
+    "skill": "JavaScript, Node JS",
+    "thumbnail": "./assets/img/certificates/2024.07.12 Codo A Codo 4.0 - Web Development JavaScript & Node JS - Thumbail.jpg"
+  },
+  {
+    "number": 99,
+    "title": "EXPLORE REACT WITH JAVASCRIPT",
+    "organization": "ALURA LATAM",
+    "date": "2024.06.10",
+    "instructor": "",
+    "duration": "70 hs",
+    "skill": "React, JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.06.10 Alura - Explore React With JavaScript - Thumbail.jpg"
+  },
+  {
+    "number": 98,
+    "title": "PRACTICING REACT WITH JAVASCRIPT",
+    "organization": "ALURA LATAM",
+    "date": "2024.06.10",
+    "instructor": "Riverol, Daniel",
+    "duration": "10 hs",
+    "skill": "React, JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.06.10 Alura - Practicing React With JavaScript - Thumbail.jpg"
+  },
+  {
+    "number": 97,
+    "title": "HOOKS IN REACT JS UNDERSTANDING THEIR POTENTIAL AND USE",
+    "organization": "ALURA LATAM",
+    "date": "2024.06.09",
+    "instructor": "Castillo Lacruz, Leonardo Jose",
+    "duration": "10 hs",
+    "skill": "React, JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.06.09 Alura - Hooks In React JS Understanding Their Potential And Use - Thumbail.jpg"
+  },
+  {
+    "number": 96,
+    "title": "REACT STYLED COMPONENTS AND MANIPULATING FILES",
+    "organization": "ALURA LATAM",
+    "date": "2024.06.07",
+    "instructor": "Riverol, Daniel",
+    "duration": "12 hs",
+    "skill": "React",
+    "thumbnail": "./assets/img/certificates/2024.06.07 Alura - React Styled Components And Manipulating Files - Thumbail.jpg"
+  },
+  {
+    "number": 95,
+    "title": "REACT ROUTER NAVIGATION IN A SPA (SINGLE PAGE APPLICATION)",
+    "organization": "ALURA LATAM",
+    "date": "2024.06.04",
+    "instructor": "Lohora, Harland",
+    "duration": "8 hs",
+    "skill": "React",
+    "thumbnail": "./assets/img/certificates/2024.06.04 Alura - React Router Navigation In A SPA (Single Page Application) - Thumbail.jpg"
+  },
+  {
+    "number": 94,
+    "title": "REACT HOW FUNCTIONAL COMPONENTS WORK",
+    "organization": "ALURA LATAM",
+    "date": "2024.06.02",
+    "instructor": "Lohora, Harland",
+    "duration": "12 hs",
+    "skill": "React",
+    "thumbnail": "./assets/img/certificates/2024.06.02 Alura - React How Functional Components Work - Thumbail.jpg"
+  },
+  {
+    "number": 93,
+    "title": "REACT DEVELOPING WITH JAVASCRIPT",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.29",
+    "instructor": "Lohora, Harland",
+    "duration": "14 hs",
+    "skill": "React",
+    "thumbnail": "./assets/img/certificates/2024.05.29 Alura - React Developing With JavaScript - Thumbail.jpg"
+  },
+  {
+    "number": 92,
+    "title": "FRONT END G6",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.05.21",
+    "instructor": "",
+    "duration": "85 hs",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2024.05.21 ONE - Front End G6 - Thumbail.jpg"
+  },
+  {
+    "number": 91,
+    "title": "FRONT-END PRACTICE CHALLENGE ALURAGEEK",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.21",
+    "instructor": "González, José",
+    "duration": "15 hs",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2024.05.21 Alura - Front-End Practice  Challenge AluraGeek - Thumbail.jpg"
+  },
+  {
+    "number": 90,
+    "title": "JAVASCRIPT VALIDATING FORMS",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.15",
+    "instructor": "Riverol, Daniel",
+    "duration": "10 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.05.15 Alura - JavaScript Validating Forms - Thumbail.jpg"
+  },
+  {
+    "number": 89,
+    "title": "JAVASCRIPT CREATING REQUESTS",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.15",
+    "instructor": "Viera, José",
+    "duration": "8 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.05.12 Alura - JavaScript Creating Requests - Thumbail.jpg"
+  },
+  {
+    "number": 88,
+    "title": "JAVASCRIPT CONSUMING AND HANDLING DATA FROM AN API",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.11",
+    "instructor": "Dos Santos, Bárbara",
+    "duration": "6 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.05.11 Alura - JavaScript  Consuming And Handling Data From An API - Thumbail.jpg"
+  },
+  {
+    "number": 87,
+    "title": "HTTP THE BASE OF THE INTERNET",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.10",
+    "instructor": "Lohora, Harland",
+    "duration": "8 hs",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2024.05.10 Alura - HTTP The Base Of The Internet - Thumbail.jpg"
+  },
+  {
+    "number": 86,
+    "title": "JAVASCRIPT MANIPULATING DOM ELEMENTS",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.09",
+    "instructor": "Dos Santos, Bárbara",
+    "duration": "6 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.05.09 Alura - JavaScript Manipulating DOM Elements - Thumbail.jpg"
+  },
+  {
+    "number": 85,
+    "title": "JAVASCRIPT FOR WEB CREATE DINAMICS PAGES",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.07",
+    "instructor": "Quijada, Jeanmarie",
+    "duration": "8 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.05.07 Alura - Javascript For Web Create Dinamics Pages - Thumbail.jpg"
+  },
+  {
+    "number": 84,
+    "title": "FRONT-END PRACTICE CHALLENGE PORTFOLIO",
+    "organization": "ALURA LATAM",
+    "date": "2024.05.05",
+    "instructor": "González, José",
+    "duration": "10 hs",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2024.05.05 Alura - Front-End Practice Challenge Portfolio - Thumbail.jpg"
+  },
+  {
+    "number": 83,
+    "title": "CSS FLEXBOX AND RESPONSIVES LAYOUTS",
+    "organization": "ALURA LATAM",
+    "date": "2024.04.14",
+    "instructor": "Quijada, Jeanmarie",
+    "duration": "8 hs",
+    "skill": "CSS3",
+    "thumbnail": "./assets/img/certificates/2024.04.14 Alura - CSS Flexbox And Responsives Layouts - Thumbail.jpg"
+  },
+  {
+    "number": 82,
+    "title": "ENTREPRENEURSHIP AGILITY AND PROFESSIONAL PROTAGONISM G6",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.03.29",
+    "instructor": "",
+    "duration": "39 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.03.29 ONE - Entrepreneurship Agility And Professional Protagonism G6 - Thumbail.jpg"
+  },
+  {
+    "number": 81,
+    "title": "ENTREPRENEURSHIP FROM THE IDEA TO THE BUSINESS PLAN",
+    "organization": "ALURA LATAM",
+    "date": "2024.03.29",
+    "instructor": "Correa Rodríguez, Ana María",
+    "duration": "6 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.03.29 Alura - Entrepreneurship From The Idea To The Business Plan - Thumbail.jpg"
+  },
+  {
+    "number": 80,
+    "title": "FUNDAMENTALS OF AGILITY FIRST STEPS FOR AGILE TRANSFORMATION",
+    "organization": "ALURA LATAM",
+    "date": "2024.03.29",
+    "instructor": "Leon Garduno, Elizabeth",
+    "duration": "6 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.03.29 Alura - Fundamentals Of Agility First Steps For Agile Transformation - Thumbail.jpg"
+  },
+  {
+    "number": 79,
+    "title": "MY CAREER",
+    "organization": "ALURA LATAM",
+    "date": "2024.03.28",
+    "instructor": "",
+    "duration": "",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.03.28 Alura - My Career - Thumbail.jpg"
+  },
+  {
+    "number": 78,
+    "title": "CAREER TRANSITION A GUIDE TO THE TECHNOLOGY FIELD",
+    "organization": "ALURA LATAM",
+    "date": "2024.03.28",
+    "instructor": "Aguiar, Gabriela",
+    "duration": "6 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.03.28 Alura - Career Transition A Guide To The Technology Field - Thumbail.jpg"
+  },
+  {
+    "number": 77,
+    "title": "PROFESSIONAL PURPOSE BE THE PROTAGONIST OF YOUR CAREER",
+    "organization": "ALURA LATAM",
+    "date": "2024.03.27",
+    "instructor": "Aguiar, Gabriela",
+    "duration": "6 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.03.27 Alura - Professional Purpose Be The Protagonist Of Your Career - Thumbail.jpg"
+  },
+  {
+    "number": 76,
+    "title": "CAREER DEVELOPMENT HOW TO GET TO YOUR DESIRED POSITION",
+    "organization": "ALURA LATAM",
+    "date": "2024.03.26",
+    "instructor": "Stuani, Priscila",
+    "duration": "6 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.03.26 Alura - Career Development How To Get To Your Desired Position - Thumbail.jpg"
+  },
+  {
+    "number": 75,
+    "title": "CAREER DEVELOPMENT MARKET DEMAND",
+    "organization": "ALURA LATAM",
+    "date": "2024.03.25",
+    "instructor": "Stuani, Priscila",
+    "duration": "6 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.03.25 Alura - Career Development Market Demand - Thumbail.jpg"
+  },
+  {
+    "number": 74,
+    "title": "PRACTICAL REST API CONSUMPTION COURSE WITH JAVASCRIPT",
+    "organization": "PLATZI",
+    "date": "2024.03.03",
+    "instructor": "Castro, Juan David",
+    "duration": "16 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.03.03 Platzi - Practical REST API Consumption Course With JavaScript - Thumbail.jpg"
+  },
+  {
+    "number": 73,
+    "title": "BEGINNER IN PROGRAMMING",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.02.04",
+    "instructor": "",
+    "duration": "62 hs",
+    "skill": "Front-End, HTML5, CSS3, JavaScript, GitHub",
+    "thumbnail": "./assets/img/certificates/2024.02.04 Alura - Beginner In Programming - Thumbail.jpg"
+  },
+  {
+    "number": 72,
+    "title": "PROGRAMMING LOGIC WITH JAVASCRIPT",
+    "organization": "ALURA LATAM",
+    "date": "2024.02.04",
+    "instructor": "",
+    "duration": "24 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.02.04 Alura - Programming Logic With JavaScript - Thumbail.jpg"
+  },
+  {
+    "number": 71,
+    "title": "GIT AND GITHUB REPOSITORY COMMIT AND VERSIONS",
+    "organization": "ALURA LATAM",
+    "date": "2024.02.04",
+    "instructor": "Pimentel, Ellen",
+    "duration": "6 hs",
+    "skill": "GitHub",
+    "thumbnail": "./assets/img/certificates/2024.02.04 Alura - Git And GitHub Repository Commit And Versions - Thumbail.jpg"
+  },
+  {
+    "number": 70,
+    "title": "HTML5 AND CSS3 PART 4 ADVANCING IN CSS",
+    "organization": "ALURA LATAM",
+    "date": "2024.02.04",
+    "instructor": "Velasco, Christian",
+    "duration": "10 hs",
+    "skill": "Front-End, HTML5, CSS3",
+    "thumbnail": "./assets/img/certificates/2024.02.04 Alura - Html5 y Css3 Part 4 Advancing In Css - Thumbail.jpg"
+  },
+  {
+    "number": 69,
+    "title": "HTML5 Y CSS3 PART 3 WORKING WITH FORMS AND TABLES",
+    "organization": "ALURA LATAM",
+    "date": "2024.02.03",
+    "instructor": "Velasco, Christian",
+    "duration": "8 hs",
+    "skill": "Front-End, HTML5, CSS3",
+    "thumbnail": "./assets/img/certificates/2024.02.03 Alura - Html5 Y Css3 Part 3 Working With Forms And Tables - Thumbail.jpg"
+  },
+  {
+    "number": 68,
+    "title": "HTML5 AND CSS3 PART 2 POSITIONING LISTS AND NAVIGATION",
+    "organization": "ALURA LATAM",
+    "date": "2024.02.03",
+    "instructor": "Velasco, Christian",
+    "duration": "8 hs",
+    "skill": "Front-End, HTML5, CSS3",
+    "thumbnail": "./assets/img/certificates/2024.02.03 Alura - HTML5 And CSS3 Part 2 Positioning Lists And Navigation - Thumbail.jpg"
+  },
+  {
+    "number": 67,
+    "title": "HTML5 AND CSS3 PART 1 MY FIRST WEBSITE",
+    "organization": "ALURA LATAM",
+    "date": "2024.01.26",
+    "instructor": "Velasco, Christian",
+    "duration": "8 hs",
+    "skill": "Front-End, HTML5, CSS3",
+    "thumbnail": "./assets/img/certificates/2024.01.26 Alura - Html5 And Css3 Part 1 My First Website - Thumbail.jpg"
+  },
+  {
+    "number": 66,
+    "title": "PROGRAMMING LOGIC EXPLORE FUNCTIONS AND LISTS",
+    "organization": "ALURA LATAM",
+    "date": "2024.01.25",
+    "instructor": "Velasco, Christian",
+    "duration": "8 hs",
+    "skill": "",
+    "thumbnail": "./assets/img/certificates/2024.01.25 Alura - Programming Logic Explore Functions And Lists - Thumbail.jpg"
+  },
+  {
+    "number": 65,
+    "title": "PERSONAL DEVELOPMENT G6",
+    "organization": "ONE (ORACLE NEXT EDUCATION)",
+    "date": "2024.01.23",
+    "instructor": "",
+    "duration": "35 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.01.23 ONE - Personal Development - Thumbail.jpg"
+  },
+  {
+    "number": 64,
+    "title": "FOCUS BRINGS MORE RESULTS FOR EVERYDAY LIFE",
+    "organization": "ALURA LATAM",
+    "date": "2024.01.23",
+    "instructor": "Stuani, Priscila",
+    "duration": "8 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.01.23 Alura - Focus Brings More Results For Everyday Life - Thumbail.jpg"
+  },
+  {
+    "number": 63,
+    "title": "HABITS BE PRODUCTIVE TO MEET YOUR PERSONAL GOALS",
+    "organization": "ALURA LATAM",
+    "date": "2024.01.23",
+    "instructor": "Stuani, Priscila",
+    "duration": "8 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.01.23 Alura - Habits Be Productive To Meet Your Personal Goals - Thumbail.jpg"
+  },
+  {
+    "number": 62,
+    "title": "LEARNING TO LEARN TECHNIQUES FOR YOUR SELF-DEVELOPMENT",
+    "organization": "ALURA LATAM",
+    "date": "2024.01.22",
+    "instructor": "Aguiar, Gabriela",
+    "duration": "8 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.01.22 Alura - Learning To Learn Techniques For Your Self-Development - Thumbail.jpg"
+  },
+  {
+    "number": 61,
+    "title": "LINKEDIN HOW TO MAKE YOUR PROFILE WORK FOR YOU",
+    "organization": "ALURA LATAM",
+    "date": "2024.01.22",
+    "instructor": "Aguiar, Gabriela",
+    "duration": "6 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2024.01.22 Alura - Linkedin How To Make Your Profile Work For You - Thumbail.jpg"
+  },
+  {
+    "number": 60,
+    "title": "LOGIC PROGRAMMING DIVE INTO PROGRAMMING WITH JAVASCRIPT",
+    "organization": "ALURA LATAM",
+    "date": "2024.01.18",
+    "instructor": "Velasco, Christian",
+    "duration": "8 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2024.01.18 Alura - Logic Programming Dive Into Programming With Javascript- Thumbail.jpg"
+  },
+  {
+    "number": 59,
+    "title": "IA BASICS",
+    "organization": "MICROSOFT LEARN",
+    "date": "2023.12.25",
+    "instructor": "",
+    "duration": "1 h",
+    "skill": "Artificial Intelligence",
+    "thumbnail": "./assets/img/certificates/2023.12.25 Microsoft Learn - IA Basics - Thumbail.jpg"
+  },
+  {
+    "number": 58,
+    "title": "DIGITAL SKILLS FOR PROFESSIONALS",
+    "organization": "GOOGLE DIGITAL ACADEMY",
+    "date": "2023.12.25",
+    "instructor": "",
+    "duration": "3 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2023.12.25 Google Digital Academy - Digital Skills For Professionals - Thumbail.jpg"
+  },
+  {
+    "number": 57,
+    "title": "INTRODUCTION TO THE TOOLS AND TECHNIQUES OF DATA SCIENCE",
+    "organization": "IBM GLOBAL TRAINING",
+    "date": "2023.12.25",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Data Science",
+    "thumbnail": "./assets/img/certificates/2023.12.25 IBM Global Training - Introduction To The Tools And Techniques Of Data Science - Thumbail.jpg"
+  },
+  {
+    "number": 56,
+    "title": "CONSUMING RESTFUL API WITH JAVASCRIPT",
+    "organization": "PLATZI",
+    "date": "2023.12.24",
+    "instructor": "Castro Gallego, Juan David",
+    "duration": "16 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2023.12.24 Platzi - Consuming Restful Api With Javascript - Thumbail.jpg"
+  },
+  {
+    "number": 55,
+    "title": "MOBILE SOFTWARE DESIGN",
+    "organization": "PLATZI",
+    "date": "2023.12.22",
+    "instructor": "Villamil, Cristian",
+    "duration": "15 hs",
+    "skill": "Android",
+    "thumbnail": "./assets/img/certificates/2023.12.22 Platzi - Mobile Software Design - Thumbail.jpg"
+  },
+  {
+    "number": 54,
+    "title": "JAVASCRIPT ESSENTIALS",
+    "organization": "CISCO NETWORKING ACADEMY",
+    "date": "2023.12.21",
+    "instructor": "",
+    "duration": "40 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2023.12.21 Cisco Networking Academy - JavaScript Essentials - Thumbail.jpg"
+  },
+  {
+    "number": 53,
+    "title": "JAVASCRIPT FROM ZERO",
+    "organization": "PLATZI",
+    "date": "2023.12.20",
+    "instructor": "",
+    "duration": "29 hs",
+    "skill": "JavaScript",
+    "thumbnail": "./assets/img/certificates/2023.12.20 Plazi - Javascript From Zero - Thumbail.jpg"
+  },
+  {
+    "number": 52,
+    "title": "ITALIAN A1",
+    "organization": "UNC FFYL (UNIVERSIDAD NACIONAL DE CUYO FACULTAD DE FILOSOFÍA Y LETRAS)",
+    "date": "2023.12.10",
+    "instructor": "Agüero, Marianela",
+    "duration": "100 hs",
+    "skill": "Italian",
+    "thumbnail": "./assets/img/certificates/2023.12.10 UNC FFyL - Italian A1 - Thumbail.jpg"
+  },
+  {
+    "number": 51,
+    "title": "ENGLISH C1",
+    "organization": "UNC FFYL (UNIVERSIDAD NACIONAL DE CUYO FACULTAD DE FILOSOFÍA Y LETRAS)",
+    "date": "2023.12.10",
+    "instructor": "Pallotti Durán, Romina",
+    "duration": "144 hs",
+    "skill": "English",
+    "thumbnail": "./assets/img/certificates/2023.12.10 UNC FFyL - English C1 - Thumbail.jpg"
+  },
+  {
+    "number": 50,
+    "title": "IELTS PREPARATION COURSE",
+    "organization": "PLATZI",
+    "date": "2023.09.29",
+    "instructor": "Lora, René",
+    "duration": "19 hs",
+    "skill": "English",
+    "thumbnail": "./assets/img/certificates/2023.09.29 Platzi - IELTS Preparation Course - Thumbail.jpg"
+  },
+  {
+    "number": 49,
+    "title": "DATA PROCESSING WITH PYTHON",
+    "organization": "ARGENTINA PROGRAMA 4.0",
+    "date": "2023.08.30",
+    "instructor": "",
+    "duration": "30 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2023.08.30 Ticmas Argentina Programa 4.0 - Data Processing With Python - Thumbail.jpg"
+  },
+  {
+    "number": 48,
+    "title": "AUTOMATED TESTING AND QA",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2023.07.10",
+    "instructor": "Ventura, Natalia",
+    "duration": "208 hs",
+    "skill": "Testing, QA (Quality Assurance)",
+    "thumbnail": "./assets/img/certificates/2023.07.10 Codo A Codo - Automated Testing And QA - Thumbail.jpg"
+  },
+  {
+    "number": 47,
+    "title": "ENGLISH B2+",
+    "organization": "UNC FFYL (UNIVERSIDAD NACIONAL DE CUYO FACULTAD DE FILOSOFÍA Y LETRAS)",
+    "date": "2023.07.10",
+    "instructor": "Borbon, Ivanna",
+    "duration": "100 hs",
+    "skill": "English",
+    "thumbnail": "./assets/img/certificates/2023.07.10 UNC FFyL - English B2 Plus - Thumbail.jpg"
+  },
+  {
+    "number": 46,
+    "title": "PEARSON ENGLISH INTERACTIVE LEVEL 4",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2023.07.10",
+    "instructor": "Niño, Claudia",
+    "duration": "60 hs",
+    "skill": "English",
+    "thumbnail": "./assets/img/certificates/2023.07.10 Pearson - English Interactive Level 4 - Thumbail.jpg"
+  },
+  {
+    "number": 45,
+    "title": "STRATEGIES TO LEARN ENGLISH ONLINE",
+    "organization": "PLATZI",
+    "date": "2023.04.23",
+    "instructor": "Carvajal, Jhon",
+    "duration": "11 hs",
+    "skill": "English",
+    "thumbnail": "./assets/img/certificates/2023.04.23 Platzi - Strategies To Learn English Online - Thumbail.jpg"
+  },
+  {
+    "number": 44,
+    "title": "DATABASE FUNDAMENTALS",
+    "organization": "PLATZI",
+    "date": "2023.04.02",
+    "instructor": "Vázquez Morales, Israel",
+    "duration": "26 hs",
+    "skill": "",
+    "thumbnail": "./assets/img/certificates/2023.04.02 Platzi - Database Fundamentals - Thumbail.jpg"
+  },
+  {
+    "number": 43,
+    "title": "FRONT-END FIRST STEPS",
+    "organization": "ARGENTINA PROGRAMA 4.0",
+    "date": "2023.03.08",
+    "instructor": "",
+    "duration": "60 hs",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2023.03.08 Ticmas Argentina Programa 4.0 - Front-End First Steps - Thumbail.jpg"
+  },
+  {
+    "number": 42,
+    "title": "ENGLISH B2",
+    "organization": "UNC FFYL (UNIVERSIDAD NACIONAL DE CUYO FACULTAD DE FILOSOFÍA Y LETRAS)",
+    "date": "2022.12.10",
+    "instructor": "Poveda, Wanda",
+    "duration": "144 hs",
+    "skill": "English",
+    "thumbnail": "./assets/img/certificates/2022.12.10 UNC FFyL - English B2 - Thumbail.jpg"
+  },
+  {
+    "number": 41,
+    "title": "DJANGO",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.12.10",
+    "instructor": "Hunt, Alejandro",
+    "duration": "208 hs",
+    "skill": "Django",
+    "thumbnail": "./assets/img/certificates/2022.12.10 Codo A Codo - Django - Thumbail.jpg"
+  },
+  {
+    "number": 40,
+    "title": "WORKING AS FREELANCE",
+    "organization": "PLATZI",
+    "date": "2022.10.16",
+    "instructor": "Salgado Díaz de la Vega, Anahí",
+    "duration": "12 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.10.16 Platzi - Workin As A Freelancer - Thumbail.jpg"
+  },
+  {
+    "number": 39,
+    "title": "I CAN PROGRAM",
+    "organization": "ARGENTINA PROGRAMA 4.0",
+    "date": "2022.10.13",
+    "instructor": "",
+    "duration": "60 hs",
+    "skill": "",
+    "thumbnail": "./assets/img/certificates/2022.10.13 Argentina Programa - I Can Program - Thumbail.jpg"
+  },
+  {
+    "number": 38,
+    "title": "SUCCESS IN JOB INTERVIEWS",
+    "organization": "PLATZI",
+    "date": "2022.10.10",
+    "instructor": "Gayosso, Carolina",
+    "duration": "16 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.10.10 Platzi - Success In Job Interviews - Thumbail.jpg"
+  },
+  {
+    "number": 37,
+    "title": "BECOMING A PROFESSIONAL FREELANCER",
+    "organization": "PLATZI",
+    "date": "2022.10.17",
+    "instructor": "Buenaventura, Sebastián",
+    "duration": "17 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.10.07 Platzi - Becoming A Professional Freelancer - Thumbail.jpg"
+  },
+  {
+    "number": 36,
+    "title": "GET JOB IN IT",
+    "organization": "PLATZI",
+    "date": "2022.09.28",
+    "instructor": "Mayo, Abraham",
+    "duration": "10 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.09.28 Platzi - Get Job In It - Thumbail.jpg"
+  },
+  {
+    "number": 35,
+    "title": "GET JOB IN PROGRAMMING",
+    "organization": "PLATZI",
+    "date": "2022.09.21",
+    "instructor": "Gayosso, Carolina",
+    "duration": "10 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.09.21 Platzi - Get Job In Programming - Thumbail.jpg"
+  },
+  {
+    "number": 34,
+    "title": "CREATION OF PORTFOLIO AND CV",
+    "organization": "PLATZI",
+    "date": "2022.09.15",
+    "instructor": "Gayosso, Carolina",
+    "duration": "16 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.09.15 Platzi - Creation Of Portfolio And Cv - Thumbail.jpg"
+  },
+  {
+    "number": 33,
+    "title": "PRACTICAL COURSE OF HTML AND CSS",
+    "organization": "",
+    "date": "2022.07.22",
+    "instructor": "De Granda, Diego",
+    "duration": "16 hs",
+    "skill": "Front-End, HTML5, CSS3",
+    "thumbnail": "./assets/img/certificates/2022.07.17 Platzi - Practical Course Of Html And Css - Thumbail.jpg"
+  },
+  {
+    "number": 32,
+    "title": "FULL STACK PYTHON",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.07.01",
+    "instructor": "Romero Liendro, Paola Gabriel",
+    "duration": "208 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2022.07.01 Codo A Codo - Full Stack Python Developer - Thumbail.jpg"
+  },
+  {
+    "number": 31,
+    "title": "INTRODUCTION COURSE TO AWS COMPUTE STORAGE AND DATABASES",
+    "organization": "PLATZI",
+    "date": "2022.06.07",
+    "instructor": "Lopez Araujo, Enrique Alexis",
+    "duration": "11 hs",
+    "skill": "AWS",
+    "thumbnail": "./assets/img/certificates/2022.06.07 Platzi - Introduction Course To Aws Compute Storage And Databases - Thumbail.jpg"
+  },
+  {
+    "number": 30,
+    "title": "ACCENTURE ARGENTINA - COMMUNICATION - WRITTEN COMPREHENSION - LEVEL 6: MASTER",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 29,
+    "title": "ACCENTURE ARGENTINA - SELF-CONFIDENCE - LEVEL 6: MASTER",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 28,
+    "title": "ACCENTURE ARGENTINA - SELF-CONFIDENCE - LEVEL 5: ADVANCE",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 27,
+    "title": "ACCENTURE ARGENTINA - SELF-CONFIDENCE - LEVEL 4: INTERMEDIATE",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 26,
+    "title": "ACCENTURE ARGENTINA - SELF-KNOWLEDGE - LEVEL 3: JUNIOR",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 25,
+    "title": "ACCENTURE ARGENTINA - SELF-KNOWLEDGE - LEVEL 6: MASTER",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 24,
+    "title": "ACCENTURE ARGENTINA - SELF-KNOWLEDGE - LEVEL 5: ADVANCE",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 23,
+    "title": "ACCENTURE ARGENTINA - SELF-KNOWLEDGE - LEVEL 4: INTERMEDIATE",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 22,
+    "title": "ACCENTURE ARGENTINA - SELF-CONFIDENCE - LEVEL 3: JUNIOR",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 21,
+    "title": "ACCENTURE ARGENTINA - SELF-CONFIDENCE - LEVEL 2: START",
+    "organization": "CODO A CODO 4.0 BUENOS AIRES CIUDAD",
+    "date": "2022.06.04",
+    "instructor": "",
+    "duration": "1 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg"
+  },
+  {
+    "number": 20,
+    "title": "BASIC COURSE OF PROGRAMMING IN DJANGO",
+    "organization": "PLATZI",
+    "date": "2022.04.22",
+    "instructor": "Martínez, Luis",
+    "duration": "22 hs",
+    "skill": "Django",
+    "thumbnail": "./assets/img/certificates/2022.04.22 Platzi - Basic Course Of Programming In Django - Thumbail.jpg"
+  },
+  {
+    "number": 19,
+    "title": "INTRODUCTION TO AWS CLOUD COMPUTING FUNDAMENTALS COURSE",
+    "organization": "PLATZI",
+    "date": "2022.04.19",
+    "instructor": "Lopez Araujo, Enrique Alexis",
+    "duration": "14 hs",
+    "skill": "AWS",
+    "thumbnail": "./assets/img/certificates/2022.04.19 Platzi - Introduction To AWS Cloud Computing Fundamentals Course - Thumbail.jpg"
+  },
+  {
+    "number": 18,
+    "title": "FRONTEND DEBUGGING WITH CHROME DEVTOOLS",
+    "organization": "PLATZI",
+    "date": "2022.04.18",
+    "instructor": "De Granda, Diego",
+    "duration": "18 hs",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2022.04.18 Platzi - FrontEnd Debugging With Chrome DevTools - Thumbail.jpg"
+  },
+  {
+    "number": 17,
+    "title": "INTRODUCTION TO BACKEND DEVELOPMENT COURSE",
+    "organization": "PLATZI",
+    "date": "2022.04.15",
+    "instructor": "Molina, Nicolas",
+    "duration": "9 hs",
+    "skill": "Back-End",
+    "thumbnail": "./assets/img/certificates/2022.04.15 Platzi - Introduction To Backend Development Course - Thumbail.jpg"
+  },
+  {
+    "number": 16,
+    "title": "INTRODUCTION TO THE TERMINAL AND COMMAND LINE COURSE",
+    "organization": "PLATZI",
+    "date": "2022.04.14",
+    "instructor": "Devars, Enrique",
+    "duration": "11 hs",
+    "skill": "Back-End",
+    "thumbnail": "./assets/img/certificates/2022.04.14 Platzi - Introduction To The Terminal And Command Line Course - Thumbail.jpg"
+  },
+  {
+    "number": 15,
+    "title": "LINUX ENVIRONMENT CONFIGURATION COURSE",
+    "organization": "PLATZI",
+    "date": "2022.04.11",
+    "instructor": "Devars, Enrique",
+    "duration": "12 hs",
+    "skill": "Linux",
+    "thumbnail": "./assets/img/certificates/2022.04.11 Platzi - Introduction To The Terminal And Command Line Course - Thumbail.jpg"
+  },
+  {
+    "number": 14,
+    "title": "SCRUM PROFESSIONAL COURSE",
+    "organization": "PLATZI",
+    "date": "2022.04.04",
+    "instructor": "Romero, Gerardo",
+    "duration": "12 hs",
+    "skill": "Scrum",
+    "thumbnail": "./assets/img/certificates/2022.04.04 Platzi - Scrum Professional Course - Thumbail.jpg"
+  },
+  {
+    "number": 13,
+    "title": "GIT AND GITHUB PROFESSIONAL COURSE",
+    "organization": "PLATZI",
+    "date": "2022.04.02",
+    "instructor": "Vega, Freddy",
+    "duration": "22 hs",
+    "skill": "GitHub",
+    "thumbnail": "./assets/img/certificates/2022.04.02 Platzi - Git And Github Professional Course - Thumbail.jpg"
+  },
+  {
+    "number": 12,
+    "title": "PROFESSIONAL PYTHON PROGRAMMING",
+    "organization": "PLATZI",
+    "date": "2022.03.20",
+    "instructor": "García Martoni, Facundo",
+    "duration": "15 hs",
+    "skill": "Django",
+    "thumbnail": "./assets/img/certificates/2022.03.30 Platzi - Professional Python Programming - Thumbail.jpg"
+  },
+  {
+    "number": 11,
+    "title": "OBJECT ORIENTED PROGRAMMING COURSE",
+    "organization": "",
+    "date": "2022.03.20",
+    "instructor": "Salgado Díaz de la Vega, Anahí",
+    "duration": "15 hs",
+    "skill": "",
+    "thumbnail": "./assets/img/certificates/2022.03.20 Platzi - Object Oriented Programming - Thumbail.jpg"
+  },
+  {
+    "number": 10,
+    "title": "LINUX UNHATCHED NDG",
+    "organization": "CISCO NETWORKING ACADEMY",
+    "date": "2022.03.14",
+    "instructor": "",
+    "duration": "8 hs",
+    "skill": "Linux",
+    "thumbnail": "./assets/img/certificates/2022.03.14 Cisco Networking Academy - Linux Unhatched NDG - Thumbail.jpg"
+  },
+  {
+    "number": 9,
+    "title": "PROGRAMMING ESSENTIALS IN PYTHON PCAP",
+    "organization": "OPEN EDG PYTHON INSTITUTE",
+    "date": "2022.01.24",
+    "instructor": "",
+    "duration": "40 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2022.01.24 OpenEDG Python Institute - Programming Essentials In Python PCAP - Thumbail.jpg"
+  },
+  {
+    "number": 8,
+    "title": "PERSONAL BRANDING",
+    "organization": "PLATZI",
+    "date": "2021.11.08",
+    "instructor": "Vega, Freddy",
+    "duration": "12 hs",
+    "skill": "Soft-Skills",
+    "thumbnail": "./assets/img/certificates/2021.11.08 Platzi - Personal Branding - Thumbail.jpg"
+  },
+  {
+    "number": 7,
+    "title": "OBJECT ORIENTED PROGRAMMING AND ALGORITHMS IN PYTHON",
+    "organization": "PLATZI",
+    "date": "2021.10.31",
+    "instructor": "Aroesti, David",
+    "duration": "16 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2021.10.31 Platzi - Object Oriented Programming And Algorithms In Python - Thumbail.jpg"
+  },
+  {
+    "number": 6,
+    "title": "ALGORITHMIC COMPLEXITY WITH PYTHON",
+    "organization": "PLATZI",
+    "date": "2021.10.31",
+    "instructor": "Aroesti, David",
+    "duration": "13 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2021.10.31 Platzi - Algorithmic Complexity With Python - Thumbail.jpg"
+  },
+  {
+    "number": 5,
+    "title": "INTERMEDIATE PYTHON PROGRAMMING",
+    "organization": "PLATZI",
+    "date": "2021.10.29",
+    "instructor": "Molina, Nicolas",
+    "duration": "17 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2021.1029 Platzi - Intermediate Python Programming Course - Thumbail.jpg"
+  },
+  {
+    "number": 4,
+    "title": "BASIC PYTHON PROGRAMMING",
+    "organization": "PLATZI",
+    "date": "2021.10.29",
+    "instructor": "Molina, Nicolas",
+    "duration": "16 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2021.10.29 Platzi - Basic Python Programming - Thumbail.jpg"
+  },
+  {
+    "number": 3,
+    "title": "BASIC PROGRAMMING",
+    "organization": "PLATZI",
+    "date": "2021.10.08",
+    "instructor": "Vega, Freddy",
+    "duration": "34 hs",
+    "skill": "Front-End",
+    "thumbnail": "./assets/img/certificates/2021.10.08 Platzi - Basic Programming - Thumbail.jpg"
+  },
+  {
+    "number": 2,
+    "title": "CERTIFIED ENTRY LEVEL PYTHON PROGRAMMER PCEP 30 01 NP",
+    "organization": "OPEN EDG PYTHON INSTITUTE",
+    "date": "2021.09.21",
+    "instructor": "",
+    "duration": "30 hs",
+    "skill": "Python",
+    "thumbnail": "./assets/img/certificates/2021.09.21 Openedg Python Institute - Certified Entry Level Python Programmer PCEP 30 01 NP - Thumbail.jpg"
+  },
+  {
+    "number": 1,
+    "title": "INTERNAL AUDITOR QUALITY MANAGEMENT ISO 9001 2000",
+    "organization": "BUREAU VERITAS",
+    "date": "2006.11.14",
+    "instructor": "",
+    "duration": "16 hs",
+    "skill": "QA (Quality Assurance)",
+    "thumbnail": "./assets/img/certificates/2006.11.14 Bureau Veritas - Internal Auditor - Quality Management ISO 9001 2000 - Thumbail.jpg"
+  }
+]
