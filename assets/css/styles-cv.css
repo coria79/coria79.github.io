@@ -1098,3 +1098,191 @@ RESPONSIVE 921px - 1050px
   .role::before, .role::after{ display: none; }
   .hobby-grid{ grid-template-columns: 1fr; }
 }
+
+/* =========================================
+   RESPONSIVE EXTRA SMALL - hasta 520px
+========================================= */
+@media (max-width: 520px){
+
+  .stage{
+    padding: 10px 6px;
+    align-items: flex-start;
+  }
+
+  .cv{
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+  }
+
+  .clip{
+    display: none;
+  }
+
+  .side-top{
+    padding: 14px 12px 10px;
+  }
+
+  .side-body{
+    padding: 6px 12px 16px;
+  }
+
+  .avatar-wrap{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 8px;
+  }
+
+  .avatar-img{
+    width: 120px;
+    height: 120px;
+    margin: 18px auto 0;
+  }
+
+  .glow-ring{
+    width: 160px;
+    height: 160px;
+  }
+
+  .contact-card{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-row{
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+
+  .c-ico{
+    height: 42px;
+  }
+
+  .c-text{
+    min-width: 0;
+    font-size: 12.5px;
+    padding: 0 10px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .hero{
+    padding: 22px 14px 18px;
+  }
+
+  .hero-inner{
+    padding-top: 22px;
+  }
+
+  .name{
+    font-size: 26px;
+    letter-spacing: .8px;
+    line-height: 1.15;
+  }
+
+  .role{
+    font-size: 11px;
+    letter-spacing: 2.4px;
+    line-height: 1.35;
+  }
+
+  .lead{
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .lang-switch{
+    top: 8px;
+    right: 8px;
+    padding: 5px 8px;
+    gap: 5px;
+  }
+
+  .lang-btn{
+    font-size: 11px;
+    padding: 3px 4px;
+  }
+
+  .content{
+    padding: 12px 10px 22px;
+  }
+
+  .grid-2{
+    grid-template-columns: 1fr;
+  }
+
+  .tag,
+  .tag-arrow{
+    min-width: 0;
+    width: auto;
+    max-width: calc(100% - 18px);
+    font-size: 11px;
+    padding: 8px 10px;
+    line-height: 1.25;
+  }
+
+  .tag-arrow::after{
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid var(--accent2);
+    right: -18px;
+  }
+
+  .card,
+  .card-top,
+  .card-main{
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .item-course{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .item-course__body{
+    width: 100%;
+  }
+
+  .item-course__thumb{
+    width: 100%;
+    max-width: 210px;
+    flex: 0 0 auto;
+    margin: 0 auto;
+  }
+
+  .item-course__thumb img{
+    width: 100%;
+    height: auto;
+  }
+
+  .item-h{
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .item-meta,
+  .item-p{
+    font-size: 12.5px;
+    line-height: 1.45;
+  }
+
+  .btn{
+    width: 100%;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+
+  .hobby-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .courses-filters{
+    grid-template-columns: 1fr;
+  }
+
+  #courses-pagination{
+    justify-content: center;
+  }
+}
