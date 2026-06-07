@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="index.html" class="brand" aria-label="Inicio INSTAGR">Instagram</a>
+      <nav class="topbar__nav" aria-label="Navegación principal">
+        <span class="nav-icon" title="Inicio">⌂</span>
+        <span class="nav-icon" title="Explorar">◇</span>
+        <span class="nav-icon" title="Perfil">◎</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="profile" aria-label="Perfil">
+      <div class="profile__avatar">
+        <img src="assets/img/logo.jpg" alt="Dr. Elrlichs">
+      </div>
+
+      <div class="profile__info">
+        <div class="profile__title-row">
+          <h1>Dr. Elrlichs</h1>
+          <button class="button" type="button">Editar perfil</button>
+        </div>
+
+        <ul class="profile__stats" aria-label="Estadísticas del perfil">
+          <li><strong id="postCount">0</strong> publicaciones</li>
+          <li><strong>1.248</strong> seguidores</li>
+          <li><strong>318</strong> seguidos</li>
+        </ul>
+
+        <div class="profile__bio">
+          <strong>Dr. Elrlichs</strong>
+          <p>Sitio estático inspirado en una galería social. Likes y comentarios cargados manualmente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs" aria-label="Secciones">
+      <button class="tab tab--active" type="button">▦ Publicaciones</button>
+      <button class="tab" type="button">⌑ Guardadas</button>
+      <button class="tab" type="button">◎ Etiquetas</button>
+    </section>
+
+    <section id="gallery" class="gallery" aria-label="Galería de imágenes"></section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Vista de publicación completa">
+    <button id="modalClose" class="modal__close" type="button" aria-label="Cerrar">×</button>
+
+    <article class="modal__content">
+      <div class="modal__image-wrap">
+        <img id="modalImage" class="modal__image" src="" alt="" />
+      </div>
+
+      <aside class="modal__side">
+        <header class="modal__header">
+          <div class="small-avatar">IG</div>
+          <div>
+            <strong id="modalAuthor">instagr.profile</strong>
+            <p id="modalLocation">Ubicación</p>
+          </div>
+        </header>
+
+        <section id="modalComments" class="comments" aria-label="Comentarios"></section>
+
+        <footer class="modal__footer">
+          <div class="modal__actions" aria-label="Acciones simuladas">
+            <span>♡</span>
+            <span>⌁</span>
+            <span>↗</span>
+          </div>
+          <p class="likes"><strong id="modalLikes">0</strong> Me gusta</p>
+          <p id="modalDate" class="date">Fecha</p>
+        </footer>
+      </aside>
+    </article>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
