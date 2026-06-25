@@ -870,7 +870,7 @@
     "date": "2024.01.25",
     "instructor": "Velasco, Christian",
     "duration": "8 hs",
-    "skill": "",
+    "skill": "Programming",
     "thumbnail": "./assets/img/certificates/2024.01.25 Alura - Programming Logic Explore Functions And Lists - Thumbail.jpg",
     "title_es": "Lógica de programación: explora funciones y listas",
     "title_it": "Logica di programmazione: esplora funzioni e liste"
@@ -1134,7 +1134,7 @@
     "date": "2023.04.02",
     "instructor": "Vázquez Morales, Israel",
     "duration": "26 hs",
-    "skill": "",
+    "skill": "Programming",
     "thumbnail": "./assets/img/certificates/2023.04.02 Platzi - Database Fundamentals - Thumbail.jpg",
     "title_es": "Fundamentos de bases de datos",
     "title_it": "Fondamenti di database"
@@ -1194,7 +1194,7 @@
     "date": "2022.10.13",
     "instructor": "",
     "duration": "60 hs",
-    "skill": "",
+    "skill": "Programming",
     "thumbnail": "./assets/img/certificates/2022.10.13 Argentina Programa - I Can Program - Thumbail.jpg",
     "title_es": "I Can Program",
     "title_it": "I Can Program"
@@ -1302,7 +1302,7 @@
     "date": "2022.06.04",
     "instructor": "",
     "duration": "1 hs",
-    "skill": "",
+    "skill": "Soft-Skills",
     "thumbnail": "./assets/img/certificates/2022.06.04 Accenture Buenos Aires Ciudad - Thumbail.jpg",
     "title_es": "Accenture Argentina - Comunicación - Comprensión escrita - Nivel 6: Máster",
     "title_it": "Accenture Argentina - Comunicazione - Comprensione scritta - Livello 6: Master"
@@ -1530,7 +1530,7 @@
     "date": "2022.03.20",
     "instructor": "Salgado Díaz de la Vega, Anahí",
     "duration": "15 hs",
-    "skill": "",
+    "skill": "Programming",
     "thumbnail": "./assets/img/certificates/2022.03.20 Platzi - Object Oriented Programming - Thumbail.jpg",
     "title_es": "Curso de programación orientada a objetos",
     "title_it": "Corso di programmazione orientata agli oggetti"
