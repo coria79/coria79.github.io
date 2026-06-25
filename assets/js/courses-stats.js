@@ -2,6 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCoursesStats();
 });
 
+let cachedCoursesStats = null;
+
+function getStatsText(key) {
+  if (typeof getText === "function") {
+    return getText(key);
+  }
+
+  const fallback = {
+    courses_stats_total_label: " total hours courses completed",
+    courses_stats_error: "Training statistics could not be loaded.",
+  };
+
+  return fallback[key] || key;
+}
+
 async function loadCoursesStats() {
   try {
     const response = await fetch("./assets/data/courses.json");
@@ -12,9 +27,9 @@ async function loadCoursesStats() {
 
     const courses = await response.json();
 
-    const stats = calculateTopSkills(courses, 6);
+    cachedCoursesStats = calculateTopSkills(courses, 6);
 
-    renderCoursesStats(stats);
+    renderCoursesStats(cachedCoursesStats);
   } catch (error) {
     console.error("Error loading course statistics:", error);
 
@@ -22,7 +37,7 @@ async function loadCoursesStats() {
     const grid = document.getElementById("skills-stats-grid");
 
     if (subtitle) {
-      subtitle.textContent = "Training statistics could not be loaded.";
+      subtitle.textContent = getStatsText("courses_stats_error");
     }
 
     if (grid) {
@@ -106,10 +121,10 @@ function renderCoursesStats(stats) {
     return;
   }
 
-subtitle.innerHTML = `
-  <span class="courses-stats-total">${Math.round(stats.totalHours).toLocaleString("en-US")} hs</span>
-  <span class="courses-stats-label"> total hours courses finalyzed</span>
-`;
+  subtitle.innerHTML = `
+    <span class="courses-stats-total">${Math.round(stats.totalHours).toLocaleString("en-US")} hs</span>
+    <span class="courses-stats-label">${getStatsText("courses_stats_total_label")}</span>
+  `;
 
   grid.innerHTML = stats.topSkills
     .map((item) => {
@@ -131,3 +146,9 @@ subtitle.innerHTML = `
     })
     .join("");
 }
+
+document.addEventListener("languagechange", () => {
+  if (cachedCoursesStats) {
+    renderCoursesStats(cachedCoursesStats);
+  }
+});

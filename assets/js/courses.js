@@ -11,6 +11,42 @@ const filterOrganization = document.getElementById("filter-organization");
 const filterSkill = document.getElementById("filter-skill");
 const filterYear = document.getElementById("filter-year");
 
+function getCourseText(key) {
+  if (typeof getText === "function") {
+    return getText(key);
+  }
+
+  const fallback = {
+    course_organization_label: "Issuing organization",
+    course_date_label: "Date",
+    course_instructor_label: "Instructor",
+    course_duration_label: "Duration",
+    course_skill_label: "Skill",
+    courses_empty: "No courses found with the selected filters.",
+    courses_error: "Courses could not be loaded.",
+    certificate_thumbnail_alt: "Certificate thumbnail",
+    filter_all_organizations: "All organizations",
+    filter_all_skills: "All skills",
+    filter_all_years: "All years",
+  };
+
+  return fallback[key] || key;
+}
+
+function getCourseTitle(course) {
+  const language = window.currentLanguage || "en";
+
+  if (language === "es") {
+    return course.title_es || course.title;
+  }
+
+  if (language === "it") {
+    return course.title_it || course.title;
+  }
+
+  return course.title;
+}
+
 async function loadCourses() {
   try {
     const response = await fetch("assets/data/courses.json");
@@ -30,13 +66,27 @@ async function loadCourses() {
     coursesContainer.innerHTML = `
       <section class="block">
         <div class="card-main">
-          <p class="item-p">Courses could not be loaded.</p>
+          <p class="item-p">${getCourseText("courses_error")}</p>
         </div>
       </section>
     `;
 
     console.error(error);
   }
+}
+
+function setDefaultOption(selectElement, text) {
+  const option = selectElement.querySelector('option[value=""]');
+
+  if (option) {
+    option.textContent = text;
+  }
+}
+
+function updateFilterDefaultOptions() {
+  setDefaultOption(filterOrganization, getCourseText("filter_all_organizations"));
+  setDefaultOption(filterSkill, getCourseText("filter_all_skills"));
+  setDefaultOption(filterYear, getCourseText("filter_all_years"));
 }
 
 function populateFilters() {
@@ -53,6 +103,8 @@ function populateFilters() {
       .map(course => course.date ? course.date.substring(0, 4) : "")
       .filter(Boolean)
   )].sort((a, b) => b - a);
+
+  updateFilterDefaultOptions();
 
   organizations.forEach(organization => {
     const option = document.createElement("option");
@@ -120,7 +172,7 @@ function renderCourses() {
     coursesContainer.innerHTML = `
       <section class="block">
         <div class="card-main">
-          <p class="item-p">No courses found with the selected filters.</p>
+          <p class="item-p">${getCourseText("courses_empty")}</p>
         </div>
       </section>
     `;
@@ -128,6 +180,8 @@ function renderCourses() {
   }
 
   coursesContainer.innerHTML = visibleCourses.map(course => {
+    const title = getCourseTitle(course);
+
     return `
       <section class="block">
         <div class="card-main">
@@ -135,20 +189,20 @@ function renderCourses() {
             <article class="item item-course">
 
               <div class="item-course__body">
-                <h4 class="item-h">#${String(course.number).padStart(3, "0")} - ${course.title}</h4>
-                <div class="item-meta">Issuing organization: ${course.organization}</div>
+                <h4 class="item-h">#${String(course.number).padStart(3, "0")} - ${title}</h4>
+                <div class="item-meta">${getCourseText("course_organization_label")}: ${course.organization}</div>
                 <p class="item-p">
-                  Date: ${course.date}
+                  ${getCourseText("course_date_label")}: ${course.date}
                   <br>
-                  ${course.instructor ? `Instructor: ${course.instructor}<br>` : ""}
-                  Duration: ${course.duration}
+                  ${course.instructor ? `${getCourseText("course_instructor_label")}: ${course.instructor}<br>` : ""}
+                  ${getCourseText("course_duration_label")}: ${course.duration}
                   <br>
-                  Skill: ${course.skill}
+                  ${getCourseText("course_skill_label")}: ${course.skill}
                 </p>
               </div>
 
               <div class="item-course__thumb">
-                <img src="${course.thumbnail}" alt="Certificate thumbnail - ${course.title}">
+                <img src="${course.thumbnail}" alt="${getCourseText("certificate_thumbnail_alt")} - ${title}">
               </div>
 
             </article>
@@ -187,5 +241,11 @@ function renderPagination() {
     coursesPagination.appendChild(button);
   }
 }
+
+document.addEventListener("languagechange", () => {
+  updateFilterDefaultOptions();
+  renderCourses();
+  renderPagination();
+});
 
 loadCourses();
