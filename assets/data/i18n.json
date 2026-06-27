@@ -72,7 +72,8 @@
       "hobby_music": "Music",
       "hobby_walking": "Walking",
       "hobby_guitar": "Guitar",
-      "hobby_basketball": "Basketball"
+      "hobby_basketball": "Basketball",
+      "view_diploma": "View diploma"
     },
     "attributes": {
       "contact_aria": "Contact",
@@ -84,7 +85,9 @@
       "decoration_aria": "Decoration",
       "main_content_aria": "Main content",
       "header_aria": "Header",
-      "language_selector_aria": "Language selector"
+      "language_selector_aria": "Language selector",
+      "view_diploma_aria": "Open diploma image in a new tab",
+      "view_diploma_title": "View diploma"
     }
   },
   "es": {
@@ -160,7 +163,8 @@
       "hobby_music": "Música",
       "hobby_walking": "Caminar",
       "hobby_guitar": "Guitarra",
-      "hobby_basketball": "Basketball"
+      "hobby_basketball": "Basketball",
+      "view_diploma": "Ver diploma"
     },
     "attributes": {
       "contact_aria": "Contacto",
@@ -172,7 +176,9 @@
       "decoration_aria": "Decoración",
       "main_content_aria": "Contenido principal",
       "header_aria": "Encabezado",
-      "language_selector_aria": "Selector de idioma"
+      "language_selector_aria": "Selector de idioma",
+      "view_diploma_aria": "Abrir imagen del diploma en una nueva pestaña",
+      "view_diploma_title": "Ver diploma"
     }
   },
   "it": {
@@ -248,7 +254,8 @@
       "hobby_music": "Musica",
       "hobby_walking": "Camminare",
       "hobby_guitar": "Chitarra",
-      "hobby_basketball": "Basket"
+      "hobby_basketball": "Basket",
+      "view_diploma": "Vedi diploma"
     },
     "attributes": {
       "contact_aria": "Contatto",
@@ -260,7 +267,9 @@
       "decoration_aria": "Decorazione",
       "main_content_aria": "Contenuto principale",
       "header_aria": "Intestazione",
-      "language_selector_aria": "Selettore lingua"
+      "language_selector_aria": "Selettore lingua",
+      "view_diploma_aria": "Apri l’immagine del diploma in una nuova scheda",
+      "view_diploma_title": "Vedi diploma"
     }
   }
 }

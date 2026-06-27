@@ -391,7 +391,8 @@ body{
 .contact-row:focus-visible,
 .project-link:focus-visible,
 .btn:focus-visible,
-.linkedin-link:focus-visible{
+.linkedin-link:focus-visible,
+.diploma-link:focus-visible{
   outline: 2px solid rgba(255,122,24,.65);
   outline-offset: 3px;
   border-radius: 12px;
@@ -641,6 +642,47 @@ body{
 
 .btn:active{
   transform: translateY(0px);
+}
+
+
+/* Diploma link in Education section */
+.diploma-link{
+  margin-top: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: fit-content;
+  min-height: 52px;
+  padding: 6px 11px;
+  border-radius: 14px;
+  border: 2px solid var(--accent);
+  background: rgba(255,255,255,.74);
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.diploma-link:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.95);
+  box-shadow: 0 12px 24px rgba(0,0,0,.10);
+}
+
+.diploma-link:active{
+  transform: translateY(0);
+}
+
+.diploma-link__icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: var(--accent);
+  font-size: 28px;
 }
 
 /* hobbies */
@@ -1273,6 +1315,19 @@ RESPONSIVE 921px - 1050px
     width: 100%;
     justify-content: space-between;
     font-size: 13px;
+  }
+
+  .diploma-link{
+    width: 100%;
+    min-height: 50px;
+    padding: 11px 16px;
+    gap: 12px;
+  }
+
+  .diploma-link__icon{
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
   }
 
   .hobby-grid{
