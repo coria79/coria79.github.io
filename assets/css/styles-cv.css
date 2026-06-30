@@ -1473,7 +1473,7 @@ RESPONSIVE 921px - 1050px
 .skill-list{
   margin: 0;
   padding: 4px 16px 14px 54px;
-  columns: 2;
+  columns: 1;
   column-gap: 26px;
 }
 
