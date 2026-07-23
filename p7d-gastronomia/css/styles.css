@@ -177,6 +177,16 @@ button {
    ========================================================================== */
 
 .hero {
+  /*
+   * Desktop placement controls for the independent logo and feature row.
+   * These percentages are relative to the complete hero image.
+   */
+  --hero-logo-left: 15.95%;
+  --hero-logo-top: 9.55%;
+  --hero-logo-width: 17.49%;
+  --hero-features-left: 9.15%;
+  --hero-features-bottom: 12.55%;
+
   position: relative;
   width: 100%;
   margin: 0;
@@ -197,6 +207,75 @@ button {
   object-position: center top;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+/*
+ * The overlay occupies exactly the same area as the responsive hero image.
+ * It does not intercept pointer input and contains only visual information.
+ */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero__logo {
+  position: absolute;
+  top: var(--hero-logo-top);
+  left: var(--hero-logo-left);
+  width: var(--hero-logo-width);
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hero__features {
+  position: absolute;
+  bottom: var(--hero-features-bottom);
+  left: var(--hero-features-left);
+  display: flex;
+  align-items: center;
+  gap: clamp(15px, 1.7vw, 28px);
+  margin: 0;
+  padding: 0;
+  color: rgba(190, 181, 191, 0.78);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(10px, 1.02vw, 16px);
+  font-weight: 400;
+  line-height: 1;
+  list-style: none;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(4, 0, 8, 0.55);
+}
+
+.hero-feature {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(5px, 0.55vw, 9px);
+}
+
+.hero-feature__icon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: clamp(15px, 1.45vw, 23px);
+  height: clamp(15px, 1.45vw, 23px);
+  border: 1.4px solid rgba(171, 137, 46, 0.8);
+  border-radius: 50%;
+  color: rgba(181, 145, 48, 0.9);
+  box-shadow: 0 1px 2px rgba(3, 0, 7, 0.34);
+}
+
+.hero-feature__icon svg {
+  width: 61%;
+  height: 61%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* ========================================================================== 
@@ -419,6 +498,48 @@ button {
   position: relative;
   z-index: 1;
 }
+
+/* --------------------------------------------------------------------------
+   Benefits heading watermark
+   -------------------------------------------------------------------------- */
+
+.benefits-section .section-heading {
+  isolation: isolate;
+}
+
+.benefits-section .section-heading::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+
+  width: clamp(230px, 24vw, 340px);
+  aspect-ratio: 1;
+
+  content: "";
+  pointer-events: none;
+
+  background-image: url("../assets/brand/logo-footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  opacity: 0.055;
+  transform: translate(-50%, -50%);
+}
+
+.benefits-section .section-heading h2 {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
 
 .benefits-grid {
   display: grid;
@@ -859,6 +980,35 @@ button {
    Tablets and mobile screens
    -------------------------------------------------------------------------- */
 @media (max-width: 760px) {
+  .hero {
+    --hero-logo-left: 50%;
+    --hero-logo-top: 6.28%;
+    --hero-logo-width: 36%;
+  }
+
+  .hero__logo {
+    transform: translateX(-50%);
+  }
+
+  .hero__features {
+    top: 2.1%;
+    right: 2.1%;
+    bottom: auto;
+    left: 2.1%;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: clamp(9px, 3vw, 22px);
+  }
+
+  .hero-feature {
+    gap: clamp(4px, 1.2vw, 7px);
+  }
+
+  .hero-feature__icon {
+    width: clamp(14px, 4.4vw, 32px);
+    height: clamp(14px, 4.4vw, 32px);
+  }
+
   .container {
     width: min(calc(100% - 28px), var(--container-width));
   }
@@ -872,6 +1022,16 @@ button {
   .section-heading {
     margin-bottom: 38px;
   }
+
+
+
+  .benefits-section .section-heading::before {
+  top: 48%;
+  width: clamp(175px, 52vw, 230px);
+  opacity: 0.05;
+  }
+
+
 
   .section-heading h2 span {
     display: none;
@@ -933,10 +1093,36 @@ button {
 
 }
 
+
+/* Corrección del logo cuando todavía se utiliza el hero de escritorio */
+@media (min-width: 701px) and (max-width: 760px) {
+  .hero {
+    --hero-logo-left: 15.95%;
+    --hero-logo-top: 9.55%;
+    --hero-logo-width: 17.49%;
+  }
+
+  .hero__logo {
+    transform: none;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Small mobile screens
    -------------------------------------------------------------------------- */
 @media (max-width: 470px) {
+  .hero__features {
+    right: 1.4%;
+    left: 1.4%;
+    gap: 4px;
+    font-size: clamp(8px, 3vw, 14px);
+  }
+
+  .hero-feature__icon {
+    width: clamp(13px, 4.4vw, 21px);
+    height: clamp(13px, 4.4vw, 21px);
+  }
+
   .menu-grid {
     gap: 18px;
   }
