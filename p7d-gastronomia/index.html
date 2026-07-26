@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta
     name="description"
-    content="Performance 7 Gastronomia: menu digitali con QR per ristoranti, pizzerie, street food e sushi."
+    content="Performance 7 Gastronomia: menu digitali con QR per ristoranti, pizzerie, paninoteche e sushi."
   >
   <meta name="theme-color" content="#160820">
 
   <title>Performance 7 Gastronomia — Menu digitale</title>
 
-  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/images/brand/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <main id="main-content">
@@ -26,13 +26,13 @@
       aria-label="Presentazione del menu digitale Performance 7 Gastronomia"
     >
       <picture class="hero__picture">
-        <source media="(max-width: 700px)" srcset="assets/hero/hero-mobile.jpg">
+        <source media="(max-width: 700px)" srcset="assets/images/hero/hero-mobile.jpg">
         <img
           class="hero__image"
-          src="assets/hero/hero-desktop.jpg"
+          src="assets/images/hero/hero-desktop.jpg"
           alt="Un codice QR e uno smartphone mostrano un menu digitale in un ristorante"
-          width="1561"
-          height="848"
+          width="1706"
+          height="922"
           fetchpriority="high"
           decoding="async"
         >
@@ -45,7 +45,7 @@
       <div class="hero__overlay">
         <img
           class="hero__logo"
-          src="assets/brand/logo-hero.png"
+          src="assets/images/brand/logo-hero.png"
           alt="Performance 7 Gastronomia"
           width="324"
           height="267"
@@ -109,7 +109,7 @@
             <div class="menu-card__icon" aria-hidden="true">
               <img
                 class="menu-card__icon-image"
-                src="assets/icons/menu/kebab.png"
+                src="assets/images/icons-menu/kebab.png"
                 alt=""
               >
             </div>
@@ -121,34 +121,62 @@
               </p>
             </div>
 
-            <div class="menu-card__media">
+            <div class="menu-card__media menu-card__media--kebab">
               <img
-                src="assets/images/menu/kebab.webp"
-                alt="Piatto kebab con verdure"
-                width="194"
-                height="153"
+                src="assets/images/cards/kebab.webp"
+                alt="Piatto kebab con carne e verdure"
+                width="1600"
+                height="720"
                 loading="lazy"
                 decoding="async"
               >
             </div>
 
-            <button
-              class="menu-card__button"
-              type="button"
-              data-menu-image="assets/images/demo-menues/menu-kebab.png"
-            >
-              <span>Scopri il menu</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m9 6 6 6-6 6"></path>
-              </svg>
-            </button>
+            <div class="menu-card__actions" aria-label="Esempi del menu kebab">
+              <button
+                class="menu-card__button"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-kebab.png"
+                aria-label="Apri il primo esempio del menu kebab"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+
+              <button
+                class="menu-card__button"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-kebab2.jpeg"
+                aria-label="Apri il secondo esempio del menu kebab"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+
+              <button
+                class="menu-card__button"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-kebab3.jpeg"
+                aria-label="Apri il terzo esempio del menu kebab"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+            </div>
+
           </article>
 
           <article class="menu-card reveal" data-reveal>
             <div class="menu-card__icon" aria-hidden="true">
               <img
                 class="menu-card__icon-image"
-                src="assets/icons/menu/pizza.png"
+                src="assets/images/icons-menu/pizza.png"
                 alt=""
               >
             </div>
@@ -160,34 +188,61 @@
               </p>
             </div>
 
-            <div class="menu-card__media">
+            <div class="menu-card__media menu-card__media--pizza">
               <img
-                src="assets/images/menu/pizza.webp"
+                src="assets/images/cards/pizza.webp"
                 alt="Pizza con pomodoro, mozzarella e basilico"
-                width="198"
-                height="153"
+                width="1600"
+                height="720"
                 loading="lazy"
                 decoding="async"
               >
             </div>
 
-            <button
-              class="menu-card__button menu-card__button--gold"
-              type="button"
-              data-menu-image="assets/images/demo-menues/menu-pizza.png"
-            >
-              <span>Scopri il menu</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m9 6 6 6-6 6"></path>
-              </svg>
-            </button>
+            <div class="menu-card__actions" aria-label="Esempi del menu pizze">
+              <button
+                class="menu-card__button menu-card__button--gold"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-pizza.png"
+                aria-label="Apri il primo esempio del menu pizze"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+
+              <button
+                class="menu-card__button menu-card__button--gold"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-pizza2.jpeg"
+                aria-label="Apri il secondo esempio del menu pizze"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+
+              <button
+                class="menu-card__button menu-card__button--gold"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-pizza3.jpeg"
+                aria-label="Apri il terzo esempio del menu pizze"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+            </div>
           </article>
 
           <article class="menu-card reveal" data-reveal>
             <div class="menu-card__icon" aria-hidden="true">
               <img
                 class="menu-card__icon-image"
-                src="assets/icons/menu/street-food.png"
+                src="assets/images/icons-menu/panini.png"
                 alt=""
               >
             </div>
@@ -199,34 +254,61 @@
               </p>
             </div>
 
-            <div class="menu-card__media">
+            <div class="menu-card__media menu-card__media--panini">
               <img
-                src="assets/images/menu/street-food.webp"
-                alt="Patatine fritte e bocconcini croccanti"
-                width="207"
-                height="153"
+                src="assets/images/cards/panini.png"
+                alt="Panino grigliato con prosciutto, formaggio, pomodoro e rucola"
+                width="1870"
+                height="841"
                 loading="lazy"
                 decoding="async"
               >
             </div>
 
-            <button
-              class="menu-card__button"
-              type="button"
-              data-menu-image="assets/images/demo-menues/menu-paninis.png"
-            >
-              <span>Scopri il menu</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m9 6 6 6-6 6"></path>
-              </svg>
-            </button>
+            <div class="menu-card__actions" aria-label="Esempi del menu panini">
+              <button
+                class="menu-card__button"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-panini.png"
+                aria-label="Apri il primo esempio del menu panini"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+
+              <button
+                class="menu-card__button"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-panini2.png"
+                aria-label="Apri il secondo esempio del menu panini"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+
+              <button
+                class="menu-card__button"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-panini3.png"
+                aria-label="Apri il terzo esempio del menu panini"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+            </div>
           </article>
 
           <article class="menu-card reveal" data-reveal>
             <div class="menu-card__icon" aria-hidden="true">
               <img
                 class="menu-card__icon-image"
-                src="assets/icons/menu/sushi.png"
+                src="assets/images/icons-menu/sushi.png"
                 alt=""
               >
             </div>
@@ -238,27 +320,54 @@
               </p>
             </div>
 
-            <div class="menu-card__media">
+            <div class="menu-card__media menu-card__media--sushi">
               <img
-                src="assets/images/menu/sushi.webp"
+                src="assets/images/cards/sushi.webp"
                 alt="Assortimento di sushi"
-                width="204"
-                height="153"
+                width="1600"
+                height="720"
                 loading="lazy"
                 decoding="async"
               >
             </div>
 
-            <button
-              class="menu-card__button menu-card__button--gold"
-              type="button"
-              data-menu-image="assets/images/demo-menues/menu-sushi.jpeg"
-            >
-              <span>Scopri il menu</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m9 6 6 6-6 6"></path>
-              </svg>
-            </button>
+            <div class="menu-card__actions" aria-label="Esempi del menu sushi">
+              <button
+                class="menu-card__button menu-card__button--gold"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-sushi.jpeg"
+                aria-label="Apri il primo esempio del menu sushi"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+
+              <button
+                class="menu-card__button menu-card__button--gold"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-sushi2.jpeg"
+                aria-label="Apri il secondo esempio del menu sushi"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+
+              <button
+                class="menu-card__button menu-card__button--gold"
+                type="button"
+                data-menu-image="assets/images/demo-menues/menu-sushi3.jpeg"
+                aria-label="Apri il terzo esempio del menu sushi"
+              >
+                <span>Scopri il menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
+            </div>
           </article>
         </div>
       </div>
@@ -385,7 +494,7 @@
             <div class="contact-card__icon" aria-hidden="true">
               <img
                 class="contact-card__icon-image"
-                src="assets/icons/contact/icon-whatsapp.png"
+                src="assets/images/icons-contact/icon-whatsapp.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -414,7 +523,7 @@
             <div class="contact-card__icon" aria-hidden="true">
               <img
                 class="contact-card__icon-image"
-                src="assets/icons/contact/icon-email.png"
+                src="assets/images/icons-contact/icon-email.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -440,7 +549,7 @@
             <div class="contact-card__icon" aria-hidden="true">
               <img
                 class="contact-card__icon-image"
-                src="assets/icons/contact/icon-support.png"
+                src="assets/images/icons-contact/icon-support.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -455,9 +564,9 @@
 
             <a
               class="contact-card__action contact-card__action--link"
-              href="mailto:support.p7d@gmail.com"
+              href="mailto:supporto.p7d@gmail.com"
             >
-              support.p7d@gmail.com
+              supporto.p7d@gmail.com
             </a>
           </article>
         </div>
@@ -473,7 +582,7 @@
     <div class="container site-footer__content">
       <img
         class="site-footer__logo"
-        src="assets/brand/logo-footer.png"
+        src="assets/images/brand/logo-footer.png"
         alt="Performance 7 Gastronomia"
         width="1024"
         height="1024"
@@ -488,6 +597,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>

@@ -391,7 +391,7 @@ button {
 
 .menu-card__media {
   position: relative;
-  height: 168px;
+  height: 276px;
   margin: 10px -18px -18px;
   overflow: hidden;
 }
@@ -405,13 +405,32 @@ button {
 }
 
 .menu-card__media img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transform: scale(1.03);
   transition:
     transform 0.65s var(--transition-easing),
     filter 0.65s;
+}
+
+/* Ajustes de encuadre independientes para cada fotografía. */
+.menu-card__media--kebab img {
+  object-position: center 52%;
+}
+
+.menu-card__media--pizza img {
+  object-position: center;
+}
+
+.menu-card__media--panini img {
+  object-position: center 48%;
+}
+
+.menu-card__media--sushi img {
+  object-position: center;
 }
 
 .menu-card:hover .menu-card__media img,
@@ -420,15 +439,24 @@ button {
   transform: scale(1.12);
 }
 
-.menu-card__button {
+.menu-card__actions {
   position: absolute;
+  right: 18px;
   bottom: 12px;
-  left: 50%;
+  left: 18px;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.menu-card__button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 170px;
+  width: min(100%, 190px);
+  min-height: 42px;
   gap: 7px;
   padding: 10px 15px;
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -443,7 +471,6 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   backdrop-filter: blur(12px);
-  transform: translateX(-50%);
   transition:
     transform 0.25s,
     box-shadow 0.25s,
@@ -452,7 +479,12 @@ button {
 
 .menu-card__button:hover {
   box-shadow: 0 14px 28px rgba(15, 3, 23, 0.34);
-  transform: translateX(-50%) translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.menu-card__button:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.95);
+  outline-offset: 2px;
 }
 
 .menu-card__button--gold {
@@ -519,7 +551,7 @@ button {
   content: "";
   pointer-events: none;
 
-  background-image: url("../assets/brand/logo-footer.png");
+  background-image: url("../images/brand/logo-footer.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -965,6 +997,13 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* Las tarjetas son más anchas en tablet: aumentamos la altura visible
+     para evitar una franja demasiado estrecha y aprovechar las fotografías
+     de 1600 × 720 px. */
+  .menu-card__media {
+    height: clamp(270px, 32vw, 310px);
+  }
+
   .benefits-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1041,6 +1080,13 @@ button {
   .benefits-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* En una sola columna la tarjeta ocupa casi todo el ancho.
+     Esta altura mantiene una proporción visual equilibrada entre
+     471 y 760 px sin deformar ni pixelar la fotografía. */
+  .menu-card__media {
+    height: clamp(280px, 45vw, 330px);
   }
 
   .benefits-grid {
@@ -1125,6 +1171,10 @@ button {
 
   .menu-grid {
     gap: 18px;
+  }
+
+  .menu-card__media {
+    height: clamp(250px, 72vw, 300px);
   }
 
   .menu-card__copy {
